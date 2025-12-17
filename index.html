@@ -791,7 +791,7 @@
     let projects = [];
 
     async function loadProjects(){
-      const r = await fetch("data/projects.json", { cache: "no-store" });
+      const r = await fetch("Data/projects.json", { cache: "no-store" });
       if (!r.ok) throw new Error("HTTP " + r.status);
       const data = await r.json();
       const raw = Array.isArray(data) ? data : [];
@@ -854,7 +854,7 @@
         tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
         projects_title: "Projets sélectionnés",
         projects_sub: "Cliquez sur un projet pour voir les détails.",
-        projects_empty: "Aucun projet à afficher. Vérifiez data/projects.json.",
+        projects_empty: "Aucun projet à afficher. Vérifiez Data/projects.json.",
         nav_feedback: "Avis",
         feedback_title: "Avis clients",
         feedback_sub: "Quelques retours sur la qualité, la rapidité et la communication.",
@@ -947,7 +947,7 @@
         tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
         projects_title: "Selected projects",
         projects_sub: "Click a project to view details.",
-        projects_empty: "No projects to display. Check data/projects.json.",
+        projects_empty: "No projects to display. Check Data/projects.json.",
         nav_feedback: "Feedback",
         feedback_title: "Client feedback",
         feedback_sub: "A few notes about quality, speed, and communication.",
@@ -1040,7 +1040,7 @@
         tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
         projects_title: "مختارات من المشاريع",
         projects_sub: "اضغط على أي مشروع لعرض التفاصيل.",
-        projects_empty: "لا توجد مشاريع للعرض. تحقق من ملف data/projects.json.",
+        projects_empty: "لا توجد مشاريع للعرض. تحقق من ملف Data/projects.json.",
         nav_feedback: "آراء العملاء",
         feedback_title: "آراء العملاء",
         feedback_sub: "بعض الانطباعات حول الجودة والسرعة والتواصل.",
