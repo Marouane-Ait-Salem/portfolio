@@ -752,6 +752,27 @@
   </div>
 
   <script>
+    const GH_MEDIA_BASE = "https://media.githubusercontent.com/media/Marouane-Ait-Salem/portfolio/main/";
+    const USE_GH_MEDIA = /\.github\.io$/i.test(location.hostname);
+
+    function assetUrl(path){
+      const p = String(path || "").trim();
+      if (!p) return "";
+      if (/^(https?:)?\/\//i.test(p) || p.startsWith("data:") || p.startsWith("blob:")) return p;
+      const cleaned = p.replace(/^\.?\//, "");
+      return USE_GH_MEDIA ? (GH_MEDIA_BASE + cleaned) : cleaned;
+    }
+
+    function rewriteRelativeImgSrc(){
+      if (!USE_GH_MEDIA) return;
+      document.querySelectorAll("img[src]").forEach(img => {
+        const src = String(img.getAttribute("src") || "").trim();
+        if (!src) return;
+        if (/^(https?:)?\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) return;
+        img.src = assetUrl(src);
+      });
+    }
+
     const testimonials = [
       {
         name: "Doha Benomar",
@@ -1257,12 +1278,13 @@
         const quote = fb.text?.[state.lang] || "";
         const stars = Math.max(1, Math.min(5, Number(fb.stars) || 5));
         const avatar = String(fb.avatar || "").trim();
+        const avatarSrc = avatar ? assetUrl(avatar) : "";
 
         card.innerHTML = `
           <div class="tTop">
             <div class="tName">
               <div class="tAvatar ${avatar ? "" : "noimg"}" aria-hidden="true">
-                ${avatar ? `<img src="${avatar.replace(/"/g, "&quot;")}" alt="" loading="lazy" draggable="false" onerror="this.parentElement.classList.add('noimg'); this.remove();" />` : ""}
+                ${avatarSrc ? `<img src="${avatarSrc.replace(/"/g, "&quot;")}" alt="" loading="lazy" draggable="false" onerror="this.parentElement.classList.add('noimg'); this.remove();" />` : ""}
               </div>
               <div style="min-width:0">
                 <b>${fb.name}</b>
@@ -1303,7 +1325,7 @@
         const im = new Image();
         im.decoding = "async";
         im.loading = "eager";
-        im.src = src;
+        im.src = assetUrl(src);
       });
 
       for (const p of filtered){
@@ -1317,7 +1339,8 @@
         const badge = p.badge?.[state.lang] || "";
         const title = p.title?.[state.lang] || "";
         const short = p.short?.[state.lang] || "";
-        const thumb = (getProjectImages(p)[0] || "").replace(/"/g, "&quot;");
+        const thumbUrl = assetUrl(getProjectImages(p)[0] || "");
+        const thumb = thumbUrl.replace(/"/g, "&quot;");
 
         card.innerHTML = `
           <div class="thumb" data-thumb="${thumb}">
@@ -1406,7 +1429,7 @@
       if (!p) return [];
       if (Array.isArray(p.images) && p.images.length) return p.images;
       if (p.image) return [p.image];
-      return ["render-placeholder.jpg"];
+      return [];
     }
 
     function openLightbox(p, startIndex=0){
@@ -1418,7 +1441,7 @@
 
       function render(){
         const src = imgs[currentIndex];
-        lbImg.src = src;
+        lbImg.src = assetUrl(src);
         lbDots.innerHTML = imgs.map((_, i) =>
           `<button class="lbDot" type="button" aria-label="Image ${i+1}" aria-current="${i===currentIndex}"></button>`
         ).join("");
@@ -1481,7 +1504,7 @@
       const imgs = getProjectImages(p);
       currentIndex = 0;
       const img = $("m_img_el");
-      img.src = imgs[0];
+      img.src = assetUrl(imgs[0]);
 
       expandBtn.onclick = () => openLightbox(p, currentIndex);
 
@@ -1555,6 +1578,7 @@
       try{ await loadProjects(); }
       catch(_){ projects = []; }
       applyLang("fr");
+      rewriteRelativeImgSrc();
       showPreloadOnce();
     })();
   </script>

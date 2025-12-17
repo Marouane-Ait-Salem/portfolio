@@ -1,0 +1,2502 @@
+[
+  {
+  "id": "p29",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Bureau de direction — design institutionnel contemporain",
+    "en": "Executive office — contemporary institutional design",
+    "ar": "مكتب إداري تنفيذي — تصميم مؤسساتي معاصر"
+  },
+  "short": {
+    "fr": "Aménagement d’un bureau de direction alliant élégance, confort et image institutionnelle.",
+    "en": "Design of an executive office combining elegance, comfort, and institutional identity.",
+    "ar": "تصميم مكتب إداري يجمع بين الأناقة والراحة والهوية المؤسساتية."
+  },
+  "type": {
+    "fr": "Bureau de direction",
+    "en": "Executive office",
+    "ar": "مكتب إدارة"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + concept d’aménagement",
+  "tags": [
+    "Bureaux",
+    "Direction",
+    "Design institutionnel",
+    "Bois",
+    "Espace exécutif",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de bureau de direction a été conçu pour refléter une image institutionnelle forte et raffinée. L’aménagement met en valeur des matériaux nobles comme le bois, un éclairage architectural intégré et une organisation claire des espaces de travail et de réception. L’ensemble vise à créer un cadre prestigieux, propice à la prise de décision et aux échanges professionnels.",
+    "en": "This executive office project was designed to convey a strong and refined institutional image. The layout highlights noble materials such as wood, integrated architectural lighting, and a clear organization between work and reception areas. The overall design creates a prestigious environment suitable for decision-making and professional meetings.",
+    "ar": "تم تصميم هذا المشروع لمكتب إدارة بهدف إبراز صورة مؤسساتية قوية وراقية، من خلال استخدام مواد فاخرة مثل الخشب، وإضاءة معمارية مدمجة، وتنظيم واضح بين فضاء العمل وفضاء الاستقبال. يوفر التصميم بيئة رسمية ومريحة تدعم اتخاذ القرار والاجتماعات المهنية."
+  },
+  "images": [
+    "projects/p29-1.jpg",
+    "projects/p29-2.jpg",
+    "projects/p29-3.jpg",
+    "projects/p29-4.jpg"
+  ]
+},
+{
+    "id": "p1",
+    "category": "office",
+    "badge": { "fr": "Bureaux", "en": "Office", "ar": "مكاتب" },
+    "title": {
+      "fr": "Bureau de direction — design chaleureux",
+      "en": "Executive Office — Warm Modern Design",
+      "ar": "مكتب إدارة — تصميم عصري دافئ"
+    },
+    "short": {
+      "fr": "Zoning, acoustique & lumière naturelle.",
+      "en": "Zoning, acoustics & daylight.",
+      "ar": "توزيع الفضاء، عزل صوتي وإضاءة طبيعية."
+    },
+    "type": { "fr": "Bureaux", "en": "Office", "ar": "مكاتب" },
+    "role": { "fr": "Conception + 3D", "en": "Design + 3D", "ar": "تصميم + 3D" },
+    "tools": "BLENDER / Cycles",
+    "deliverables": "4 renders HD + plan PDF",
+    "tags": ["3D", "Lumière", "Matériaux"],
+    "desc": {
+      "fr": "Bureau de direction au style contemporain chaleureux : grande table en bois foncé, assises claires et arrière-plan architectural en bois/black avec niches décoratives...",
+      "en": "Warm contemporary executive office with dark wood desk, indirect lighting and a premium lounge area...",
+      "ar": "مكتب إدارة بطابع عصري دافئ مع مكتب خشبي داكن وإضاءة غير مباشرة وركن جلوس راقٍ..."
+    },
+    "images": [
+      "projects/p1-1.jpg",
+      "projects/p1-2.jpg",
+      "projects/p1-3.jpg"
+    ]
+  },
+  {
+    "id": "p2",
+    "category": "commercial",
+    "badge": { "fr": "Commercial", "en": "Commercial", "ar": "تجاري" },
+    "title": {
+      "fr": "Coffee shop — design industriel contemporain",
+      "en": "Coffee Shop — Contemporary Industrial Design",
+      "ar": "مقهى — تصميم صناعي معاصر"
+    },
+    "short": {
+      "fr": "Expérience client, ambiance & parcours fluide.",
+      "en": "Customer experience, atmosphere & fluid circulation.",
+      "ar": "تجربة الزبون، الأجواء، وسلاسة الحركة."
+    },
+    "type": {
+      "fr": "Café / Restauration",
+      "en": "Coffee Shop",
+      "ar": "مقهى"
+    },
+    "role": {
+      "fr": "Concept + Design 3D",
+      "en": "Concept + 3D Design",
+      "ar": "تصميم + ثلاثي الأبعاد"
+    },
+    "tools": "3ds Max / Corona",
+    "deliverables": "4 renders HD",
+    "tags": ["Commercial", "Hospitality", "Coffee Shop", "3D"],
+    "desc": {
+      "fr": "Coffee shop à l’esthétique industrielle contemporaine combinant intérieur lumineux et terrasse végétalisée...",
+      "en": "Contemporary industrial coffee shop combining a bright interior with a landscaped terrace...",
+      "ar": "مقهى بطابع صناعي معاصر يجمع بين فضاء داخلي مضيء وتراس خارجي مزروع..."
+    },
+    "images": [
+      "projects/p2-1.jpg",
+      "projects/p2-2.jpg",
+      "projects/p2-3.jpg",
+      "projects/p2-4.jpg",
+      "projects/p2-5.jpg"
+    ]
+  },
+{
+  "id": "p3",
+  "category": "education",
+  "badge": { "fr": "Éducation", "en": "Education", "ar": "تعليم" },
+  "title": {
+    "fr": "Salle de formation collaborative",
+    "en": "Collaborative Training Room",
+    "ar": "قاعة تكوين تعاونية"
+  },
+  "short": {
+    "fr": "Apprentissage flexible, ergonomie & collaboration.",
+    "en": "Flexible learning, ergonomics & collaboration.",
+    "ar": "تعلم مرن، راحة وظيفية وتعاون."
+  },
+  "type": { "fr": "Éducation", "en": "Education", "ar": "تعليم" },
+  "role": { "fr": "3D & plans", "en": "3D & drawings", "ar": "3D و مخططات" },
+  "tools": "Blender / Cycles / AutoCAD",
+  "deliverables": "3 renders + plans",
+  "tags": ["Education", "Learning Space", "Collaboration", "3D"],
+  "desc": {
+    "fr": "Salle de formation contemporaine conçue pour l’apprentissage collaboratif. L’aménagement repose sur un mobilier modulaire favorisant le travail en groupe, une organisation spatiale flexible et une identité graphique forte. La lumière naturelle, complétée par un éclairage homogène, garantit un confort visuel optimal pour les sessions de formation et les ateliers pédagogiques.",
+    "en": "Contemporary training room designed for collaborative learning. The layout is based on modular furniture encouraging group work, flexible spatial organization, and a strong graphic identity. Natural daylight combined with uniform artificial lighting ensures optimal visual comfort for training sessions and educational workshops.",
+    "ar": "قاعة تكوين عصرية مخصصة للتعلم التعاوني، تعتمد على أثاث مرن يسمح بتعدد وضعيات العمل الجماعي وتنظيم فضائي قابل للتكيف، مع هوية بصرية واضحة. تم تعزيز الإضاءة الطبيعية بإضاءة متجانسة لضمان راحة بصرية مثالية أثناء الدروس وورشات التكوين."
+  },
+  "images": [
+    "projects/p3-1.jpg",
+    "projects/p3-2.jpg",
+    "projects/p3-3.jpg",
+    "projects/p3-4.jpg",
+    "projects/p3-5.jpg"
+  ]
+},
+{
+  "id": "p4",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Espace de vie contemporain — élégance chaleureuse",
+    "en": "Contemporary Living Space — Warm Elegance",
+    "ar": "فضاء سكني معاصر — أناقة دافئة"
+  },
+  "short": {
+    "fr": "Confort, matériaux nobles & éclairage indirect.",
+    "en": "Comfort, noble materials & indirect lighting.",
+    "ar": "راحة، مواد راقية وإضاءة غير مباشرة."
+  },
+  "type": {
+    "fr": "Habitat privé",
+    "en": "Private Residence",
+    "ar": "سكن خاص"
+  },
+  "role": {
+    "fr": "Conception + Design 3D",
+    "en": "Concept + 3D Design",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "5 renders HD",
+  "tags": [
+    "Residential",
+    "Living Space",
+    "Dining Area",
+    "Luxury",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Projet résidentiel contemporain intégrant salon et salle à manger dans un espace ouvert et fluide. L’aménagement met en valeur des matériaux chaleureux, des claustras en bois pour structurer les volumes et un éclairage indirect créant une ambiance douce et raffinée. Le design privilégie le confort, la lisibilité des espaces et une esthétique élégante et intemporelle.",
+    "en": "Contemporary residential project combining living and dining areas within a fluid open space. The design highlights warm materials, wooden slatted partitions to structure volumes, and indirect lighting creating a soft and refined atmosphere. The layout prioritizes comfort, spatial clarity, and a timeless elegant aesthetic.",
+    "ar": "مشروع سكني معاصر يجمع بين صالة الجلوس ومنطقة الطعام ضمن فضاء مفتوح وسلس. يعتمد التصميم على مواد دافئة، فواصل خشبية لتنظيم الأحجام، وإضاءة غير مباشرة تضفي أجواء هادئة وراقية. يركز التخطيط على الراحة، وضوح الفضاءات، وجمالية أنيقة خالدة."
+  },
+  "images": [
+    "projects/p4-1.jpg",
+    "projects/p4-2.jpg",
+    "projects/p4-3.jpg",
+    "projects/p4-4.jpg",
+    "projects/p4-5.jpg"
+  ]
+},
+{
+  "id": "p5",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Amphithéâtre moderne — design académique",
+    "en": "Modern Lecture Hall — Academic Design",
+    "ar": "مدرج جامعي حديث — تصميم أكاديمي"
+  },
+  "short": {
+    "fr": "Confort acoustique, visibilité & accessibilité.",
+    "en": "Acoustic comfort, visibility & accessibility.",
+    "ar": "راحة صوتية، وضوح الرؤية وإمكانية الولوج."
+  },
+  "type": {
+    "fr": "Enseignement supérieur",
+    "en": "Higher Education",
+    "ar": "تعليم عالٍ"
+  },
+  "role": {
+    "fr": "Conception + Design 3D",
+    "en": "Concept + 3D Design",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "4 renders HD",
+  "tags": [
+    "Education",
+    "Auditorium",
+    "Lecture Hall",
+    "Acoustics",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Amphithéâtre contemporain conçu pour l’enseignement universitaire et les conférences. L’aménagement en gradins assure une visibilité optimale vers la scène, tandis que les revêtements muraux en bois participent au confort acoustique et à l’identité architecturale de l’espace. L’éclairage homogène, l’ergonomie des assises et l’intégration de places accessibles garantissent une expérience inclusive, fonctionnelle et qualitative.",
+    "en": "Contemporary lecture hall designed for university teaching and conferences. The tiered seating layout ensures optimal visibility toward the stage, while wooden wall panels enhance acoustic comfort and architectural identity. Uniform lighting, ergonomic seating, and integrated accessible spaces provide an inclusive, functional, and high-quality user experience.",
+    "ar": "مدرج عصري مخصص للتعليم الجامعي والندوات، يعتمد على تنظيم مدرج يضمن وضوح الرؤية نحو المنصة. تساهم الكسوات الخشبية في تحسين الراحة الصوتية وإبراز الهوية المعمارية، بينما توفر الإضاءة المتجانسة، المقاعد المريحة، ومناطق الولوج المخصصة تجربة استعمال شاملة وعملية."
+  },
+  "images": [
+    "projects/p5-1.jpg",
+    "projects/p5-2.jpg",
+    "projects/p5-3.jpg",
+    "projects/p5-4.jpg"
+  ]
+},
+{
+  "id": "p6",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Chambre parentale contemporaine",
+    "en": "Contemporary Master Bedroom",
+    "ar": "غرفة نوم رئيسية عصرية"
+  },
+  "short": {
+    "fr": "Ambiance douce, confort et élégance.",
+    "en": "Soft atmosphere, comfort and elegance.",
+    "ar": "أجواء هادئة، راحة وأناقة."
+  },
+  "type": {
+    "fr": "Habitat privé",
+    "en": "Private Residence",
+    "ar": "سكن خاص"
+  },
+  "role": {
+    "fr": "Conception + Design 3D",
+    "en": "Concept + 3D Design",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "4 renders HD",
+  "tags": [
+    "Residential",
+    "Bedroom",
+    "Master Bedroom",
+    "Interior Design",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Chambre parentale contemporaine conçue pour offrir une atmosphère apaisante et élégante. Le projet met en valeur une palette de tons neutres et chaleureux, un mobilier intégré optimisant le rangement, ainsi qu’un éclairage indirect soulignant les volumes architecturaux. Les variantes chromatiques proposées permettent d’adapter l’ambiance selon les préférences, tout en conservant une cohérence esthétique et un haut niveau de confort.",
+    "en": "Contemporary master bedroom designed to provide a calm and elegant atmosphere. The project features a warm neutral color palette, integrated furniture optimizing storage, and indirect lighting highlighting architectural volumes. The proposed color variations allow the ambiance to be adapted to different preferences while maintaining visual coherence and a high level of comfort.",
+    "ar": "غرفة نوم رئيسية عصرية صُممت لتوفير أجواء هادئة وأنيقة. يعتمد المشروع على ألوان محايدة ودافئة، أثاث مدمج يضمن استغلالاً مثالياً للمساحات، وإضاءة غير مباشرة تبرز التفاصيل المعمارية. تم تقديم أكثر من خيار لوني لإتاحة تخصيص الأجواء مع الحفاظ على الانسجام البصري ومستوى عالٍ من الراحة."
+  },
+  "images": [
+    "projects/p6-1.jpg",
+    "projects/p6-3.jpg",
+    "projects/p6-3.jpg",
+    "projects/p6-4.jpg"
+  ]
+},
+{
+  "id": "p7",
+  "category": "office",
+  "badge": {
+    "fr": "Présidence",
+    "en": "Presidency",
+    "ar": "الرئاسة"
+  },
+  "title": {
+    "fr": "Salle d’attente présidentielle",
+    "en": "Presidential Waiting Area",
+    "ar": "قاعة انتظار رئاسية"
+  },
+  "short": {
+    "fr": "Un espace d’accueil institutionnel, élégant et apaisant.",
+    "en": "An elegant, calm, and institutional reception space.",
+    "ar": "فضاء استقبال راقٍ يعكس الهيبة والهدوء."
+  },
+  "type": {
+    "fr": "Bureaux de direction",
+    "en": "Executive Offices",
+    "ar": "مكاتب الإدارة العليا"
+  },
+  "role": {
+    "fr": "Concept design + Visualisation 3D",
+    "en": "Concept Design + 3D Visualization",
+    "ar": "تصميم مفاهيمي + تصور ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Presidential",
+    "Executive",
+    "Waiting Area",
+    "Corporate Interior",
+    "Biophilic Design",
+    "3D Visualization"
+  ],
+  "desc": {
+    "fr": "Cette salle d’attente présidentielle a été pensée comme un espace de représentation et de sérénité, destiné à accueillir des visiteurs de haut niveau. L’organisation spatiale s’articule autour d’un élément végétal central intégré à une assise circulaire, créant un repère symbolique fort et une atmosphère apaisante. Les matériaux nobles, la palette de tons chauds et l’éclairage indirect renforcent le caractère institutionnel et prestigieux du lieu, tout en garantissant confort et lisibilité des circulations.",
+    "en": "This presidential waiting area was designed as a space of representation and serenity, intended to welcome high-level visitors. The spatial composition revolves around a central vegetal element integrated into circular seating, creating a strong symbolic focal point and a calming atmosphere. Refined materials, warm tones, and indirect lighting enhance the institutional and prestigious character of the space while ensuring comfort and clear circulation.",
+    "ar": "تم تصميم قاعة الانتظار الرئاسية هذه كفضاء يعكس الهيبة والسكينة، مخصص لاستقبال الشخصيات رفيعة المستوى. يرتكز التكوين المكاني على عنصر نباتي مركزي مدمج مع مقاعد دائرية، مما يخلق نقطة رمزية قوية وجواً مريحاً. المواد الراقية، الألوان الدافئة، والإضاءة غير المباشرة تعزز الطابع المؤسساتي والفخم للمكان مع ضمان الراحة وسهولة الحركة."
+  },
+  "images": [
+    "projects/p7-1.jpg",
+    "projects/p7-2.jpg",
+    "projects/p7-3.jpg",
+    "projects/p7-4.jpg",
+    "projects/p7-5.jpg"
+  ]
+},
+{
+  "id": "p8",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Offices",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Open space de bureaux collaboratif",
+    "en": "Collaborative Open-Space Office",
+    "ar": "فضاء عمل مفتوح تعاوني"
+  },
+  "short": {
+    "fr": "Un environnement de travail dynamique et fonctionnel.",
+    "en": "A dynamic and functional work environment.",
+    "ar": "بيئة عمل ديناميكية وعملية."
+  },
+  "type": {
+    "fr": "Bureaux",
+    "en": "Offices",
+    "ar": "مكاتب"
+  },
+  "role": {
+    "fr": "Concept design + Visualisation 3D",
+    "en": "Concept Design + 3D Visualization",
+    "ar": "تصميم مفاهيمي + تصور ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Office Design",
+    "Open Space",
+    "Corporate Interior",
+    "Workplace",
+    "3D Visualization"
+  ],
+  "desc": {
+    "fr": "Ce projet d’open space de bureaux a été conçu pour favoriser la collaboration, la productivité et le bien-être des utilisateurs. L’aménagement combine des postes de travail organisés, des zones informelles de détente et des espaces semi-fermés grâce à des cloisons vitrées. La palette chromatique dynamique, associant des tons jaunes, gris et orangés, renforce l’identité visuelle tout en structurant les différents espaces. L’intégration de végétation et de signalétique graphique participe à créer un environnement de travail moderne, lisible et stimulant.",
+    "en": "This open-space office project was designed to encourage collaboration, productivity, and user well-being. The layout combines organized workstations, informal relaxation areas, and semi-enclosed spaces created with glass partitions. The dynamic color palette, mixing yellow, grey, and orange tones, strengthens the visual identity while structuring the workspace. The integration of greenery and graphic signage contributes to a modern, clear, and stimulating work environment.",
+    "ar": "تم تصميم هذا الفضاء المكتبي المفتوح لتعزيز التعاون والإنتاجية وراحة المستخدمين. يجمع التخطيط بين محطات عمل منظمة، مناطق جلوس غير رسمية، ومساحات شبه مغلقة باستخدام فواصل زجاجية. الألوان الديناميكية التي تمزج بين الأصفر والرمادي والبرتقالي تعزز الهوية البصرية وتساعد على تنظيم الفضاء. كما يساهم إدماج النباتات والعناصر الجرافيكية في خلق بيئة عمل حديثة وواضحة ومحفزة."
+  },
+  "images": [
+    "projects/p8-1.jpg",
+    "projects/p8-2.jpg",
+    "projects/p8-3.jpg",
+    "projects/p8-4.jpg"
+  ]
+},
+{
+  "id": "p9",
+  "category": "exterior",
+  "badge": {
+    "fr": "Extérieur",
+    "en": "Exterior",
+    "ar": "خارجي"
+  },
+  "title": {
+    "fr": "Façade architecturale contemporaine",
+    "en": "Contemporary Architectural Façade ",
+    "ar": "واجهة معمارية معاصرة "
+  },
+  "short": {
+    "fr": "Une identité architecturale forte et distinctive.",
+    "en": "A strong and distinctive architectural identity.",
+    "ar": "هوية معمارية قوية ومميزة."
+  },
+  "type": {
+    "fr": "Bâtiment tertiaire",
+    "en": "Commercial / Office Building",
+    "ar": "مبنى إداري / تجاري"
+  },
+  "role": {
+    "fr": "Conception architecturale + Visualisation 3D",
+    "en": "Architectural Design + 3D Visualization",
+    "ar": "تصميم معماري + تصور ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus extérieurs photoréalistes",
+  "tags": [
+    "Architecture",
+    "Exterior Design",
+    "Facade",
+    "Corporate Building",
+    "3D Visualization"
+  ],
+  "desc": {
+    "fr": "Ce projet de façade contemporaine a été conçu pour affirmer une identité architecturale forte et innovante. La composition volumétrique combine des lignes épurées, des pleins et des vides maîtrisés, ainsi qu’un jeu de matériaux contrastés associant béton, bardage bois et surfaces perforées. L’élément central graphique intégrant le logo devient un repère visuel majeur, renforçant la lisibilité du bâtiment et son caractère institutionnel dans le paysage urbain.",
+    "en": "This contemporary façade project was designed to express a strong and innovative architectural identity. The volumetric composition combines clean lines, controlled solids and voids, and a contrast of materials including concrete, wood cladding, and perforated surfaces. The central graphic element integrating the logo acts as a key visual landmark, reinforcing the building’s presence and institutional character within the urban context.",
+    "ar": "تم تصميم هذا المشروع الخارجي لإبراز هوية معمارية قوية ومبتكرة. يعتمد التكوين على خطوط نقية، توازن مدروس بين الكتل والفراغات، وتباين المواد مثل الخرسانة، الكسوة الخشبية، والأسطح المثقبة. يشكل العنصر الجرافيكي المركزي الذي يدمج شعار علامة بصرية بارزة تعزز وضوح المبنى وحضوره المؤسسي داخل المحيط العمراني."
+  },
+  "images": [
+    "projects/p9-1.jpg",
+    "projects/p9-2.jpg",
+    "projects/p9-3.jpg"
+  ]
+},
+{
+  "id": "p10",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Salle de réunion exécutive — design contemporain",
+    "en": "Executive meeting room — contemporary design",
+    "ar": "قاعة اجتماعات تنفيذية — تصميم معاصر"
+  },
+  "short": {
+    "fr": "Salle de réunion haut de gamme avec cloisons vitrées et finitions bois.",
+    "en": "High-end meeting room with glass partitions and wood finishes.",
+    "ar": "قاعة اجتماعات راقية بجدران زجاجية وتشطيبات خشبية."
+  },
+  "type": {
+    "fr": "Salle de réunion",
+    "en": "Meeting room",
+    "ar": "قاعة اجتماعات"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + proposition d’aménagement",
+  "tags": [
+    "Bureaux",
+    "Salle de réunion",
+    "Design exécutif",
+    "Verre",
+    "Bois",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette salle de réunion exécutive a été conçue pour offrir un cadre élégant, fonctionnel et représentatif, adapté aux réunions de direction et aux prises de décision stratégiques. Le design associe des cloisons vitrées aux formes courbes, des finitions bois chaleureuses et un éclairage architectural maîtrisé, favorisant à la fois confidentialité, confort et image institutionnelle.",
+    "en": "This executive meeting room was designed to provide an elegant, functional, and representative environment suitable for board meetings and strategic decision-making. The design combines curved glass partitions, warm wood finishes, and controlled architectural lighting to ensure privacy, comfort, and a strong corporate image.",
+    "ar": "تم تصميم قاعة الاجتماعات التنفيذية هذه لتوفير فضاء أنيق وعملي يعكس مكانة الإدارة العليا، ومناسب للاجتماعات الاستراتيجية واتخاذ القرارات. يجمع التصميم بين فواصل زجاجية منحنية، وتشطيبات خشبية دافئة، وإضاءة معمارية مدروسة تضمن الخصوصية والراحة وتعزز الصورة المؤسسية."
+  },
+  "images": [
+    "projects/p10-1.jpg",
+    "projects/p10-2.jpg",
+    "projects/p10-3.jpg",
+    "projects/p10-4.jpg"
+  ]
+},
+{
+  "id": "p11",
+  "category": "showroom",
+  "badge": {
+    "fr": "Showroom",
+    "en": "Showroom",
+    "ar": "صالة عرض"
+  },
+  "title": {
+    "fr": "Showroom matériaux & finitions — design contemporain",
+    "en": "Materials & finishes showroom — contemporary design",
+    "ar": "صالة عرض المواد والتشطيبات — تصميم معاصر"
+  },
+  "short": {
+    "fr": "Showroom professionnel dédié à la présentation de matériaux et finitions architecturales.",
+    "en": "Professional showroom dedicated to architectural materials and finishes presentation.",
+    "ar": "صالة عرض مهنية مخصصة لعرض المواد والتشطيبات المعمارية."
+  },
+  "type": {
+    "fr": "Showroom matériaux",
+    "en": "Materials showroom",
+    "ar": "صالة عرض مواد"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + conception d’aménagement",
+  "tags": [
+    "Showroom",
+    "Matériaux",
+    "Finitions",
+    "Design contemporain",
+    "Architecture intérieure",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce showroom a été conçu comme un espace fonctionnel et immersif dédié à la présentation de matériaux et finitions architecturales. L’organisation en zones distinctes permet une lecture claire des gammes (HPL, Corian, MDF, plexiglas), tandis que le design contemporain et l’éclairage technique mettent en valeur textures, couleurs et détails, offrant une expérience professionnelle et qualitative aux visiteurs.",
+    "en": "This showroom was designed as a functional and immersive space dedicated to the presentation of architectural materials and finishes. The organization into distinct zones ensures clear product reading (HPL, Corian, MDF, plexiglass), while contemporary design and technical lighting enhance textures, colors, and details, creating a professional and high-quality visitor experience.",
+    "ar": "تم تصميم هذا المعرض كفضاء عملي وتجريبي مخصص لعرض المواد والتشطيبات المعمارية. يتيح التقسيم إلى مناطق واضحة قراءة سهلة لمختلف الخامات، مثل HPL والكوريان وMDF والبليكسي، بينما يبرز التصميم المعاصر والإضاءة التقنية الألوان والملمس والتفاصيل، مما يوفر تجربة احترافية عالية الجودة للزوار."
+  },
+  "images": [
+    "projects/p11-1.jpg",
+    "projects/p11-2.jpg",
+    "projects/p11-3.jpg",
+    "projects/p11-4.jpg"
+  ]
+},
+{
+  "id": "p12",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Cuisine contemporaine avec îlot central — design épuré",
+    "en": "Contemporary kitchen with central island — clean design",
+    "ar": "مطبخ معاصر بجزيرة مركزية — تصميم أنيق"
+  },
+  "short": {
+    "fr": "Cuisine moderne alliant bois naturel, surfaces blanches et îlot fonctionnel.",
+    "en": "Modern kitchen combining natural wood, white surfaces, and a functional island.",
+    "ar": "مطبخ حديث يجمع بين الخشب الطبيعي والأسطح البيضاء وجزيرة عملية."
+  },
+  "type": {
+    "fr": "Cuisine résidentielle",
+    "en": "Residential kitchen",
+    "ar": "مطبخ سكني"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + proposition d’aménagement",
+  "tags": [
+    "Résidentiel",
+    "Cuisine",
+    "Îlot central",
+    "Design contemporain",
+    "Bois",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette cuisine résidentielle a été conçue dans une approche contemporaine mettant l’accent sur la fonctionnalité et la pureté des lignes. L’association de façades blanches, de bois naturel et de plans de travail clairs crée une atmosphère lumineuse et chaleureuse. L’îlot central structure l’espace et favorise à la fois la préparation, le rangement et les moments de convivialité, tandis que l’éclairage intégré souligne les volumes et les finitions.",
+    "en": "This residential kitchen was designed with a contemporary approach focused on functionality and clean lines. The combination of white cabinetry, natural wood, and light countertops creates a bright and warm atmosphere. The central island organizes the space and supports cooking, storage, and social interaction, while integrated lighting enhances volumes and finishes.",
+    "ar": "تم تصميم هذا المطبخ السكني بأسلوب معاصر يركز على العملية ونقاء الخطوط. يخلق الجمع بين الواجهات البيضاء والخشب الطبيعي وأسطح العمل الفاتحة جواً مشرقاً ودافئاً. تشكل الجزيرة المركزية عنصراً أساسياً لتنظيم الفضاء، حيث تخدم التحضير والتخزين والتجمع، بينما تبرز الإضاءة المدمجة الأحجام والتشطيبات."
+  },
+  "images": [
+    "projects/p12-1.jpg",
+    "projects/p12-2.jpg",
+    "projects/p12-3.jpg",
+    "projects/p12-4.jpg"
+  ]
+},
+{
+  "id": "p13",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Open space créatif — design contemporain",
+    "en": "Creative open space — contemporary design",
+    "ar": "فضاء عمل مفتوح إبداعي — تصميم معاصر"
+  },
+  "short": {
+    "fr": "Open space moderne favorisant collaboration, concentration et dynamisme.",
+    "en": "Modern open space promoting collaboration, focus, and dynamism.",
+    "ar": "فضاء عمل حديث يعزز التعاون والتركيز والدينامية."
+  },
+  "type": {
+    "fr": "Open space",
+    "en": "Open space office",
+    "ar": "مكتب مفتوح"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + proposition d’aménagement",
+  "tags": [
+    "Office",
+    "Open space",
+    "Design contemporain",
+    "Espace collaboratif",
+    "Aménagement de bureaux",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cet open space a été conçu comme un environnement de travail créatif et stimulant, adapté aux équipes modernes. Le design repose sur une palette chromatique affirmée, des lignes courbes et des éléments graphiques forts qui structurent l’espace sans le cloisonner. L’éclairage circulaire suspendu, les séparations légères et les zones de travail bien définies favorisent à la fois la collaboration, la concentration et le confort quotidien des utilisateurs.",
+    "en": "This open space was designed as a creative and stimulating work environment suited to modern teams. The design features a bold color palette, curved lines, and strong graphic elements that structure the space without enclosing it. Suspended circular lighting, light partitions, and clearly defined work zones support collaboration, focus, and everyday comfort.",
+    "ar": "تم تصميم هذا الفضاء المفتوح كبيئة عمل إبداعية ومحفزة تناسب فرق العمل الحديثة. يعتمد التصميم على ألوان جريئة وخطوط منحنية وعناصر بصرية قوية تنظم الفضاء دون عزله. تساهم الإضاءة الدائرية المعلقة والفواصل الخفيفة وتوزيع مناطق العمل في تعزيز التعاون والتركيز والراحة اليومية للمستخدمين."
+  },
+  "images": [
+    "projects/p13-1.jpg",
+    "projects/p13-2.jpg",
+    "projects/p13-3.jpg",
+    "projects/p13-4.jpg"
+  ]
+},
+{
+  "id": "p14",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Chambre parentale — design contemporain et élégant",
+    "en": "Master bedroom — contemporary and elegant design",
+    "ar": "غرفة نوم رئيسية — تصميم معاصر وأنيق"
+  },
+  "short": {
+    "fr": "Chambre moderne aux tons chaleureux avec tête de lit sculpturale et éclairage architectural.",
+    "en": "Modern bedroom with warm tones, sculptural headboard, and architectural lighting.",
+    "ar": "غرفة نوم حديثة بألوان دافئة مع لوح رأس مميز وإضاءة معمارية."
+  },
+  "type": {
+    "fr": "Chambre parentale",
+    "en": "Master bedroom",
+    "ar": "غرفة نوم رئيسية"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + proposition d’aménagement",
+  "tags": [
+    "Résidentiel",
+    "Chambre",
+    "Design contemporain",
+    "Éclairage architectural",
+    "Bois",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette chambre parentale a été pensée comme un espace intime et raffiné, combinant confort et esthétisme contemporain. La composition murale en bois et panneaux texturés structure le lit et crée un point focal fort, renforcé par un éclairage indirect soigneusement intégré. Les tons profonds, associés à des matériaux nobles et à des lignes douces, offrent une atmosphère chaleureuse et apaisante, propice au repos et au bien-être.",
+    "en": "This master bedroom was designed as an intimate and refined space, combining comfort with contemporary aesthetics. The wooden wall composition and textured panels frame the bed and create a strong focal point, enhanced by carefully integrated indirect lighting. Deep tones, noble materials, and soft lines create a warm and calming atmosphere ideal for rest and relaxation.",
+    "ar": "تم تصميم غرفة النوم الرئيسية هذه كفضاء خاص وأنيق يجمع بين الراحة والطابع المعاصر. يبرز التكوين الجداري المصنوع من الخشب والألواح المزخرفة السرير كنقطة محورية قوية، مع تعزيز ذلك بإضاءة غير مباشرة مدمجة بعناية. تخلق الألوان العميقة والمواد الراقية والخطوط الناعمة جواً دافئاً ومريحاً يساعد على الاسترخاء والراحة."
+  },
+  "images": [
+    "projects/p14-1.jpg",
+    "projects/p14-2.jpg",
+    "projects/p14-3.jpg",
+    "projects/p14-4.jpg"
+  ]
+},
+{
+  "id": "p15",
+  "category": "exterior",
+  "badge": {
+    "fr": "Extérieur",
+    "en": "Exterior",
+    "ar": "خارجي"
+  },
+  "title": {
+    "fr": "Villa contemporaine — façade et aménagement extérieur",
+    "en": "Contemporary villa — façade and exterior design",
+    "ar": "فيلا معاصرة — الواجهة والتصميم الخارجي"
+  },
+  "short": {
+    "fr": "Conception d’une villa contemporaine avec façade épurée et intégration paysagère.",
+    "en": "Design of a contemporary villa with a clean façade and landscaped integration.",
+    "ar": "تصميم فيلا معاصرة بواجهة بسيطة واندماج متناغم مع المحيط الخارجي."
+  },
+  "type": {
+    "fr": "Villa",
+    "en": "Villa",
+    "ar": "فيلا"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Extérieur",
+    "Villa",
+    "Architecture contemporaine",
+    "Façade",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet porte sur la conception extérieure d’une villa contemporaine, caractérisée par des lignes épurées, des volumes horizontaux affirmés et une façade blanche contrastée par des éléments minéraux et végétaux. L’aménagement extérieur met en valeur la relation entre architecture, rue et paysage, tout en assurant intimité et élégance.",
+    "en": "This project focuses on the exterior design of a contemporary villa, defined by clean lines, strong horizontal volumes, and a white façade contrasted with mineral and landscape elements. The exterior layout highlights the relationship between architecture, street, and landscape while ensuring privacy and elegance.",
+    "ar": "يركز هذا المشروع على التصميم الخارجي لفيلا معاصرة تتميز بخطوط نقية وكتل أفقية واضحة وواجهة بيضاء تتباين مع العناصر النباتية والمعدنية. يبرز التصميم العلاقة بين العمارة والشارع والمحيط الطبيعي مع ضمان الخصوصية والأناقة."
+  },
+  "images": [
+    "projects/p15-1.jpg",
+    "projects/p15-2.jpg",
+    "projects/p15-3.jpg"
+  ]
+},{
+  "id": "p16",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Salle de prière — conception intérieure",
+    "en": "Prayer hall — interior design",
+    "ar": "قاعة صلاة — تصميم داخلي"
+  },
+  "short": {
+    "fr": "Conception intérieure d’une salle de prière alliant sobriété, identité spirituelle et confort acoustique.",
+    "en": "Interior design of a prayer hall combining sobriety, spiritual identity, and acoustic comfort.",
+    "ar": "تصميم داخلي لقاعة صلاة يجمع بين البساطة والهوية الروحية والراحة الصوتية."
+  },
+  "type": {
+    "fr": "Salle de prière",
+    "en": "Prayer hall",
+    "ar": "قاعة صلاة"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Éducation",
+    "Salle de prière",
+    "Architecture intérieure",
+    "Design spirituel",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet consiste en la conception intérieure d’une salle de prière, mettant en valeur une architecture inspirée des formes traditionnelles islamiques, avec un traitement sobre des matériaux, une mise en lumière douce et un travail acoustique adapté. L’objectif est de créer un espace apaisant, fonctionnel et respectueux du caractère spirituel du lieu.",
+    "en": "This project involves the interior design of a prayer hall, highlighting architecture inspired by traditional Islamic forms, with a sober material palette, soft lighting, and adapted acoustic treatment. The goal is to create a calming, functional space that respects the spiritual character of the place.",
+    "ar": "يتعلق هذا المشروع بتصميم داخلي لقاعة صلاة مستوحاة من الأشكال المعمارية الإسلامية التقليدية، مع اعتماد مواد بسيطة، وإضاءة هادئة، ومعالجة صوتية مناسبة. الهدف هو خلق فضاء هادئ وعملي يحترم الطابع الروحي للمكان."
+  },
+  "images": [
+    "projects/p16-1.jpg",
+    "projects/p16-3.jpg",
+    "projects/p16-4.jpg",
+    "projects/p16-5.jpg"
+  ]
+},
+{
+  "id": "p17",
+  "category": "commercial",
+  "badge": {
+    "fr": "Commercial",
+    "en": "Commercial",
+    "ar": "تجاري"
+  },
+  "title": {
+    "fr": "Coffee shop contemporain — espace à double hauteur",
+    "en": "Contemporary coffee shop — double-height space",
+    "ar": "مقهى معاصر — فضاء بارتفاع مزدوج"
+  },
+  "short": {
+    "fr": "Aménagement intérieur d’un coffee shop moderne avec mezzanine, palette chaleureuse et touches végétales.",
+    "en": "Interior design of a modern coffee shop featuring a mezzanine, warm palette, and green accents.",
+    "ar": "تصميم داخلي لمقهى عصري بطابق نصفي، ألوان دافئة ولمسات نباتية."
+  },
+  "type": {
+    "fr": "Coffee shop",
+    "en": "Coffee shop",
+    "ar": "مقهى"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Commercial",
+    "Coffee shop",
+    "Design contemporain",
+    "Mezzanine",
+    "Intérieur",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de coffee shop contemporain se distingue par un espace à double hauteur intégrant une mezzanine, favorisant une perception généreuse des volumes. La palette chromatique associe des tons terreux et verts doux, complétés par un mobilier confortable et un éclairage soigné. L’aménagement vise à créer une atmosphère conviviale et élégante, adaptée aussi bien aux moments de détente qu’aux rencontres informelles.",
+    "en": "This contemporary coffee shop project stands out with its double-height space and integrated mezzanine, enhancing the perception of volume. The color palette combines earthy tones with soft greens, complemented by comfortable furniture and carefully designed lighting. The layout creates a welcoming and elegant atmosphere suitable for both relaxation and informal meetings.",
+    "ar": "يتميز مشروع المقهى المعاصر هذا بفضاء ذي ارتفاع مزدوج مع طابق نصفي، مما يعزز الإحساس بالاتساع. تجمع الألوان بين الدرجات الترابية والخضراء الهادئة، مع أثاث مريح وإضاءة مدروسة. يهدف التصميم إلى خلق أجواء دافئة وأنيقة تناسب الاسترخاء واللقاءات غير الرسمية."
+  },
+  "images": [
+    "projects/p17-1.jpg",
+    "projects/p17-2.jpg",
+    "projects/p17-3.jpg",
+    "projects/p17-4.jpg",
+    "projects/p17-5.jpg",
+    "projects/p17-6.jpg",
+    "projects/p17-7.jpg"
+  ]
+},
+{
+  "id": "p18",
+  "category": "commercial",
+  "badge": {
+    "fr": "Commercial",
+    "en": "Commercial",
+    "ar": "تجاري"
+  },
+  "title": {
+    "fr": "Lounge contemporain — espace d’accueil et détente",
+    "en": "Contemporary lounge — reception and relaxation space",
+    "ar": "ردهة معاصرة — فضاء استقبال واستراحة"
+  },
+  "short": {
+    "fr": "Espace lounge haut de gamme combinant confort, design sculptural et ambiance chaleureuse.",
+    "en": "High-end lounge space combining comfort, sculptural design, and a warm atmosphere.",
+    "ar": "فضاء لاونج راقٍ يجمع بين الراحة والتصميم النحتي وأجواء دافئة."
+  },
+  "type": {
+    "fr": "Lounge / espace d’accueil",
+    "en": "Lounge / reception area",
+    "ar": "لاونج / فضاء استقبال"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Commercial",
+    "Lounge",
+    "Espace d’accueil",
+    "Design contemporain",
+    "Plafond architectural",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de lounge contemporain a été pensé comme un espace d’accueil et de détente à forte identité visuelle. Le design se distingue par un plafond architectural sculptural, un sol graphique en marbre et une palette chromatique mêlant tons neutres et accents chaleureux. L’aménagement favorise la fluidité des circulations, le confort des usagers et une atmosphère élégante et accueillante.",
+    "en": "This contemporary lounge project was designed as a reception and relaxation space with a strong visual identity. The design features a sculptural architectural ceiling, a graphic marble floor, and a color palette combining neutral tones with warm accents. The layout promotes smooth circulation, user comfort, and an elegant, welcoming atmosphere.",
+    "ar": "تم تصميم هذا المشروع كردهة معاصرة للاستقبال والاستراحة بهوية بصرية قوية. يتميز التصميم بسقف معماري نحتي، وأرضية رخامية ذات طابع هندسي، ولوحة ألوان تجمع بين الدرجات الهادئة ولمسات دافئة. يركز التوزيع الداخلي على سهولة الحركة وراحة المستخدمين وخلق أجواء أنيقة وجذابة."
+  },
+  "images": [
+    "projects/p18-1.jpg",
+    "projects/p18-2.jpg",
+    "projects/p18-3.jpg",
+    "projects/p18-4.jpg"
+  ]
+},
+{
+  "id": "p19",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Porte d’entrée contemporaine — bois et verre",
+    "en": "Contemporary entrance door — wood and glass",
+    "ar": "باب مدخل معاصر — خشب وزجاج"
+  },
+  "short": {
+    "fr": "Conception d’une porte d’entrée haut de gamme en bois avec inserts vitrés.",
+    "en": "Design of a high-end wooden entrance door with glass inserts.",
+    "ar": "تصميم باب مدخل فاخر من الخشب مع إدماج الزجاج."
+  },
+  "type": {
+    "fr": "Porte d’entrée",
+    "en": "Entrance door",
+    "ar": "باب مدخل"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Produit",
+    "Porte",
+    "Design contemporain",
+    "Bois",
+    "Verre",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet présente une porte d’entrée contemporaine conçue avec des panneaux en bois naturel, des lames verticales décoratives et des inserts vitrés fumés. Le design met l’accent sur l’élégance, la robustesse et la mise en valeur de l’entrée, tout en jouant sur la lumière et les textures.",
+    "en": "This project showcases a contemporary entrance door designed with natural wood panels, vertical decorative slats, and smoked glass inserts. The design emphasizes elegance, solidity, and a strong visual identity while enhancing light and material textures.",
+    "ar": "يعرض هذا المشروع باب مدخل معاصر مصمم بألواح خشبية طبيعية مع شرائح عمودية زخرفية وإدماج زجاج معتم. يركز التصميم على الأناقة والمتانة وإبراز المدخل مع اللعب على الضوء والملمس."
+  },
+  "images": [
+    "projects/p19-1.jpg",
+    "projects/p19-2.jpg",
+    "projects/p19-3.jpg",
+    "projects/p19-4.jpg",
+    "projects/p19-5.jpg",
+    "projects/p19-6.jpg",
+    "projects/p19-7.jpg",
+    "projects/p19-8.jpg"
+  ]
+},
+{
+  "id": "p21",
+  "category": "exterior",
+  "badge": {
+    "fr": "Extérieur",
+    "en": "Exterior",
+    "ar": "خارجي"
+  },
+  "title": {
+    "fr": "Immeuble résidentiel et commercial — façade contemporaine",
+    "en": "Residential and commercial building — contemporary façade",
+    "ar": "عمارة سكنية وتجارية — واجهة معاصرة"
+  },
+  "short": {
+    "fr": "Conception d’un immeuble mixte avec commerces en rez-de-chaussée et logements en étages.",
+    "en": "Design of a mixed-use building with ground-floor shops and residential units above.",
+    "ar": "تصميم عمارة متعددة الاستعمالات تضم محلات تجارية في الطابق الأرضي وشقق سكنية في الطوابق العلوية."
+  },
+  "type": {
+    "fr": "Immeuble mixte",
+    "en": "Mixed-use building",
+    "ar": "عمارة متعددة الاستعمالات"
+  },
+  "role": {
+    "fr": "Conception architecturale + 3D",
+    "en": "Architectural design + 3D",
+    "ar": "تصميم معماري + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D extérieurs",
+  "tags": [
+    "Extérieur",
+    "Immeuble",
+    "Façade",
+    "Architecture contemporaine",
+    "Mixte",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet porte sur la conception de la façade d’un immeuble résidentiel et commercial implanté en angle de rue. Le traitement architectural repose sur une composition sobre et rythmée, alternant volumes clairs, balcons continus et garde-corps métalliques. Le rez-de-chaussée est dédié aux commerces avec des rideaux métalliques intégrés, tandis que les étages supérieurs accueillent des logements bénéficiant d’une lecture claire et équilibrée de la façade.",
+    "en": "This project focuses on the façade design of a residential and commercial building located on a corner plot. The architectural approach is based on a clean and rhythmic composition, combining light-colored volumes, continuous balconies, and metal railings. The ground floor is dedicated to retail units, while the upper floors host residential apartments with a clear and balanced façade identity.",
+    "ar": "يركز هذا المشروع على تصميم واجهة عمارة سكنية وتجارية تقع عند زاوية شارع. يعتمد الطرح المعماري على تكوين بسيط ومتوازن يجمع بين كتل فاتحة اللون وشرفات متواصلة ودرابزين معدني. خُصص الطابق الأرضي للمحلات التجارية، في حين تضم الطوابق العلوية شققاً سكنية بواجهة واضحة ومنسجمة."
+  },
+  "images": [
+    "projects/p21-1.jpg",
+    "projects/p21-2.jpg",
+    "projects/p21-3.jpg"
+  ]
+},
+{
+  "id": "p22",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Studio gaming & podcast — design immersif",
+    "en": "Gaming & podcast studio — immersive design",
+    "ar": "استوديو ألعاب وبودكاست — تصميم غامر"
+  },
+  "short": {
+    "fr": "Conception d’un studio gaming et podcast à l’ambiance sombre et immersive.",
+    "en": "Design of a gaming and podcast studio with a dark, immersive atmosphere.",
+    "ar": "تصميم استوديو ألعاب وبودكاست بأجواء داكنة وغامرة."
+  },
+  "type": {
+    "fr": "Studio multimédia",
+    "en": "Multimedia studio",
+    "ar": "استوديو متعدد الوسائط"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + concept d’aménagement",
+  "tags": [
+    "Office",
+    "Studio gaming",
+    "Podcast",
+    "Design immersif",
+    "LED",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet consiste en la conception d’un studio gaming et podcast pensé comme un espace immersif et identitaire. L’ambiance repose sur une palette sombre, un éclairage LED rouge intégré aux étagères et un traitement acoustique mural. L’aménagement met en valeur les équipements, les objets de collection et le confort des utilisateurs, créant un cadre professionnel adapté à l’enregistrement, au streaming et à la création de contenu.",
+    "en": "This project focuses on the design of a gaming and podcast studio conceived as an immersive and identity-driven space. The atmosphere relies on a dark color palette, red LED lighting integrated into the shelves, and acoustic wall treatments. The layout highlights equipment, collectibles, and user comfort, providing a professional environment suitable for recording, streaming, and content creation.",
+    "ar": "يركز هذا المشروع على تصميم استوديو ألعاب وبودكاست بطابع غامر وهوية بصرية قوية. تعتمد الأجواء على ألوان داكنة مع إضاءة LED حمراء مدمجة في الرفوف ومعالجة صوتية للجدران. يبرز التصميم المعدات والمقتنيات مع ضمان راحة المستخدمين، مما يوفر فضاءً احترافيًا مناسبًا للتسجيل والبث وصناعة المحتوى."
+  },
+  "images": [
+    "projects/p22-1.jpg",
+    "projects/p22-2.jpg",
+    "projects/p22-3.jpg",
+    "projects/p22-4.jpg"
+  ]
+},
+{
+  "id": "p23",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Bureau gaming & streaming — setup immersif",
+    "en": "Gaming & streaming workstation — immersive setup",
+    "ar": "مكتب ألعاب وبث مباشر — إعداد غامر"
+  },
+  "short": {
+    "fr": "Conception d’un bureau gaming et streaming à l’ambiance sombre et technologique.",
+    "en": "Design of a gaming and streaming workstation with a dark, tech-driven atmosphere.",
+    "ar": "تصميم مكتب ألعاب وبث مباشر بأجواء داكنة وتقنية متقدمة."
+  },
+  "type": {
+    "fr": "Bureau gaming",
+    "en": "Gaming workstation",
+    "ar": "مكتب ألعاب"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + concept d’aménagement",
+  "tags": [
+    "Office",
+    "Gaming",
+    "Streaming",
+    "Setup",
+    "LED",
+    "Design immersif",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet présente la conception d’un bureau gaming et streaming pensé comme un espace immersif dédié à la performance et à la création de contenu. Le design repose sur une ambiance sombre, un éclairage LED rouge intégré aux rangements muraux et une mise en scène des équipements et objets de collection. L’aménagement favorise l’ergonomie, la concentration et l’identité visuelle, offrant un cadre professionnel adapté au gaming intensif, au streaming et à l’enregistrement vidéo.",
+    "en": "This project showcases the design of a gaming and streaming workstation conceived as an immersive space dedicated to performance and content creation. The design relies on a dark atmosphere, red LED lighting integrated into wall storage, and a strong visual display of equipment and collectibles. The layout prioritizes ergonomics, focus, and visual identity, providing a professional environment suitable for intensive gaming, streaming, and video recording.",
+    "ar": "يعرض هذا المشروع تصميم مكتب ألعاب وبث مباشر تم تصوره كفضاء غامر مخصص للأداء وصناعة المحتوى. يعتمد التصميم على أجواء داكنة مع إضاءة LED حمراء مدمجة في التخزين الجداري، وإبراز المعدات والمقتنيات. يركز التوزيع على الراحة الوظيفية والتركيز والهوية البصرية، مما يوفر بيئة احترافية مناسبة للألعاب المكثفة والبث والتسجيل المرئي."
+  },
+  "images": [
+    "projects/p23-1.jpg",
+    "projects/p23-2.jpg",
+    "projects/p23-3.jpg"
+  ]
+},
+{
+  "id": "p24",
+  "category": "commercial",
+  "badge": {
+    "fr": "Espace commercial",
+    "en": "Commercial space",
+    "ar": "فضاء تجاري"
+  },
+  "title": {
+    "fr": "Clinique privée — accueil et espaces de consultation",
+    "en": "Private clinic — reception and consultation areas",
+    "ar": "عيادة خاصة — الاستقبال وفضاءات الاستشارة"
+  },
+  "short": {
+    "fr": "Aménagement contemporain d’une clinique privée avec accueil, salles d’attente et espaces de consultation.",
+    "en": "Contemporary design of a private clinic including reception, waiting areas, and consultation spaces.",
+    "ar": "تصميم معاصر لعيادة خاصة يضم الاستقبال وقاعات الانتظار وفضاءات الاستشارة."
+  },
+  "type": {
+    "fr": "Clinique privée",
+    "en": "Private clinic",
+    "ar": "عيادة خاصة"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + conception d’aménagement intérieur",
+  "tags": [
+    "Clinique",
+    "Espace commercial",
+    "Accueil",
+    "Salle d’attente",
+    "Consultation",
+    "Design contemporain",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet consiste en la conception intérieure complète d’une clinique privée, mettant l’accent sur le confort des usagers, la fluidité des circulations et une image professionnelle rassurante. Le design adopte une palette douce et contemporaine, associée à un mobilier ergonomique, un éclairage homogène et une organisation claire des espaces d’accueil, d’attente et de consultation.",
+    "en": "This project involves the complete interior design of a private clinic, focusing on user comfort, smooth circulation, and a reassuring professional image. The design features a soft contemporary palette, ergonomic furniture, balanced lighting, and a clear spatial organization for reception, waiting, and consultation areas.",
+    "ar": "يرتكز هذا المشروع على التصميم الداخلي المتكامل لعيادة خاصة، مع التركيز على راحة المرتفقين وسلاسة الحركة وإبراز صورة مهنية مطمئنة. يعتمد التصميم على ألوان هادئة معاصرة، وأثاث مريح، وإضاءة متوازنة، وتنظيم واضح لفضاءات الاستقبال والانتظار والاستشارة."
+  },
+  "images": [
+    "projects/p24-1.jpg",
+    "projects/p24-2.jpg",
+    "projects/p24-3.jpg",
+    "projects/p24-4.jpg",
+    "projects/p24-5.jpg",
+    "projects/p24-6.jpg"
+  ]
+},
+{
+  "id": "p25",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Salon contemporain — ambiance chaleureuse et minimaliste",
+    "en": "Contemporary living room — warm and minimalist atmosphere",
+    "ar": "صالون معاصر — أجواء دافئة وبسيطة"
+  },
+  "short": {
+    "fr": "Aménagement d’un salon contemporain alliant tons chauds, bois naturel et lignes épurées.",
+    "en": "Design of a contemporary living room combining warm tones, natural wood, and clean lines.",
+    "ar": "تصميم صالون معاصر يجمع بين الألوان الدافئة والخشب الطبيعي والخطوط البسيطة."
+  },
+  "type": {
+    "fr": "Salon",
+    "en": "Living room",
+    "ar": "صالون"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Résidentiel",
+    "Salon",
+    "Design contemporain",
+    "Bois",
+    "Minimalisme",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet propose l’aménagement d’un salon résidentiel contemporain pensé pour offrir confort, élégance et fonctionnalité. La composition repose sur une palette de tons chauds et neutres, des finitions en bois naturel et un mobilier aux formes douces. L’éclairage intégré et la gestion des volumes renforcent une atmosphère apaisante et accueillante, adaptée à un usage quotidien.",
+    "en": "This project presents the design of a contemporary residential living room focused on comfort, elegance, and functionality. The layout features a palette of warm and neutral tones, natural wood finishes, and softly shaped furniture. Integrated lighting and balanced proportions enhance a calm and welcoming atmosphere suitable for everyday living.",
+    "ar": "يقدم هذا المشروع تصميم صالون سكني معاصر يركز على الراحة والأناقة والوظيفية. يعتمد التكوين على ألوان دافئة ومحايدة، وتشطيبات من الخشب الطبيعي، وأثاث بخطوط ناعمة. كما تساهم الإضاءة المدمجة وتنظيم الفضاء في خلق أجواء هادئة ومريحة تناسب الاستعمال اليومي."
+  },
+  "images": [
+    "projects/p25-1.jpg",
+    "projects/p25-2.jpg"
+  ]
+},
+{
+  "id": "p26",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Salon circulaire — design contemporain et lumière naturelle",
+    "en": "Circular living room — contemporary design and natural light",
+    "ar": "صالون دائري — تصميم معاصر وإضاءة طبيعية"
+  },
+  "short": {
+    "fr": "Salon contemporain à composition circulaire, baigné de lumière naturelle et pensé pour le confort.",
+    "en": "Contemporary circular living room filled with natural light and designed for comfort.",
+    "ar": "صالون معاصر بتكوين دائري، مشبع بالإضاءة الطبيعية ومصمم للراحة."
+  },
+  "type": {
+    "fr": "Salon",
+    "en": "Living room",
+    "ar": "صالون"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Résidentiel",
+    "Salon",
+    "Design contemporain",
+    "Mobilier circulaire",
+    "Lumière naturelle",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet met en valeur un salon résidentiel contemporain organisé autour d’un mobilier circulaire favorisant la convivialité et la fluidité des échanges. Les larges ouvertures vitrées, associées à des voilages légers, permettent une diffusion optimale de la lumière naturelle. Les teintes neutres, rehaussées par des assises colorées, créent une ambiance élégante, chaleureuse et apaisante.",
+    "en": "This project showcases a contemporary residential living room organized around circular seating to encourage comfort and social interaction. Large glazed openings combined with sheer curtains ensure optimal natural light diffusion. Neutral tones enhanced by colored seating elements create an elegant, warm, and calming atmosphere.",
+    "ar": "يبرز هذا المشروع صالونًا سكنيًا معاصرًا يعتمد على أثاث دائري يعزز الراحة والتواصل الاجتماعي. تسمح الفتحات الزجاجية الواسعة مع الستائر الخفيفة بانتشار مثالي للضوء الطبيعي. وتخلق الألوان المحايدة مع لمسات لونية في الجلسات أجواء أنيقة ودافئة ومريحة."
+  },
+  "images": [
+    "projects/p26-1.jpg",
+    "projects/p26-2.jpg"
+  ]
+},
+{
+  "id": "p27",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Salle de classe moderne — aménagement pédagogique contemporain",
+    "en": "Modern classroom — contemporary educational design",
+    "ar": "قاعة دراسية حديثة — تصميم تعليمي معاصر"
+  },
+  "short": {
+    "fr": "Salle de classe fonctionnelle et lumineuse, pensée pour un enseignement moderne et structuré.",
+    "en": "Functional and bright classroom designed for modern and structured learning.",
+    "ar": "قاعة دراسية عملية ومضاءة جيدًا، مصممة للتعليم الحديث والمنظم."
+  },
+  "type": {
+    "fr": "Salle de classe",
+    "en": "Classroom",
+    "ar": "قاعة دراسية"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + organisation spatiale",
+  "tags": [
+    "Éducation",
+    "Salle de classe",
+    "Design pédagogique",
+    "Mobilier scolaire",
+    "Lumière naturelle",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet présente l’aménagement d’une salle de classe moderne, conçue pour offrir un environnement d’apprentissage confortable, clair et efficace. L’organisation rationnelle du mobilier, l’intégration d’un écran de projection et de tableaux pédagogiques, ainsi que l’apport généreux de lumière naturelle favorisent la concentration, l’interaction et la qualité de l’enseignement.",
+    "en": "This project showcases the design of a modern classroom created to provide a comfortable, clear, and efficient learning environment. The rational furniture layout, integration of a projection screen and teaching boards, and generous natural light enhance focus, interaction, and overall educational quality.",
+    "ar": "يعرض هذا المشروع تصميم قاعة دراسية حديثة تهدف إلى توفير بيئة تعليمية مريحة وواضحة وفعالة. يساهم التنظيم المدروس للأثاث، ودمج شاشة عرض وسبورات تعليمية، إضافة إلى الإضاءة الطبيعية الوفيرة، في تعزيز التركيز والتفاعل وجودة العملية التعليمية."
+  },
+  "images": [
+    "projects/p27-1.jpg",
+    "projects/p27-2.jpg",
+    "projects/p27-3.jpg"
+  ]
+},
+{
+  "id": "p28",
+  "category": "commercial",
+  "badge": {
+    "fr": "Commercial",
+    "en": "Commercial",
+    "ar": "تجاري"
+  },
+  "title": {
+    "fr": "Salle de sport contemporaine — design intérieur",
+    "en": "Contemporary gym — interior design",
+    "ar": "قاعة رياضية عصرية — تصميم داخلي"
+  },
+  "short": {
+    "fr": "Conception d’une salle de sport moderne alliant performance, ergonomie et identité visuelle forte.",
+    "en": "Design of a modern gym combining performance, ergonomics, and strong visual identity.",
+    "ar": "تصميم قاعة رياضية حديثة تجمع بين الأداء، الراحة، وهوية بصرية قوية."
+  },
+  "type": {
+    "fr": "Salle de sport",
+    "en": "Gym",
+    "ar": "قاعة رياضية"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD",
+  "tags": [
+    "Salle de sport",
+    "Gym",
+    "Design commercial",
+    "Architecture intérieure",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet présente la conception intérieure d’une salle de sport contemporaine pensée pour optimiser les parcours d’entraînement, la lisibilité des espaces et le confort des utilisateurs. Le design associe des matériaux sobres, un éclairage technique soigné et une organisation fonctionnelle des zones cardio, musculation et entraînement libre.",
+    "en": "This project showcases the interior design of a contemporary gym focused on optimizing workout flow, spatial clarity, and user comfort. The design combines sober materials, precise technical lighting, and a functional organization of cardio, strength, and free-training areas.",
+    "ar": "يعرض هذا المشروع التصميم الداخلي لقاعة رياضية عصرية تهدف إلى تحسين مسارات التدريب، وضوح الفضاءات، وراحة المستخدمين. يعتمد التصميم على مواد بسيطة، إضاءة تقنية مدروسة، وتنظيم وظيفي لمناطق الكارديو، تقوية العضلات، والتدريب الحر."
+  },
+  "images": [
+    "projects/p28-1.jpg",
+    "projects/p28-2.jpg",
+    "projects/p28-3.jpg",
+    "projects/p28-4.jpg",
+    "projects/p28-5.jpg"
+  ]
+},
+{
+  "id": "p30",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Salle de réunion collaborative — design biophilique contemporain",
+    "en": "Collaborative meeting room — contemporary biophilic design",
+    "ar": "قاعة اجتماعات تعاونية — تصميم معاصر بلمسة بيولوجية"
+  },
+  "short": {
+    "fr": "Salle de réunion moderne intégrant technologie, confort acoustique et éléments végétaux.",
+    "en": "Modern meeting room integrating technology, acoustic comfort, and greenery.",
+    "ar": "قاعة اجتماعات حديثة تجمع بين التكنولوجيا والراحة الصوتية والعناصر النباتية."
+  },
+  "type": {
+    "fr": "Salle de réunion",
+    "en": "Meeting room",
+    "ar": "قاعة اجتماعات"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + concept d’aménagement",
+  "tags": [
+    "Bureaux",
+    "Salle de réunion",
+    "Design collaboratif",
+    "Biophilie",
+    "Technologie",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette salle de réunion collaborative a été conçue pour favoriser l’échange, la créativité et la prise de décision collective. Le design associe une table centrale modulaire, des assises ergonomiques, un éclairage architectural dynamique et des panneaux muraux hexagonaux intégrant des éléments végétaux. L’ensemble crée une atmosphère contemporaine, apaisante et parfaitement adaptée aux réunions hybrides et aux environnements de travail innovants.",
+    "en": "This collaborative meeting room was designed to encourage interaction, creativity, and collective decision-making. The layout combines a modular central table, ergonomic seating, dynamic architectural lighting, and hexagonal wall panels with integrated greenery. The result is a contemporary and calming environment, ideal for hybrid meetings and innovative workspaces.",
+    "ar": "تم تصميم قاعة الاجتماعات التعاونية هذه لتعزيز التفاعل والإبداع واتخاذ القرار الجماعي. يجمع التصميم بين طاولة مركزية مرنة، وكراسٍ مريحة، وإضاءة معمارية ديناميكية، وجدران سداسية الشكل مدمج بها عناصر نباتية، مما يوفر أجواء عصرية ومريحة ومناسبة للاجتماعات الحديثة والهجينة."
+  },
+  "images": [
+    "projects/p30-1.jpg",
+    "projects/p30-2.jpg",
+    "projects/p30-3.jpg"
+  ]
+},
+{
+  "id": "p31",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Salon marocain contemporain — élégance et artisanat",
+    "en": "Contemporary Moroccan living room — elegance and craftsmanship",
+    "ar": "صالون مغربي معاصر — أناقة وحرفية"
+  },
+  "short": {
+    "fr": "Salon marocain revisité avec boiseries nobles, assises traditionnelles et éclairage raffiné.",
+    "en": "Reinterpreted Moroccan living room with noble woodwork, traditional seating, and refined lighting.",
+    "ar": "صالون مغربي مُعاد تصميمه يجمع بين الخشب الفاخر، الجلسات التقليدية، والإضاءة الراقية."
+  },
+  "type": {
+    "fr": "Salon marocain",
+    "en": "Moroccan living room",
+    "ar": "صالون مغربي"
+  },
+  "role": {
+    "fr": "Conception + 3D",
+    "en": "Design + 3D",
+    "ar": "تصميم + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + proposition d’aménagement",
+  "tags": [
+    "Résidentiel",
+    "Salon marocain",
+    "Design contemporain",
+    "Bois",
+    "Artisanat",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de salon marocain contemporain propose une interprétation élégante du style traditionnel, en associant des assises basses, des boiseries finement travaillées et une palette de tons chaleureux. L’éclairage décoratif, les panneaux muraux et le luminaire central sculptural renforcent l’atmosphère conviviale et raffinée, tout en respectant l’identité culturelle marocaine dans un langage architectural moderne.",
+    "en": "This contemporary Moroccan living room project offers an elegant reinterpretation of traditional design, combining low seating, finely crafted wood elements, and a warm color palette. Decorative lighting, wall panels, and a sculptural central chandelier enhance the refined and welcoming atmosphere while preserving Moroccan cultural identity through a modern architectural language.",
+    "ar": "يقدم هذا المشروع لصالون مغربي معاصر قراءة أنيقة للطابع التقليدي، من خلال دمج الجلسات الأرضية، والخشب المشغول بدقة، ولوحة ألوان دافئة. تساهم الإضاءة الزخرفية، ومعالجة الجدران، والثريا المركزية النحتية في خلق أجواء راقية ودافئة تحافظ على الهوية المغربية بأسلوب معماري حديث."
+  },
+  "images": [
+    "projects/p31-1.jpg",
+    "projects/p31-2.jpg",
+    "projects/p31-3.jpg",
+    "projects/p31-4.jpg",
+    "projects/p31-5.jpg"
+  ]
+},
+{
+  "id": "p32",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Auditorium contemporain — confort et performance acoustique",
+    "en": "Contemporary auditorium — comfort and acoustic performance",
+    "ar": "مدرج معاصر — راحة وأداء صوتي"
+  },
+  "short": {
+    "fr": "Auditorium moderne conçu pour les conférences, formations et événements académiques.",
+    "en": "Modern auditorium designed for conferences, training sessions, and academic events.",
+    "ar": "مدرج حديث مخصص للمحاضرات، الدورات التكوينية، والفعاليات الأكاديمية."
+  },
+  "type": {
+    "fr": "Auditorium / Salle de conférence",
+    "en": "Auditorium / Conference hall",
+    "ar": "مدرج / قاعة محاضرات"
+  },
+  "role": {
+    "fr": "Conception architecturale + 3D",
+    "en": "Architectural design + 3D",
+    "ar": "تصميم معماري + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + étude d’aménagement",
+  "tags": [
+    "Éducation",
+    "Auditorium",
+    "Salle de conférence",
+    "Design contemporain",
+    "Acoustique",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet d’auditorium contemporain met l’accent sur le confort des usagers, la visibilité optimale et la performance acoustique. L’organisation en gradins, le choix de revêtements bois et textiles, ainsi que l’éclairage linéaire intégré au plafond créent une atmosphère sobre et institutionnelle, adaptée aux établissements éducatifs et culturels.",
+    "en": "This contemporary auditorium project focuses on user comfort, optimal visibility, and acoustic performance. The tiered seating layout, the use of wood and textile finishes, and the integrated linear ceiling lighting create a sober and institutional atmosphere suitable for educational and cultural facilities.",
+    "ar": "يركز هذا المشروع لمدرج معاصر على راحة المستخدمين، وضوح الرؤية، والأداء الصوتي. يساهم التنظيم المتدرج للمقاعد، واختيار تشطيبات الخشب والأنسجة، مع الإضاءة الخطية المدمجة في السقف، في خلق فضاء رسمي وهادئ مناسب للمؤسسات التعليمية والثقافية."
+  },
+  "images": [
+    "projects/p32-1.jpg",
+    "projects/p32-2.jpg"
+  ]
+},
+{
+  "id": "p33",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Salle de motricité infantile — apprentissage par le jeu",
+    "en": "Children’s motor skills room — learning through play",
+    "ar": "قاعة الحركية للأطفال — التعلم عبر اللعب"
+  },
+  "short": {
+    "fr": "Espace ludique et sécurisé dédié au développement moteur et sensoriel des enfants.",
+    "en": "Playful and safe space dedicated to children’s motor and sensory development.",
+    "ar": "فضاء ترفيهي وآمن مخصص لتنمية المهارات الحركية والحسية لدى الأطفال."
+  },
+  "type": {
+    "fr": "Salle de motricité / Espace éducatif",
+    "en": "Motor skills room / Educational space",
+    "ar": "قاعة حركية / فضاء تعليمي"
+  },
+  "role": {
+    "fr": "Conception intérieure + 3D",
+    "en": "Interior design + 3D",
+    "ar": "تصميم داخلي + ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D HD + concept d’aménagement pédagogique",
+  "tags": [
+    "Éducation",
+    "Petite enfance",
+    "Salle de motricité",
+    "Design ludique",
+    "Espace pédagogique",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette salle de motricité est conçue comme un environnement pédagogique stimulant, favorisant le développement physique, cognitif et sensoriel des enfants. Les formes douces, les couleurs pastel et les modules en mousse assurent un usage sécurisé tout en encourageant le jeu libre, l’équilibre et la coordination.",
+    "en": "This motor skills room is designed as a stimulating educational environment that supports children’s physical, cognitive, and sensory development. Soft shapes, pastel colors, and foam modules ensure safe use while encouraging free play, balance, and coordination.",
+    "ar": "تم تصميم قاعة الحركية هذه كبيئة تعليمية محفزة تدعم النمو الجسدي والمعرفي والحسي للأطفال. تضمن الأشكال الناعمة، الألوان الهادئة، والوحدات الإسفنجية استخداماً آمناً مع تشجيع اللعب الحر، التوازن، والتناسق الحركي."
+  },
+  "images": [
+    "projects/p33-1.jpg",
+    "projects/p33-2.jpg",
+    "projects/p33-3.jpg",
+    "projects/p33-4.jpg"
+  ]
+},
+{
+  "id": "p34",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Salon contemporain avec séparation bois végétalisée",
+    "en": "Contemporary living room with wooden green partition",
+    "ar": "صالون معاصر بفاصل خشبي نباتي"
+  },
+  "short": {
+    "fr": "Salon moderne alliant bois naturel, touches végétales et palette apaisante.",
+    "en": "Modern living space combining natural wood, greenery accents, and a calming palette.",
+    "ar": "فضاء معيشة حديث يجمع بين الخشب الطبيعي واللمسات النباتية وألوان مريحة."
+  },
+  "type": {
+    "fr": "Salon résidentiel",
+    "en": "Residential living room",
+    "ar": "صالون سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Salon",
+    "Design contemporain",
+    "Bois naturel",
+    "Végétation intérieure",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de salon contemporain mise sur une séparation ajourée en bois intégrant des plantes pour structurer l’espace sans le fermer. L’association du marbre clair, du bois chaleureux et des touches vertes crée une atmosphère élégante, naturelle et équilibrée, pensée pour le confort et la convivialité.",
+    "en": "This contemporary living room project features an open wooden partition with integrated greenery, structuring the space while maintaining visual openness. The combination of light marble, warm wood, and green accents creates an elegant, natural, and balanced atmosphere focused on comfort and conviviality.",
+    "ar": "يرتكز هذا المشروع لصالون معاصر على فاصل خشبي مفتوح مدمج بالنباتات لتنظيم الفضاء دون عزله بصرياً. يخلق مزيج الرخام الفاتح، الخشب الدافئ، واللمسات الخضراء جواً أنيقاً وطبيعياً ومتوازناً، يركز على الراحة والانسجام."
+  },
+  "images": [
+    "projects/p34-1.jpg",
+    "projects/p34-2.jpg",
+    "projects/p34-3.jpg",
+    "projects/p34-4.jpg"
+  ]
+},
+{
+  "id": "p35",
+  "category": "office",
+  "badge": {
+    "fr": "Bureau",
+    "en": "Office",
+    "ar": "مكتب"
+  },
+  "title": {
+    "fr": "Bureau moderne vitré avec coin réunion",
+    "en": "Modern glass office with meeting corner",
+    "ar": "مكتب عصري بواجهة زجاجية مع ركن اجتماع"
+  },
+  "short": {
+    "fr": "Espace de travail lumineux avec cloison vitrée, bois clair et mobilier minimaliste.",
+    "en": "Bright workspace with glass partition, light wood finishes, and minimalist furniture.",
+    "ar": "فضاء عمل مضيء مع فاصل زجاجي، تشطيبات خشب فاتح وأثاث بسيط."
+  },
+  "type": {
+    "fr": "Bureau de direction / espace de travail",
+    "en": "Executive office / workspace",
+    "ar": "مكتب إداري / فضاء عمل"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D + rendu",
+    "en": "Interior design + 3D modeling + rendering",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes + vue plan (top view)",
+  "tags": [
+    "Office",
+    "Bureau",
+    "Design moderne",
+    "Cloison vitrée",
+    "Bois clair",
+    "Minimaliste",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet propose un bureau contemporain organisé autour d’une grande façade vitrée apportant un maximum de lumière naturelle. La composition mêle bois clair, panneaux décoratifs et transparence pour un rendu professionnel, sobre et chaleureux. Un coin réunion intégré permet d’accueillir des échanges rapides sans perturber la zone de travail.",
+    "en": "This project features a contemporary office organized around a large glazed facade to maximize natural daylight. The layout combines light wood, decorative panels, and transparency for a professional, clean, and warm atmosphere. An integrated meeting corner supports quick discussions without disrupting the main work area.",
+    "ar": "يعتمد هذا المشروع على مكتب معاصر يستفيد من واجهة زجاجية كبيرة لتعزيز الإضاءة الطبيعية. يجمع التصميم بين الخشب الفاتح، الألواح الزخرفية والشفافية لإحساس مهني وهادئ ودافئ. كما تم دمج ركن اجتماع لتسهيل النقاشات السريعة دون إزعاج منطقة العمل."
+  },
+  "images": [
+    "projects/p35-1.jpg",
+    "projects/p35-2.jpg",
+    "projects/p35-3.jpg",
+    "projects/p35-4.jpg",
+    "projects/p35-5.jpg"
+  ]
+},
+{
+  "id": "p36",
+  "category": "commercial",
+  "badge": {
+    "fr": "Commercial",
+    "en": "Commercial",
+    "ar": "تجاري"
+  },
+  "title": {
+    "fr": "Restaurant contemporain avec mur végétal et identité graphique",
+    "en": "Contemporary restaurant with green wall and graphic identity",
+    "ar": "مطعم معاصر بجدار نباتي وهوية بصرية"
+  },
+  "short": {
+    "fr": "Espace de restauration moderne combinant couleurs chaleureuses, végétation intégrée et graphisme mural.",
+    "en": "Modern dining space combining warm colors, integrated greenery, and wall graphics.",
+    "ar": "فضاء مطعم حديث يجمع بين الألوان الدافئة والنباتات المدمجة والرسومات الجدارية."
+  },
+  "type": {
+    "fr": "Restaurant / Cafétéria",
+    "en": "Restaurant / Cafeteria",
+    "ar": "مطعم / كافتيريا"
+  },
+  "role": {
+    "fr": "Concept design + modélisation 3D",
+    "en": "Concept design + 3D modeling",
+    "ar": "تصميم مفهومي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Commercial",
+    "Restaurant",
+    "Cafétéria",
+    "Design contemporain",
+    "Mur végétal",
+    "Identité visuelle",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de restaurant contemporain met en valeur une ambiance conviviale et dynamique à travers une palette de couleurs chaleureuses, un mobilier léger et des murs graphiques. L’intégration d’un mur végétal apporte une touche naturelle et améliore le confort visuel, tandis que l’identité graphique renforce le caractère moderne et accueillant de l’espace.",
+    "en": "This contemporary restaurant project highlights a friendly and dynamic atmosphere through a warm color palette, lightweight furniture, and graphic walls. The integration of a green wall adds a natural touch and enhances visual comfort, while the graphic identity reinforces the modern and welcoming character of the space.",
+    "ar": "يركز هذا المشروع لمطعم معاصر على خلق أجواء ودية وحيوية من خلال ألوان دافئة، أثاث خفيف، وجدران ذات طابع رسومي. يضيف الجدار النباتي لمسة طبيعية ويحسن الراحة البصرية، بينما تعزز الهوية البصرية الطابع العصري والجذاب للمكان."
+  },
+  "images": [
+    "projects/p36-1.jpg",
+    "projects/p36-2.jpg",
+    "projects/p36-3.jpg",
+    "projects/p36-4.jpg",
+    "projects/p36-5.jpg"
+  ]
+},
+{
+  "id": "p37",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Cuisine contemporaine minimaliste avec éclairage intégré",
+    "en": "Minimalist contemporary kitchen with integrated lighting",
+    "ar": "مطبخ معاصر بسيط بإضاءة مدمجة"
+  },
+  "short": {
+    "fr": "Cuisine moderne en L, aux lignes épurées, dominée par des tons clairs et un éclairage LED subtil.",
+    "en": "Modern L-shaped kitchen with clean lines, light tones, and subtle LED lighting.",
+    "ar": "مطبخ حديث على شكل L بخطوط بسيطة وألوان فاتحة وإضاءة LED ناعمة."
+  },
+  "type": {
+    "fr": "Cuisine résidentielle",
+    "en": "Residential kitchen",
+    "ar": "مطبخ سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Cuisine",
+    "Design contemporain",
+    "Minimalisme",
+    "Éclairage LED",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de cuisine contemporaine repose sur une approche minimaliste mettant en valeur la pureté des lignes et la fonctionnalité. Les façades claires, le plan de travail uniforme et l’éclairage LED intégré sous les meubles et en plinthe renforcent la sensation de propreté, d’espace et de modernité.",
+    "en": "This contemporary kitchen project is based on a minimalist approach that highlights clean lines and functionality. Light-colored cabinetry, a seamless countertop, and integrated LED lighting under cabinets and toe-kicks enhance the sense of cleanliness, space, and modernity.",
+    "ar": "يعتمد هذا المشروع لمطبخ معاصر على أسلوب بسيط يبرز نقاء الخطوط والوظائف العملية. تساهم الواجهات الفاتحة، سطح العمل المتجانس، والإضاءة المدمجة أسفل الخزائن وفي الحواف السفلية في خلق إحساس بالنظافة والاتساع والحداثة."
+  },
+  "images": [
+    "projects/p37-1.jpg",
+    "projects/p37-2.jpg",
+    "projects/p37-3.jpg"
+  ]
+},
+{
+  "id": "p38",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Chambre parentale contemporaine aux tons doux",
+    "en": "Contemporary master bedroom with soft tones",
+    "ar": "غرفة نوم عصرية بألوان هادئة"
+  },
+  "short": {
+    "fr": "Chambre moderne et apaisante mêlant bois clair, textiles doux et éclairage architectural.",
+    "en": "Calm and modern bedroom combining light wood, soft textiles, and architectural lighting.",
+    "ar": "غرفة نوم حديثة وهادئة تجمع بين الخشب الفاتح، الأقمشة الناعمة والإضاءة المعمارية."
+  },
+  "type": {
+    "fr": "Chambre résidentielle",
+    "en": "Residential bedroom",
+    "ar": "غرفة نوم سكنية"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Chambre",
+    "Design contemporain",
+    "Bois clair",
+    "Éclairage indirect",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Cette chambre parentale contemporaine a été conçue pour offrir une atmosphère reposante et élégante. L’association de tons beige et bois clair, du mobilier minimaliste et d’un éclairage indirect intégré au plafond crée un espace harmonieux, fonctionnel et confortable, propice au repos.",
+    "en": "This contemporary master bedroom was designed to create a calm and elegant atmosphere. The combination of beige tones, light wood, minimalist furniture, and integrated indirect ceiling lighting results in a harmonious, functional, and comfortable space ideal for relaxation.",
+    "ar": "تم تصميم هذه غرفة النوم الرئيسية بأسلوب معاصر لخلق أجواء هادئة وأنيقة. يساهم مزيج الألوان البيج مع الخشب الفاتح، الأثاث البسيط، والإضاءة غير المباشرة المدمجة في السقف في توفير فضاء متوازن ومريح مثالي للاسترخاء."
+  },
+  "images": [
+    "projects/p38-1.jpg",
+    "projects/p38-2.jpg",
+    "projects/p38-3.jpg",
+    "projects/p38-4.jpg"
+  ]
+},
+{
+  "id": "p39",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Escalier intérieur contemporain en bois avec éclairage intégré",
+    "en": "Contemporary interior wooden staircase with integrated lighting",
+    "ar": "درج داخلي معاصر من الخشب بإضاءة مدمجة"
+  },
+  "short": {
+    "fr": "Escalier moderne alliant bois naturel, lignes épurées et mise en lumière architecturale.",
+    "en": "Modern staircase combining natural wood, clean lines, and architectural lighting.",
+    "ar": "درج حديث يجمع بين الخشب الطبيعي والخطوط النقية والإضاءة المعمارية."
+  },
+  "type": {
+    "fr": "Escalier résidentiel",
+    "en": "Residential staircase",
+    "ar": "درج سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Escalier",
+    "Design contemporain",
+    "Bois naturel",
+    "Éclairage architectural",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet d’escalier intérieur contemporain met en valeur une structure légère à marches suspendues en bois, accompagnée d’un éclairage LED intégré soulignant chaque marche. Les claustras verticaux en bois et la double hauteur renforcent la sensation d’espace, tandis que la lumière naturelle et artificielle crée une ambiance élégante et chaleureuse.",
+    "en": "This contemporary interior staircase project highlights a light structure with floating wooden steps, enhanced by integrated LED lighting accentuating each tread. Vertical wooden slats and the double-height space amplify the sense of openness, while natural and artificial light create an elegant and warm atmosphere.",
+    "ar": "يبرز هذا المشروع لدرج داخلي معاصر هيكلاً خفيفاً بدرجات خشبية معلّقة مع إضاءة LED مدمجة تبرز كل درجة. تعزز الفواصل الخشبية العمودية والفراغ مزدوج الارتفاع الإحساس بالاتساع، بينما تخلق الإضاءة الطبيعية والاصطناعية جواً أنيقاً ودافئاً."
+  },
+  "images": [
+    "projects/p39-1.jpg",
+    "projects/p39-2.jpg",
+    "projects/p39-3.jpg",
+    "projects/p39-4.jpg"
+  ]
+},
+{
+  "id": "p40",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Couloir résidentiel avec portes en bois à motif chevron",
+    "en": "Residential hallway with herringbone wooden doors",
+    "ar": "ممر سكني بأبواب خشبية بنمط متعرج"
+  },
+  "short": {
+    "fr": "Espace de circulation élégant mettant en valeur des portes en bois naturel au motif chevron et un éclairage indirect.",
+    "en": "Elegant circulation space highlighting natural wood doors with a herringbone pattern and indirect lighting.",
+    "ar": "فضاء توزيع أنيق يبرز أبواباً من الخشب الطبيعي بنمط متعرج مع إضاءة غير مباشرة."
+  },
+  "type": {
+    "fr": "Couloir résidentiel",
+    "en": "Residential hallway",
+    "ar": "ممر سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Couloir",
+    "Portes design",
+    "Bois naturel",
+    "Chevron",
+    "Éclairage indirect",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de couloir résidentiel met l’accent sur la sobriété et l’élégance à travers des portes en bois naturel ornées d’un motif chevron. L’éclairage indirect intégré au plafond souligne les lignes architecturales et crée une ambiance raffinée, tandis que les murs clairs renforcent la sensation de luminosité et d’espace.",
+    "en": "This residential hallway project focuses on sobriety and elegance through natural wooden doors featuring a herringbone pattern. Integrated indirect ceiling lighting enhances the architectural lines and creates a refined atmosphere, while light-colored walls reinforce brightness and spatial clarity.",
+    "ar": "يركز هذا المشروع لممر سكني على البساطة والأناقة من خلال أبواب خشبية طبيعية بنقشة متعرجة. تبرز الإضاءة غير المباشرة المدمجة في السقف الخطوط المعمارية وتخلق جواً راقياً، بينما تعزز الجدران الفاتحة الإحساس بالضوء والاتساع."
+  },
+  "images": [
+    "projects/p40-1.jpg",
+    "projects/p40-2.jpg",
+    "projects/p40-3.jpg"
+  ]
+},
+{
+  "id": "p41",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Cuisine contemporaine en bois foncé et marbre avec îlot central",
+    "en": "Contemporary dark-wood and marble kitchen with central island",
+    "ar": "مطبخ معاصر بخشب داكن ورخام مع جزيرة وسطية"
+  },
+  "short": {
+    "fr": "Cuisine élégante mêlant bois chaleureux, marbre veiné et éclairage indirect pour une ambiance premium.",
+    "en": "Elegant kitchen blending warm wood, veined marble, and indirect lighting for a premium atmosphere.",
+    "ar": "مطبخ أنيق يجمع بين دفء الخشب وعروق الرخام والإضاءة غير المباشرة لأجواء فاخرة."
+  },
+  "type": {
+    "fr": "Cuisine résidentielle",
+    "en": "Residential kitchen",
+    "ar": "مطبخ سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Cuisine",
+    "Îlot central",
+    "Bois foncé",
+    "Marbre",
+    "Éclairage indirect",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de cuisine contemporaine met en avant une composition sobre et haut de gamme : façades en bois foncé, crédence et revêtement en marbre veiné, et plan de travail noir contrasté. L’îlot central structure l’espace et améliore l’ergonomie au quotidien, tandis que l’éclairage indirect sous meubles et en plafond renforce la profondeur et l’ambiance chaleureuse. Les niches ouvertes éclairées apportent une touche décorative et un équilibre visuel à l’ensemble.",
+    "en": "This contemporary kitchen project features a clean, high-end composition: dark wood cabinetry, veined marble wall cladding and backsplash, and a contrasting black countertop. The central island defines the space and improves everyday ergonomics, while indirect under-cabinet and ceiling lighting adds depth and warmth. Lit open niches bring a decorative touch and visual balance to the overall design.",
+    "ar": "يقدّم هذا المشروع لمطبخ معاصر تكويناً بسيطاً وفاخراً: خزائن بواجهة خشبية داكنة، وكسوة/خلفية من الرخام المعرّق، وسطح عمل أسود يبرز التباين. تنظّم الجزيرة الوسطية الفراغ وتُحسّن سهولة الحركة والاستخدام اليومي، بينما تمنح الإضاءة غير المباشرة أسفل الخزائن وفي السقف عمقاً ودفئاً للمشهد. كما تضيف الرفوف المفتوحة المضاءة لمسة ديكورية وتوازناً بصرياً للتصميم."
+  },
+  "images": [
+    "projects/p41-1.jpg",
+    "projects/p41-2.jpg",
+    "projects/p41-3.jpg",
+    "projects/p41-4.jpg",
+    "projects/p41-5.jpg"
+  ]
+},
+{
+  "id": "p42",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Salle à manger contemporaine ouverte sur séjour",
+    "en": "Contemporary dining area open to living space",
+    "ar": "غرفة طعام معاصرة مفتوحة على فضاء المعيشة"
+  },
+  "short": {
+    "fr": "Espace de vie moderne et lumineux combinant salle à manger sculpturale et salon chaleureux.",
+    "en": "Bright modern living space combining a sculptural dining area and a warm lounge.",
+    "ar": "فضاء معيشة عصري ومشرق يجمع بين غرفة طعام منحوتة وصالون دافئ."
+  },
+  "type": {
+    "fr": "Salle à manger & séjour résidentiels",
+    "en": "Residential dining & living space",
+    "ar": "غرفة طعام وصالون سكني"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Résidentiel",
+    "Salle à manger",
+    "Séjour",
+    "Design contemporain",
+    "Mobilier sur mesure",
+    "Éclairage décoratif",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet met en scène une salle à manger contemporaine intégrée à un vaste séjour ouvert. La table organique centrale, associée à des assises enveloppantes, crée un espace convivial et élégant. Les suspensions décoratives, la cheminée centrale et les larges baies vitrées renforcent la sensation de confort et de luminosité, dans une palette de tons neutres et chaleureux.",
+    "en": "This project showcases a contemporary dining area integrated into a spacious open-plan living room. The central organic-shaped table paired with enveloping seating creates a refined and welcoming atmosphere. Decorative pendant lights, a central fireplace, and large glazed openings enhance comfort and natural light, using a warm neutral palette.",
+    "ar": "يبرز هذا المشروع غرفة طعام معاصرة مندمجة داخل صالون مفتوح واسع. الطاولة المركزية ذات الشكل العضوي مع الكراسي المريحة تخلق جواً أنيقاً وودوداً. الإضاءة المعلقة، والمدفأة المركزية، والواجهات الزجاجية الكبيرة تعزز الإحساس بالراحة والإنارة الطبيعية ضمن ألوان محايدة ودافئة."
+  },
+  "images": [
+    "projects/p42-1.jpg",
+    "projects/p42-2.jpg",
+    "projects/p42-3.jpg"
+  ]
+},
+{
+  "id": "p43",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Salle de classe contemporaine aux couleurs pédagogiques",
+    "en": "Contemporary classroom with pedagogical color scheme",
+    "ar": "قاعة دراسية معاصرة بألوان تربوية"
+  },
+  "short": {
+    "fr": "Salle de classe moderne favorisant la concentration et l’apprentissage grâce à une palette dynamique et un aménagement ergonomique.",
+    "en": "Modern classroom designed to enhance focus and learning through a dynamic color palette and ergonomic layout.",
+    "ar": "قاعة دراسية حديثة تعزز التركيز والتعلم من خلال ألوان ديناميكية وتخطيط مريح."
+  },
+  "type": {
+    "fr": "Salle de classe",
+    "en": "Classroom",
+    "ar": "قاعة دراسية"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Éducation",
+    "Salle de classe",
+    "Design pédagogique",
+    "Mobilier scolaire",
+    "Couleurs éducatives",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de salle de classe contemporaine met l’accent sur un environnement pédagogique stimulant, combinant des couleurs vives et équilibrées avec un mobilier ergonomique. L’agencement clair des tables, l’éclairage homogène et les surfaces murales interactives favorisent la concentration, l’échange et le confort visuel des élèves.",
+    "en": "This contemporary classroom project focuses on a stimulating learning environment, combining vibrant yet balanced colors with ergonomic furniture. The clear desk layout, uniform lighting, and interactive wall surfaces enhance concentration, collaboration, and visual comfort for students.",
+    "ar": "يركز هذا المشروع لقاعة دراسية معاصرة على خلق بيئة تعليمية محفزة، من خلال الجمع بين ألوان حيوية ومتوازنة وأثاث مريح. يساهم تنظيم الطاولات، والإضاءة المتجانسة، والجدران التفاعلية في تعزيز التركيز والتفاعل والراحة البصرية لدى التلاميذ."
+  },
+  "images": [
+    "projects/p43-1.jpg",
+    "projects/p43-2.jpg",
+    "projects/p43-3.jpg"
+  ]
+},
+{
+  "id": "p44",
+  "category": "education",
+  "badge": {
+    "fr": "Éducation",
+    "en": "Education",
+    "ar": "تعليم"
+  },
+  "title": {
+    "fr": "Salle de classe contemporaine – ambiance verte apaisante",
+    "en": "Contemporary classroom – calming green atmosphere",
+    "ar": "قاعة دراسية معاصرة – أجواء خضراء مريحة"
+  },
+  "short": {
+    "fr": "Salle de classe moderne pensée pour le confort visuel, avec une palette verte apaisante, un éclairage homogène et un mobilier ergonomique.",
+    "en": "Modern classroom designed for visual comfort, featuring a calming green palette, uniform lighting, and ergonomic furniture.",
+    "ar": "قاعة دراسية حديثة موجهة للراحة البصرية، بألوان خضراء مريحة وإضاءة متجانسة وأثاث مريح."
+  },
+  "type": {
+    "fr": "Salle de classe",
+    "en": "Classroom",
+    "ar": "قاعة دراسية"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D",
+    "en": "Interior design + 3D modeling",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Éducation",
+    "Salle de classe",
+    "Design pédagogique",
+    "Couleurs apaisantes",
+    "Mobilier scolaire",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet propose une salle de classe contemporaine où la palette verte joue un rôle clé pour instaurer une atmosphère apaisante et propice à la concentration. Le mobilier scolaire ergonomique est organisé de manière claire pour faciliter la circulation et la visibilité. Les panneaux d’affichage, les surfaces murales pédagogiques et l’éclairage uniforme assurent un environnement de travail confortable, adapté aux besoins quotidiens des élèves et des enseignants.",
+    "en": "This project presents a contemporary classroom where the green palette plays a key role in creating a calming, focus-friendly atmosphere. Ergonomic school furniture is arranged clearly to improve circulation and sightlines. Notice boards, educational wall surfaces, and uniform lighting provide a comfortable working environment, tailored to the daily needs of students and teachers.",
+    "ar": "يقدم هذا المشروع قاعة دراسية معاصرة تلعب فيها الألوان الخضراء دوراً أساسياً في خلق أجواء مريحة ومساعدة على التركيز. تم تنظيم الأثاث المدرسي المريح بطريقة واضحة لتحسين الحركة والرؤية داخل الفصل. كما توفر لوحات الإعلانات والعناصر الجدارية التعليمية مع الإضاءة المتجانسة بيئة عمل مريحة ومناسبة لاحتياجات التلاميذ والأساتذة اليومية."
+  },
+  "images": [
+    "projects/p44-1.jpg",
+    "projects/p44-2.jpg",
+    "projects/p44-3.jpg"
+  ]
+},
+{
+  "id": "p45",
+  "category": "commercial",
+  "badge": {
+    "fr": "Studio TV",
+    "en": "TV Studio",
+    "ar": "ستوديو تلفزيوني"
+  },
+  "title": {
+    "fr": "Studio TV futuriste avec mur LED immersif",
+    "en": "Futuristic TV studio with immersive LED wall",
+    "ar": "ستوديو تلفزيوني مستقبلي بجدار LED غامر"
+  },
+  "short": {
+    "fr": "Plateau TV à l’esthétique futuriste intégrant un mur LED panoramique et un éclairage scénographique dynamique.",
+    "en": "Futuristic TV set featuring a panoramic LED wall and dynamic scenographic lighting.",
+    "ar": "منصة تلفزيونية بطابع مستقبلي تضم جدار LED بانورامي وإضاءة سينوغرافية ديناميكية."
+  },
+  "type": {
+    "fr": "Studio TV / Plateau audiovisuel",
+    "en": "TV Studio / Broadcast set",
+    "ar": "ستوديو تلفزيوني / منصة بث"
+  },
+  "role": {
+    "fr": "Conception intérieure + modélisation 3D + rendu",
+    "en": "Interior design + 3D modeling + rendering",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Studio TV",
+    "Design futuriste",
+    "Mur LED",
+    "Scénographie",
+    "Broadcast design",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet de studio TV futuriste repose sur une scénographie immersive dominée par un mur LED panoramique et des lignes architecturales courbes. L’éclairage RGB intégré et les volumes suspendus renforcent l’identité visuelle du plateau, offrant une atmosphère technologique adaptée aux émissions d’actualité, talk-shows et productions audiovisuelles contemporaines.",
+    "en": "This futuristic TV studio project is based on an immersive scenography dominated by a panoramic LED wall and curved architectural lines. Integrated RGB lighting and suspended volumes enhance the visual identity of the set, creating a high-tech atmosphere suitable for news programs, talk shows, and contemporary broadcast productions.",
+    "ar": "يرتكز هذا المشروع لستوديو تلفزيوني مستقبلي على سينوغرافيا غامرة يهيمن عليها جدار LED بانورامي وخطوط معمارية منحنية. تعزز الإضاءة المدمجة بتقنية RGB والعناصر المعلقة الهوية البصرية للمنصة، مما يوفر أجواء تكنولوجية مناسبة للبرامج الإخبارية وحصص الحوار والإنتاجات السمعية البصرية الحديثة."
+  },
+  "images": [
+    "projects/p45-1.jpg",
+    "projects/p45-2.jpg",
+    "projects/p45-3.jpg"
+  ]
+},
+{
+  "id": "p46",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Concept de sneaker futuriste – design expérimental",
+    "en": "Futuristic sneaker concept – experimental design",
+    "ar": "تصميم حذاء مستقبلي – مفهوم تجريبي"
+  },
+  "short": {
+    "fr": "Concept de sneaker innovant mêlant formes organiques, matériaux techniques et esthétique futuriste.",
+    "en": "Innovative sneaker concept combining organic forms, technical materials, and a futuristic aesthetic.",
+    "ar": "مفهوم حذاء مبتكر يجمع بين الأشكال العضوية والمواد التقنية والطابع المستقبلي."
+  },
+  "type": {
+    "fr": "Design produit – sneaker",
+    "en": "Product design – sneaker",
+    "ar": "تصميم منتج – حذاء"
+  },
+  "role": {
+    "fr": "Concept design + modélisation 3D",
+    "en": "Concept design + 3D modeling",
+    "ar": "تصميم مفاهيمي + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Design produit",
+    "Sneaker",
+    "Concept futuriste",
+    "Footwear design",
+    "3D",
+    "Innovation"
+  ],
+  "desc": {
+    "fr": "Ce projet présente un concept de sneaker futuriste axé sur l’innovation formelle et matérielle. Le design combine une semelle sculpturale, des textures techniques inspirées du camouflage et des éléments translucides, créant une identité visuelle forte. L’approche vise à explorer de nouvelles directions esthétiques dans le design de chaussures contemporaines.",
+    "en": "This project presents a futuristic sneaker concept focused on formal and material innovation. The design combines a sculptural sole, technical camouflage-inspired textures, and translucent elements, creating a strong visual identity. The approach explores new aesthetic directions in contemporary footwear design.",
+    "ar": "يعرض هذا المشروع مفهوم حذاء مستقبلي يركز على الابتكار الشكلي والمادي. يجمع التصميم بين نعل منحوت، وخامات تقنية مستوحاة من التمويه، وعناصر شفافة، مما يمنحه هوية بصرية قوية ويستكشف آفاقاً جديدة في تصميم الأحذية المعاصرة."
+  },
+  "images": [
+    "projects/p46-1.jpg",
+    "projects/p46-2.jpg",
+    "projects/p46-3.jpg",
+    "projects/p46-4.jpg",
+    "projects/p46-5.jpg"
+  ]
+},
+{
+  "id": "p47",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Guitare acoustique – Modélisation 3D et mise en scène",
+    "en": "Acoustic guitar – 3D modeling and staging",
+    "ar": "غيتار صوتي – نمذجة ثلاثية الأبعاد وإخراج بصري"
+  },
+  "short": {
+    "fr": "Modélisation 3D réaliste d’une guitare acoustique avec mise en scène minimaliste et éclairage studio.",
+    "en": "Realistic 3D modeling of an acoustic guitar with minimalist staging and studio lighting.",
+    "ar": "نمذجة ثلاثية الأبعاد واقعية لغيتار صوتي مع إخراج بصري بسيط وإضاءة احترافية."
+  },
+  "type": {
+    "fr": "Produit musical",
+    "en": "Musical product",
+    "ar": "منتج موسيقي"
+  },
+  "role": {
+    "fr": "Modélisation 3D + rendu",
+    "en": "3D modeling + rendering",
+    "ar": "نمذجة ثلاثية الأبعاد + إخراج"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Produit",
+    "Design produit",
+    "Guitare",
+    "Modélisation 3D",
+    "Rendu studio",
+    "3D"
+  ],
+  "desc": {
+    "fr": "Ce projet présente une guitare acoustique entièrement modélisée en 3D, avec un souci particulier du détail des matériaux, des cordes et des proportions. La mise en scène sur socle circulaire et l’éclairage directionnel permettent de valoriser l’objet comme un produit haut de gamme, idéal pour un catalogue, une présentation ou une communication visuelle.",
+    "en": "This project showcases a fully 3D-modeled acoustic guitar, with special attention to material details, strings, and proportions. The circular podium staging and directional lighting highlight the object as a premium product, suitable for catalogs, presentations, or visual communication.",
+    "ar": "يعرض هذا المشروع غيتارًا صوتيًا مصممًا بالكامل بتقنية ثلاثية الأبعاد، مع اهتمام كبير بتفاصيل الخامات والأوتار والنِّسَب. يبرز الإخراج على قاعدة دائرية مع إضاءة موجهة الطابع الاحترافي للمنتج، ما يجعله مناسبًا للكتالوجات والعروض البصرية."
+  },
+  "images": [
+    "projects/p47-1.jpg",
+    "projects/p47-2.jpg",
+    "projects/p47-3.jpg"
+  ]
+},{
+  "id": "p48",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Chaise en bois minimaliste – Design produit 3D",
+    "en": "Minimalist wooden chair – 3D product design",
+    "ar": "كرسي خشبي مينيمال – تصميم منتج ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Chaise en bois au design épuré, modélisée en 3D avec un rendu studio mettant en valeur les lignes et les matériaux.",
+    "en": "Wooden chair with a clean design, 3D modeled and rendered in studio lighting to highlight form and materials.",
+    "ar": "كرسي خشبي بتصميم بسيط، تمّت نمذجته ثلاثيًّا مع إخراج بصري يبرز الخطوط والخامات."
+  },
+  "type": {
+    "fr": "Mobilier",
+    "en": "Furniture",
+    "ar": "أثاث"
+  },
+  "role": {
+    "fr": "Design produit + modélisation 3D",
+    "en": "Product design + 3D modeling",
+    "ar": "تصميم منتج + نمذجة ثلاثية الأبعاد"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Produit",
+    "Mobilier",
+    "Chaise",
+    "Design minimaliste",
+    "Bois",
+    "Modélisation 3D",
+    "Rendu studio"
+  ],
+  "desc": {
+    "fr": "Ce projet présente une chaise en bois au design minimaliste, mettant l’accent sur l’ergonomie, la simplicité des lignes et la qualité des matériaux. Le rendu studio avec fond doux permet de valoriser la silhouette du produit et ses détails constructifs, dans une approche idéale pour le design produit, le e-commerce ou la communication visuelle.",
+    "en": "This project features a minimalist wooden chair focused on ergonomics, clean lines, and material quality. The soft studio background highlights the product’s silhouette and construction details, making it suitable for product design, e-commerce, or visual communication.",
+    "ar": "يعرض هذا المشروع كرسيًا خشبيًا بتصميم بسيط يركز على الراحة، ونقاء الخطوط، وجودة الخامات. يساهم الإخراج داخل استوديو بخلفية ناعمة في إبراز شكل المنتج وتفاصيله، ما يجعله مناسبًا لتصميم المنتجات أو التجارة الإلكترونية أو العرض البصري."
+  },
+  "images": [
+    "projects/p48-1.png"
+  ]
+},
+{
+  "id": "p49",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Amplificateur audio compact – Design produit 3D",
+    "en": "Compact audio amplifier – 3D product design",
+    "ar": "مضخم صوت مدمج – تصميم منتج ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Amplificateur audio compact au design moderne, modélisé et rendu en 3D avec un éclairage studio mettant en valeur les ports, commandes et finitions.",
+    "en": "Compact audio amplifier with a modern design, 3D modeled and studio-rendered to highlight ports, controls, and finishes.",
+    "ar": "مضخم صوت مدمج بتصميم عصري، تمّت نمذجته وإخراجه ثلاثيًّا بإضاءة استوديو تُبرز المنافذ وأزرار التحكم والتشطيبات."
+  },
+  "type": {
+    "fr": "Produit électronique",
+    "en": "Electronic product",
+    "ar": "منتج إلكتروني"
+  },
+  "role": {
+    "fr": "Design produit + modélisation 3D + rendu",
+    "en": "Product design + 3D modeling + rendering",
+    "ar": "تصميم منتج + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes (vues produit)",
+  "tags": [
+    "Produit",
+    "Design industriel",
+    "Audio",
+    "Amplificateur",
+    "Électronique",
+    "Modélisation 3D",
+    "Rendu studio"
+  ],
+  "desc": {
+    "fr": "Ce projet présente un amplificateur audio compact au design sobre et fonctionnel, avec une attention particulière portée à l’ergonomie, à la lisibilité des interfaces et à la qualité perçue. Les rendus studio permettent de valoriser les détails techniques, les connectiques et les matériaux, dans une optique de présentation produit, marketing ou e-commerce.",
+    "en": "This project showcases a compact audio amplifier with a clean and functional design, focusing on ergonomics, interface clarity, and perceived quality. Studio renders highlight technical details, connectors, and materials, making it suitable for product presentation, marketing, or e-commerce.",
+    "ar": "يقدّم هذا المشروع مضخم صوت مدمج بتصميم بسيط وعملي، مع التركيز على سهولة الاستخدام ووضوح الواجهة وجودة التشطيب. تبرز لقطات الاستوديو التفاصيل التقنية والمنافذ والخامات، ما يجعله مناسبًا للعرض التسويقي أو التجاري."
+  },
+  "images": [
+    "projects/p49-1.png",
+    "projects/p49-2.png",
+    "projects/p49-3.png",
+    "projects/p49-4.png"
+  ]
+},
+{
+  "id": "p50",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Babouches contemporaines – Design produit 3D",
+    "en": "Contemporary babouches – 3D product design",
+    "ar": "بلغة مغربية عصرية – تصميم منتج ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Interprétation contemporaine de la babouche marocaine, modélisée en 3D avec des rendus studio mettant en valeur les couleurs et les motifs.",
+    "en": "Contemporary interpretation of Moroccan babouches, 3D modeled with studio renders highlighting colors and patterns.",
+    "ar": "إعادة تصور عصرية للبلغة المغربية، بنمذجة ثلاثية الأبعاد وإخراج بصري يبرز الألوان والزخارف."
+  },
+  "type": {
+    "fr": "Chaussure / Artisanat",
+    "en": "Footwear / Craft",
+    "ar": "أحذية / حرف تقليدية"
+  },
+  "role": {
+    "fr": "Design produit + modélisation 3D + rendu",
+    "en": "Product design + 3D modeling + rendering",
+    "ar": "تصميم منتج + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Produit",
+    "Chaussures",
+    "Babouches",
+    "Design marocain",
+    "Artisanat",
+    "Modélisation 3D",
+    "Rendu studio"
+  ],
+  "desc": {
+    "fr": "Ce projet propose une vision contemporaine de la babouche marocaine, combinant formes traditionnelles et approche moderne du design produit. Les rendus studio mettent en valeur les textures, les couleurs et les détails décoratifs, offrant une présentation adaptée à la communication visuelle, au e-commerce ou à la valorisation de l’artisanat revisité.",
+    "en": "This project presents a contemporary vision of Moroccan babouches, blending traditional shapes with a modern product design approach. Studio renders highlight textures, colors, and decorative details, making it suitable for visual communication, e-commerce, or contemporary craft presentation.",
+    "ar": "يقدم هذا المشروع رؤية عصرية للبلغة المغربية تجمع بين الشكل التقليدي والتصميم الحديث للمنتج. تبرز الإخراجات داخل الاستوديو الخامات والألوان والتفاصيل الزخرفية، مما يجعل المشروع مناسبًا للعرض البصري أو التجارة الإلكترونية أو إبراز الحرف التقليدية بأسلوب حديث."
+  },
+  "images": [
+    "projects/p50-1.png",
+    "projects/p50-2.png"
+  ]
+},
+{
+  "id": "p51",
+  "category": "product",
+  "badge": {
+    "fr": "Produit industriel",
+    "en": "Industrial product",
+    "ar": "منتج صناعي"
+  },
+  "title": {
+    "fr": "Broyeur industriel – Modélisation et rendu 3D",
+    "en": "Industrial shredder – 3D modeling and rendering",
+    "ar": "آلة طحن صناعية – نمذجة وإخراج ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Broyeur industriel modélisé en 3D avec un rendu réaliste mettant en valeur la structure, les volumes et les éléments de sécurité.",
+    "en": "Industrial shredder 3D modeled with realistic rendering highlighting structure, volumes, and safety components.",
+    "ar": "آلة طحن صناعية تمّت نمذجتها ثلاثيًّا مع إخراج واقعي يبرز البنية والحجوم وعناصر السلامة."
+  },
+  "type": {
+    "fr": "Équipement industriel",
+    "en": "Industrial equipment",
+    "ar": "معدات صناعية"
+  },
+  "role": {
+    "fr": "Modélisation 3D + rendu produit",
+    "en": "3D modeling + product rendering",
+    "ar": "نمذجة ثلاثية الأبعاد + إخراج منتج"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Produit industriel",
+    "Machine",
+    "Broyeur",
+    "Design industriel",
+    "Modélisation 3D",
+    "Rendu réaliste",
+    "Industrie"
+  ],
+  "desc": {
+    "fr": "Ce projet présente un broyeur industriel modélisé en 3D avec une attention particulière portée à la structure mécanique, aux proportions et aux éléments de sécurité. Le rendu réaliste permet une visualisation claire de la machine, adaptée à la communication technique, aux présentations commerciales ou aux supports industriels.",
+    "en": "This project features a 3D-modeled industrial shredder with a strong focus on mechanical structure, proportions, and safety elements. The realistic rendering provides clear visualization suitable for technical communication, commercial presentations, or industrial documentation.",
+    "ar": "يعرض هذا المشروع آلة طحن صناعية تمّت نمذجتها ثلاثيًّا مع التركيز على البنية الميكانيكية والتناسب وعناصر السلامة. يتيح الإخراج الواقعي رؤية واضحة للآلة، مناسبة للعروض التقنية أو التسويق الصناعي أو التوثيق المهني."
+  },
+  "images": [
+    "projects/p51-1.png"
+  ]
+},
+{
+  "id": "p52",
+  "category": "commercial",
+  "badge": {
+    "fr": "Commercial",
+    "en": "Commercial",
+    "ar": "تجاري"
+  },
+  "title": {
+    "fr": "Food court en containers – Design commercial 3D",
+    "en": "Container food court – 3D commercial design",
+    "ar": "فضاء مطاعم بالحاويات – تصميم تجاري ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Conception 3D d’un food court en containers maritimes avec espace de restauration extérieur et cuisine professionnelle optimisée.",
+    "en": "3D design of a container-based food court featuring an outdoor dining area and a fully optimized professional kitchen.",
+    "ar": "تصميم ثلاثي الأبعاد لفضاء مطاعم بالحاويات يضم منطقة جلوس خارجية ومطبخًا احترافيًا مجهزًا."
+  },
+  "type": {
+    "fr": "Restauration commerciale",
+    "en": "Commercial food service",
+    "ar": "خدمات غذائية تجارية"
+  },
+  "role": {
+    "fr": "Concept design + modélisation 3D + rendu",
+    "en": "Concept design + 3D modeling + rendering",
+    "ar": "تصميم مفهومي + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D extérieurs et intérieurs",
+  "tags": [
+    "Commercial",
+    "Food court",
+    "Container",
+    "Restauration",
+    "Design extérieur",
+    "Cuisine professionnelle",
+    "Modélisation 3D",
+    "Rendu photoréaliste"
+  ],
+  "desc": {
+    "fr": "Ce projet présente un concept de food court réalisé à partir de containers maritimes, combinant une zone de restauration extérieure conviviale avec pergola en bois et un aménagement intérieur fonctionnel dédié à la préparation alimentaire. Le design met l’accent sur la modularité, la circulation fluide, l’ergonomie des postes de travail et une identité visuelle moderne adaptée aux projets de restauration rapide ou éphémère.",
+    "en": "This project showcases a container-based food court concept combining a welcoming outdoor dining area with a wooden pergola and a functional interior layout dedicated to food preparation. The design focuses on modularity, smooth circulation, ergonomic workstations, and a modern visual identity suitable for fast-food or pop-up restaurant projects.",
+    "ar": "يعرض هذا المشروع مفهوم فضاء مطاعم معتمد على الحاويات البحرية، يجمع بين منطقة جلوس خارجية مريحة مع برغولا خشبية وتخطيط داخلي عملي مخصص لتحضير الطعام. يركز التصميم على المرونة، وسلاسة الحركة، وراحة العمل، وهو مناسب لمشاريع المطاعم السريعة أو المؤقتة."
+  },
+  "images": [
+    "projects/p52-1.png",
+    "projects/p52-2.png",
+    "projects/p52-3.png",
+    "projects/p52-4.png",
+    "projects/p52-5.png",
+    "projects/p52-6.png",
+    "projects/p52-7.png",
+    "projects/p52-8.png",
+    "projects/p52-9.png"
+  ]
+}
+]
