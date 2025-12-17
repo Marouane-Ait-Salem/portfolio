@@ -754,6 +754,7 @@
   <script>
     const GH_MEDIA_BASE = "https://media.githubusercontent.com/media/Marouane-Ait-Salem/portfolio/main/";
     const USE_GH_MEDIA = /\.github\.io$/i.test(location.hostname);
+    const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
     function assetUrl(path){
       const p = String(path || "").trim();
@@ -771,6 +772,77 @@
         if (/^(https?:)?\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) return;
         img.src = assetUrl(src);
       });
+    }
+
+    function waitForImage(img){
+      return new Promise(resolve => {
+        if (!img) return resolve(false);
+        if (img.complete && img.naturalWidth > 0) return resolve(true);
+
+        const done = (ok) => {
+          img.removeEventListener("load", onLoad);
+          img.removeEventListener("error", onError);
+          resolve(ok);
+        };
+        const onLoad = () => done(true);
+        const onError = () => done(false);
+
+        img.addEventListener("load", onLoad, { once: true });
+        img.addEventListener("error", onError, { once: true });
+      });
+    }
+
+    function setupSequentialLazyImages(container, opts = {}){
+      const root = container || document;
+      const eagerCount = Math.max(0, Number(opts.eagerCount) || 0);
+      const imgs = [...root.querySelectorAll("img[data-src]")];
+      if (!imgs.length) return;
+
+      const queued = new Set();
+      const queue = [];
+      let running = false;
+
+      function enqueue(img){
+        if (!img || queued.has(img)) return;
+        const src = String(img.dataset.src || "").trim();
+        const current = String(img.getAttribute("src") || "").trim();
+        if (!src || (current && current !== BLANK_IMG)) return;
+        queued.add(img);
+        queue.push(img);
+        run();
+      }
+
+      async function run(){
+        if (running) return;
+        running = true;
+        try{
+          while (queue.length){
+            const img = queue.shift();
+            const src = String(img?.dataset?.src || "").trim();
+            if (!src) continue;
+            img.src = src;
+            await waitForImage(img);
+          }
+        } finally {
+          running = false;
+        }
+      }
+
+      for (const img of imgs.slice(0, eagerCount)) enqueue(img);
+
+      if ("IntersectionObserver" in window){
+        const io = new IntersectionObserver((entries) => {
+          for (const e of entries){
+            if (!e.isIntersecting) continue;
+            enqueue(e.target);
+            io.unobserve(e.target);
+          }
+        }, { rootMargin: "400px 0px" });
+
+        imgs.forEach(img => io.observe(img));
+      } else {
+        imgs.forEach(enqueue);
+      }
     }
 
     const testimonials = [
@@ -1319,15 +1391,6 @@
         return;
       }
 
-      filtered.forEach(p => {
-        const src = getProjectImages(p)[0];
-        if (!src) return;
-        const im = new Image();
-        im.decoding = "async";
-        im.loading = "eager";
-        im.src = assetUrl(src);
-      });
-
       for (const p of filtered){
         const card = document.createElement("article");
         card.className = "proj";
@@ -1344,7 +1407,7 @@
 
         card.innerHTML = `
           <div class="thumb" data-thumb="${thumb}">
-            <img class="thumbImg" alt="${title.replace(/"/g, "&quot;")}" loading="lazy" src="${thumb}" draggable="false" onerror="this.closest('.thumb').classList.add('noimg'); this.remove();" />
+            <img class="thumbImg" alt="${title.replace(/"/g, "&quot;")}" loading="lazy" decoding="async" src="${BLANK_IMG}" data-src="${thumb}" draggable="false" onerror="this.closest('.thumb').classList.add('noimg'); this.remove();" />
             <span class="badge">${badge}</span>
             <span class="thumbShade" aria-hidden="true"></span>
           </div>
@@ -1361,6 +1424,8 @@
         });
         grid.appendChild(card);
       }
+
+      setupSequentialLazyImages(grid, { eagerCount: 3 });
     }
 
     function showPreloadOnce(){
