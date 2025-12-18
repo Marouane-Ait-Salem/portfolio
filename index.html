@@ -429,7 +429,7 @@
       <section class="introFull" aria-label="Intro">
         <div class="introWrap">
           <div class="introPic">
-            <img src="profile.png" alt="MAROUANE AIT SALEM" />
+            <img src="profile/profile.png" alt="MAROUANE AIT SALEM" />
           </div>
           <div>
             <h2 class="introTitle"><span id="t_intro_title_portfolio">Portfolio</span> <span id="t_intro_title_name" style="background:linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent">MAROUANE AIT SALEM</span></h2>
@@ -449,7 +449,7 @@
             <div class="heroBtns" style="gap:14px">
               <a class="btn btnPrimary" href="#projects" id="t_btn_projects">Voir les projets</a>
               <a class="btn" href="#contact" id="t_btn_contact">Me contacter</a>
-              <a class="btn btnPrimary" href="CV-FR.pdf" download id="cvBtn" style="font-size:14px; padding:13px 18px">
+              <a class="btn btnPrimary" href="profile/CV-FR.pdf" download id="cvBtn" style="font-size:14px; padding:13px 18px">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M12 3v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -756,7 +756,7 @@
 
   <script>
     const GH_MEDIA_BASE = "https://media.githubusercontent.com/media/Marouane-Ait-Salem/portfolio/main/";
-    const USE_GH_MEDIA = /\.github\.io$/i.test(location.hostname);
+    const USE_GH_MEDIA = false; // force relative assets so GitHub Pages uses files from this repo
     const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
     function assetUrl(path){
@@ -1205,9 +1205,9 @@
 
     const state = { lang: "fr", filter: "all" };
     const cvByLang = {
-      fr: "CV-FR.pdf",
-      en: "CV-EN.pdf",
-      ar: "CV-EN.pdf"
+      fr: "profile/CV-FR.pdf",
+      en: "profile/CV-EN.pdf",
+      ar: "profile/CV-EN.pdf"
     };
 
     const $ = (id) => document.getElementById(id);
