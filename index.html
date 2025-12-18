@@ -1217,9 +1217,9 @@
 
     const state = { lang: "fr", filter: "all" };
     const cvByLang = {
-      fr: "profile/CV-FR.pdf",
-      en: "profile/CV-EN.pdf",
-      ar: "profile/CV-EN.pdf"
+      fr: "https://drive.google.com/file/d/1cNE65ty-cvHjf1oJyfv7YaSWskJlfiX1/view?usp=sharing",
+      en: "https://drive.google.com/file/d/1VfrXdIKTyP2bP971htPQSBLOxB6ulrXy/view?usp=sharing",
+      ar: "https://drive.google.com/file/d/1VfrXdIKTyP2bP971htPQSBLOxB6ulrXy/view?usp=sharing"
     };
 
     const $ = (id) => document.getElementById(id);
@@ -1262,10 +1262,14 @@
       if (cvBtn){
         cvBtn.setAttribute("href", href);
         cvBtn.setAttribute("download", "");
+        cvBtn.setAttribute("target", "_blank");
+        cvBtn.setAttribute("rel", "noopener");
       }
       if (cvBtnTop){
         cvBtnTop.setAttribute("href", href);
         cvBtnTop.setAttribute("download", "");
+        cvBtnTop.setAttribute("target", "_blank");
+        cvBtnTop.setAttribute("rel", "noopener");
         cvBtnTop.textContent = t.btn_cv;
       }
       setText("t_intro_sub", t.intro_sub);
