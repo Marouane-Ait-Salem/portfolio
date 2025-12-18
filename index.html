@@ -144,8 +144,13 @@
     .heroText{margin:0 0 18px; color:var(--muted); font-size:15px}
 
     .heroBtns{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:11px 14px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text); font-weight:650; font-size:13px; cursor:pointer}
-    .btn:hover{background:rgba(255,255,255,.06)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:11px 14px;
+      border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text);
+      font-weight:650; font-size:13px; cursor:pointer;
+      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover{background:rgba(255,255,255,.06); transform:translateY(-1.5px); box-shadow:0 10px 30px rgba(0,0,0,.18)}
     .btnPrimary{border-color: rgba(124,92,255,.45); background:linear-gradient(135deg, rgba(124,92,255,.26), rgba(33,212,167,.12))}
 
     .heroSide{padding:18px; display:flex; flex-direction:column; gap:12px}
@@ -286,6 +291,9 @@
     .lbDots{display:flex; gap:8px; justify-content:center; align-items:center; padding:12px 14px; border-top:1px solid var(--line); background:rgba(11,13,18,.35)}
     .lbDot{width:8px; height:8px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.10); cursor:pointer}
     .lbDot[aria-current="true"]{background:linear-gradient(135deg, rgba(124,92,255,.85), rgba(33,212,167,.75)); border-color:rgba(124,92,255,.35)}
+    .mDots{position:absolute; inset:auto 0 0 0; display:flex; gap:8px; justify-content:center; align-items:center; padding:10px 12px; border-top:1px solid var(--line); background:rgba(11,13,18,.35)}
+    .mDot{width:8px; height:8px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.10); cursor:pointer}
+    .mDot[aria-current="true"]{background:linear-gradient(135deg, rgba(124,92,255,.85), rgba(33,212,167,.75)); border-color:rgba(124,92,255,.35)}
 
     .overlay{position:fixed; inset:0; background:rgba(0,0,0,.62); display:none; align-items:center; justify-content:center; padding:20px; z-index:70}
     .overlay[aria-hidden="false"]{display:flex}
@@ -434,6 +442,9 @@
           <div>
             <h2 class="introTitle"><span id="t_intro_title_portfolio">Portfolio</span> <span id="t_intro_title_name" style="background:linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent">MAROUANE AIT SALEM</span></h2>
             <p class="introSubtitle" id="t_intro_sub"></p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px">
+              <a class="btn btnPrimary" href="profile/CV-FR.pdf" download id="cvBtnTop" style="padding:11px 14px; font-size:13px"></a>
+            </div>
           </div>
         </div>
       </section>
@@ -724,6 +735,7 @@
         <div class="modalImg" id="m_img" aria-label="Aperçu">
           <img id="m_img_el" src="" alt="Project render" draggable="false" />
           <button class="expandBtn" id="expandImg" type="button" aria-label="Expand image">⤢</button>
+          <div class="mDots" id="m_dots" aria-label="Images"></div>
         </div>
         <div class="modalSide">
           <div class="kv">
@@ -851,7 +863,7 @@
     const testimonials = [
       {
         name: "Doha Benomar",
-        avatar: "clients/client 1.jpg",
+        avatar: "clients/client 1.webp",
         meta: { fr: "Entreprise • Cuisine & dressing", en: "Company • Kitchen & fit-out", ar: "شركة • تجهيزات داخلية" },
         stars: 5,
         text: {
@@ -862,7 +874,7 @@
       },
       {
         name: "Chouaib allam",
-        avatar: "clients/client 2.jpg",
+        avatar: "clients/client 2.webp",
         meta: { fr: "Agence • Bureaux", en: "Studio • Office", ar: "مكتب هندسة • مكاتب" },
         stars: 5,
         text: {
@@ -873,7 +885,7 @@
       },
       {
         name: "Aicha ait mbarek",
-        avatar: "clients/client 3.jpg",
+        avatar: "clients/client 3.webp",
         meta: { fr: "Client • Résidentiel", en: "Client • Residential", ar: "عميل • سكني" },
         stars: 4,
         text: {
@@ -1245,10 +1257,16 @@
       setText("t_btn_cv", t.btn_cv);
 
       const cvBtn = $("cvBtn");
+      const cvBtnTop = $("cvBtnTop");
+      const href = cvByLang[lang] || cvByLang.fr;
       if (cvBtn){
-        const href = cvByLang[lang] || cvByLang.fr;
         cvBtn.setAttribute("href", href);
         cvBtn.setAttribute("download", "");
+      }
+      if (cvBtnTop){
+        cvBtnTop.setAttribute("href", href);
+        cvBtnTop.setAttribute("download", "");
+        cvBtnTop.textContent = t.btn_cv;
       }
       setText("t_intro_sub", t.intro_sub);
       setText("t_intro_title_portfolio", t.intro_title_portfolio);
@@ -1428,6 +1446,22 @@
         card.addEventListener("keydown", (e) => {
           if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(p.id); }
         });
+
+        const dotEls = [...card.querySelectorAll(".thumbDot")];
+        const thumbImgEl = card.querySelector(".thumbImg");
+        function setThumb(i){
+          const idx = Math.max(0, Math.min(i, imgs.length - 1));
+          dotEls.forEach((d, j) => d.dataset.active = j === idx ? "1" : "0");
+          if (thumbImgEl && imgs[idx]){
+            const src = assetUrl(imgs[idx]);
+            thumbImgEl.dataset.src = src;
+            thumbImgEl.src = src;
+          }
+        }
+        dotEls.forEach((d, i) => {
+          d.addEventListener("click", (e) => { e.stopPropagation(); setThumb(i); });
+        });
+
         grid.appendChild(card);
       }
 
@@ -1492,6 +1526,49 @@
     const lbClose = $("lb_close");
     const lbPrev = $("lb_prev");
     const lbNext = $("lb_next");
+    let lbSwipeBound = false;
+
+    function bindLightboxSwipe(){
+      if (lbSwipeBound) return;
+      const target = lbImg?.closest(".lbBody") || lbImg;
+      if (!target) return;
+
+      let startX = 0;
+      let startY = 0;
+      let tracking = false;
+      let pid = null;
+
+      const reset = () => { tracking = false; pid = null; };
+
+      target.addEventListener("pointerdown", (e) => {
+        if (e.pointerType === "mouse" && e.button !== 0) return;
+        tracking = true;
+        pid = e.pointerId;
+        startX = e.clientX;
+        startY = e.clientY;
+        target.setPointerCapture?.(pid);
+      });
+
+      const onEnd = (e) => {
+        if (!tracking || pid !== e.pointerId) return reset();
+        const dx = e.clientX - startX;
+        const dy = Math.abs(e.clientY - startY);
+        const currentPid = pid;
+        reset();
+        if (currentPid !== null) target.releasePointerCapture?.(currentPid);
+        const THRESHOLD = 40;
+        if (Math.abs(dx) > THRESHOLD && Math.abs(dx) > dy){
+          if (dx < 0) openLightbox._next?.();
+          else openLightbox._prev?.();
+        }
+      };
+
+      target.addEventListener("pointerup", onEnd);
+      target.addEventListener("pointercancel", onEnd);
+      target.addEventListener("pointerleave", reset);
+
+      lbSwipeBound = true;
+    }
 
     let currentProject = null;
     let currentIndex = 0;
@@ -1539,12 +1616,14 @@
       lbNext.onclick = next;
       lbClose.onclick = closeLightbox;
 
+      openLightbox._prev = prev;
+      openLightbox._next = next;
+
+      bindLightboxSwipe();
+
       render();
       lightbox.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
-
-      openLightbox._prev = prev;
-      openLightbox._next = next;
     }
 
     function closeLightbox(){
@@ -1575,7 +1654,23 @@
       const imgs = getProjectImages(p);
       currentIndex = 0;
       const img = $("m_img_el");
-      img.src = assetUrl(imgs[0]);
+      const mDots = $("m_dots");
+
+      function renderModalImage(){
+        const src = assetUrl(imgs[currentIndex] || imgs[0]);
+        img.src = src;
+        if (mDots){
+          mDots.innerHTML = imgs.map((_, i) => `<span class="mDot" aria-current="${i===currentIndex}"></span>`).join("");
+          [...mDots.children].forEach((dot, i) => {
+            dot.addEventListener("click", (e) => {
+              e.stopPropagation();
+              currentIndex = i;
+              renderModalImage();
+            });
+          });
+        }
+      }
+      renderModalImage();
 
       expandBtn.onclick = () => openLightbox(p, currentIndex);
 
@@ -1655,3 +1750,4 @@
   </script>
 </body>
 </html>
+
