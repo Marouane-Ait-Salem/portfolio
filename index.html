@@ -283,6 +283,7 @@
     .footerGrid{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap}
 
     .lbBody{position:relative; background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; overflow:hidden}
+    .lbBody, .modalImg{touch-action: pan-y;}
     .lbBody img{width:100%; height:100%; object-fit:contain; display:block}
     .lbNav{position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:16px; border:1px solid var(--line); background:linear-gradient(135deg, rgba(124,92,255,.28), rgba(33,212,167,.12)); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow); backdrop-filter: blur(8px); user-select:none}
     #lb_prev{left:14px}
@@ -1541,20 +1542,38 @@
       let startY = 0;
       let tracking = false;
       let pid = null;
+      let triggered = false;
 
-      const reset = () => { tracking = false; pid = null; };
+      const reset = () => { tracking = false; pid = null; triggered = false; };
 
       target.addEventListener("pointerdown", (e) => {
         if (e.pointerType === "mouse" && e.button !== 0) return;
         tracking = true;
         pid = e.pointerId;
+        triggered = false;
         startX = e.clientX;
         startY = e.clientY;
         target.setPointerCapture?.(pid);
       });
 
+      target.addEventListener("pointermove", (e) => {
+        if (!tracking || pid !== e.pointerId || triggered) return;
+        const dx = e.clientX - startX;
+        const dy = Math.abs(e.clientY - startY);
+        const THRESHOLD = 40;
+        if (Math.abs(dx) > THRESHOLD && Math.abs(dx) > dy){
+          triggered = true;
+          const currentPid = pid;
+          reset();
+          if (currentPid !== null) target.releasePointerCapture?.(currentPid);
+          if (dx < 0) openLightbox._next?.();
+          else openLightbox._prev?.();
+        }
+      });
+
       const onEnd = (e) => {
         if (!tracking || pid !== e.pointerId) return reset();
+        if (triggered) return reset();
         const dx = e.clientX - startX;
         const dy = Math.abs(e.clientY - startY);
         const currentPid = pid;
