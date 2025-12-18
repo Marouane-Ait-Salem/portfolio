@@ -1,0 +1,1657 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio – Architecture d’intérieur & 3D." />
+  <title>Portfolio | MAROUANE AIT SALEM</title>
+  <style>
+    :root{
+      --bg:#0b0d12; --panel:#101521; --panel2:#0f1320; --text:#e9edf7; --muted:#a8b3cf;
+      --line:rgba(255,255,255,.09);
+      --accent:#7c5cff; --accent2:#21d4a7;
+      --shadow:0 14px 45px rgba(0,0,0,.45);
+      --radius:18px;
+      --radius2:26px;
+      --max:1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0; font-family:var(--font); color:var(--text); background:var(--bg); line-height:1.5; overflow-x:hidden}
+
+    body{
+      -webkit-user-select:none;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #contact, #contact *{
+      -webkit-user-select:text;
+      user-select:text;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:-20% -10% -20% -10%;
+      z-index:-1;
+      background:
+        radial-gradient(900px 420px at 20% 10%, rgba(124,92,255,.28), transparent 65%),
+        radial-gradient(900px 420px at 80% 20%, rgba(33,212,167,.20), transparent 60%),
+        radial-gradient(900px 520px at 50% 90%, rgba(124,92,255,.12), transparent 62%);
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(11,13,18,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; height:72px; gap:16px; position:relative}
+    .brand{display:flex; align-items:center; gap:12px; min-width:0; flex:1}
+    .logo{width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg, rgba(124,92,255,1), rgba(33,212,167,1)); box-shadow:0 12px 30px rgba(124,92,255,.22)}
+    .brand h1{font-size:15px; margin:0; letter-spacing:.2px}
+    .brand p{margin:0; font-size:12px; color:var(--muted)}
+
+    .menu{display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:center}
+    .menu a{font-size:13px; color:var(--muted); padding:8px 10px; border-radius:999px; border:1px solid transparent}
+
+    .burger{
+      display:none;
+      width:46px;
+      height:46px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      cursor:pointer;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .burger:hover{background:rgba(255,255,255,.06)}
+    .burger span{display:block; width:18px; height:2px; background:rgba(233,237,247,.9); border-radius:999px}
+    .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    .burger span{transition:transform .18s ease, opacity .18s ease}
+    .menu a:hover{color:var(--text); border-color:var(--line); background:rgba(255,255,255,.04)}
+
+    .actions{display:flex; gap:10px; align-items:center; justify-content:flex-end; min-width:auto}
+
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .pill:hover{color:var(--text); background:rgba(255,255,255,.05)}
+    .pill strong{color:var(--text); font-weight:650}
+
+    .cta{
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(124,92,255,.35);
+      background:linear-gradient(135deg, rgba(124,92,255,.22), rgba(33,212,167,.12));
+      color:var(--text);
+      font-weight:650;
+      font-size:13px;
+    }
+    .cta:hover{filter:brightness(1.08)}
+
+    .introFull{min-height: calc(100vh - 72px); display:flex; align-items:center; padding:48px 0 34px}
+    .introWrap{width:100%; display:grid; grid-template-columns: 260px 1fr; gap:34px; align-items:center}
+    .introPic{width:260px; height:260px; border-radius:34px; border:1px solid var(--line); background:rgba(255,255,255,.04); box-shadow: var(--shadow); display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .introPic img{width:100%; height:100%; object-fit:contain}
+    img{-webkit-user-drag:none; user-drag:none; -webkit-touch-callout:none}
+    .introTitle{margin:0 0 10px; font-size:56px; line-height:1.05; letter-spacing:-.8px}
+    .introSubtitle{margin:0; font-size:22px; color:var(--muted)}
+
+    @media (max-width: 980px){
+      .introWrap{grid-template-columns: 200px 1fr}
+      .introPic{width:200px; height:200px; border-radius:28px}
+      .introTitle{font-size:44px}
+    }
+    @media (max-width: 640px){
+      header .nav{gap:8px}
+      .brand p{display:none}
+      .brand h1{font-size:13px; white-space:nowrap}
+      .actions .cta{display:none}
+
+      .introFull{padding:34px 0 22px}
+      .introWrap{grid-template-columns: 1fr; text-align:center; justify-items:center}
+      .introTitle{font-size:40px}
+      .introSubtitle{font-size:18px}
+    }
+
+    .hero{padding:42px 0 20px}
+    .heroGrid{display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; align-items:stretch}
+    .card{background:linear-gradient(180deg, rgba(16,21,33,.82), rgba(16,21,33,.50)); border:1px solid var(--line); border-radius:var(--radius2); box-shadow:var(--shadow)}
+    .heroMain{padding:26px}
+    .kicker{display:inline-flex; align-items:center; gap:10px; font-size:12px; color:var(--muted); padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.03)}
+    .dot{width:7px; height:7px; border-radius:999px; background:var(--accent2); box-shadow:0 0 18px rgba(33,212,167,.55)}
+    .heroTitle{margin:14px 0 10px; font-size:36px; line-height:1.15; letter-spacing:-.4px}
+    .heroTitle span{background:linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+    .heroText{margin:0 0 18px; color:var(--muted); font-size:15px}
+
+    .heroBtns{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:11px 14px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text); font-weight:650; font-size:13px; cursor:pointer}
+    .btn:hover{background:rgba(255,255,255,.06)}
+    .btnPrimary{border-color: rgba(124,92,255,.45); background:linear-gradient(135deg, rgba(124,92,255,.26), rgba(33,212,167,.12))}
+
+    .heroSide{padding:18px; display:flex; flex-direction:column; gap:12px}
+    .mini{padding:16px; border-radius:var(--radius); border:1px solid var(--line); background:linear-gradient(180deg, rgba(15,19,32,.82), rgba(15,19,32,.48))}
+    .mini h3{margin:0 0 6px; font-size:13px}
+    .mini p{margin:0; color:var(--muted); font-size:13px}
+    .metrics{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
+    .metric{padding:12px; border-radius:16px; border:1px solid var(--line); background:rgba(255,255,255,.03)}
+    .metric b{display:block; font-size:16px}
+    .metric span{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+
+    section{padding:26px 0; position:relative; background:transparent}
+    .sectionHead{display:flex; align-items:flex-end; justify-content:space-between; gap:14px; margin-bottom:14px}
+    .sectionHead h2{margin:0; font-size:18px}
+    .sectionHead p{margin:0; color:var(--muted); font-size:13px}
+
+    .filters{display:flex; gap:10px; flex-wrap:wrap}
+    .chip{padding:9px 12px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--muted); font-size:13px; cursor:pointer}
+    .chip[aria-pressed="true"]{color:var(--text); border-color:rgba(124,92,255,.5); background:rgba(124,92,255,.12)}
+
+    .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:14px}
+    .proj{grid-column: span 4; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(16,21,33,.76), rgba(16,21,33,.44)); overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.35); cursor:pointer; transition:transform .15s ease, filter .15s ease}
+    .proj:hover{transform:translateY(-3px); filter:brightness(1.05)}
+    .thumb{aspect-ratio:16/10; background:radial-gradient(600px 240px at 20% 20%, rgba(124,92,255,.35), transparent 55%), radial-gradient(520px 260px at 85% 30%, rgba(33,212,167,.25), transparent 55%), rgba(255,255,255,.03); border-bottom:1px solid var(--line); position:relative; overflow:hidden}
+    .thumbImg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.02) contrast(1.03)}
+    .thumbShade{position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,13,18,.05), rgba(11,13,18,.55)); pointer-events:none}
+    .thumbDots{position:absolute; inset:auto 0 10px 0; display:flex; justify-content:center; gap:8px; pointer-events:none}
+    .thumbDot{width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.25); border:1px solid rgba(255,255,255,.28); box-shadow:0 4px 14px rgba(0,0,0,.25)}
+    .thumbDot[data-active="1"]{background:var(--accent); border-color:var(--accent); box-shadow:0 4px 18px rgba(124,92,255,.55)}
+    .thumb.noimg .thumbImg{display:none}
+    .thumb.noimg .thumbShade{display:none}
+    .badge{position:absolute; left:14px; top:14px; padding:7px 10px; border-radius:999px; border:1px solid var(--line); background:rgba(11,13,18,.55); color:var(--text); font-size:12px}
+    .projBody{padding:14px}
+    .projBody h3{margin:0 0 6px; font-size:14px}
+    .projBody p{margin:0; color:var(--muted); font-size:13px}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .tag{font-size:12px; color:var(--muted); border:1px solid var(--line); padding:6px 9px; border-radius:999px; background:rgba(255,255,255,.03)}
+
+    .tGrid{display:grid; grid-template-columns:repeat(12, 1fr); gap:14px}
+    .tCard{grid-column:span 4; padding:18px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(16,21,33,.78), rgba(16,21,33,.44)); box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .tTop{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px}
+    .tName{display:flex; align-items:center; gap:10px; min-width:0}
+    .tAvatar{width:38px; height:38px; border-radius:14px; border:1px solid var(--line); background:linear-gradient(135deg, rgba(124,92,255,.22), rgba(33,212,167,.10)); box-shadow:0 10px 26px rgba(0,0,0,.35); overflow:hidden; display:flex; align-items:center; justify-content:center}
+    .tAvatar img{width:100%; height:100%; object-fit:cover; display:block}
+    .tAvatar.noimg img{display:none}
+    .tName b{font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .tMeta{font-size:12px; color:var(--muted)}
+    .tStars{letter-spacing:3px; font-size:12px; color:rgba(255,255,255,.18)}
+    .tStars[data-s="5"]{color:var(--accent)}
+    .tStars[data-s="4"]{color:rgba(124,92,255,.85)}
+    .tStars[data-s="3"]{color:rgba(124,92,255,.65)}
+    .tQuote{margin:0; color:var(--muted); font-size:13px}
+    @media (max-width: 980px){.tCard{grid-column:span 6}}
+    @media (max-width: 640px){.tCard{grid-column:span 12}}
+
+    .about{display:grid; grid-template-columns: .9fr 1.1fr; gap:14px}
+    .about .card{padding:18px}
+    .list{display:grid; gap:10px; margin-top:10px}
+    .li{padding:12px; border-radius:16px; border:1px solid var(--line); background:rgba(255,255,255,.03)}
+    .li b{display:block; font-size:13px}
+    .toolLi{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .toolLeft{display:flex; align-items:center; gap:10px; min-width:0}
+    .toolLeft b{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .appIcon{
+      width:34px; height:34px; border-radius:12px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(124,92,255,.20), rgba(33,212,167,.10));
+      box-shadow:0 10px 26px rgba(0,0,0,.35);
+      display:inline-flex; align-items:center; justify-content:center;
+      overflow:hidden;
+      flex:0 0 34px;
+      position:relative;
+    }
+    .appIcon img{width:100%; height:100%; object-fit:contain; display:block; padding:6px}
+    .appIcon img:not([src]), .appIcon img[src=""], .appIcon img[alt=""]{display:none}
+    .appIcon::after{
+      content:attr(data-letter);
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:rgba(233,237,247,.85);
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.5px;
+      opacity:.9;
+      pointer-events:none;
+    }
+    .appIcon:has(img[src]):after{opacity:0}
+    .li span{display:block; font-size:13px; color:var(--muted); margin-top:4px}
+    .rating{
+      position:relative;
+      display:inline-flex;
+      font-size:14px;
+      letter-spacing:6px;
+      line-height:1;
+    }
+    .rating::before{
+      content:"◆◆◆◆◆";
+      color:rgba(255,255,255,.18);
+    }
+    .rating::after{
+      content:"◆◆◆◆◆";
+      position:absolute;
+      left:0;
+      top:0;
+      color:var(--accent);
+      overflow:hidden;
+      width:0;
+    }
+    .rating[data-r="1"]::after{width:20%}
+    .rating[data-r="2"]::after{width:40%}
+    .rating[data-r="3"]::after{width:60%}
+    .rating[data-r="4"]::after{width:80%}
+    .rating[data-r="5"]::after{width:100%}
+
+    form{display:grid; gap:10px}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    input, textarea{width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text); outline:none; font:inherit; font-size:14px}
+    textarea{min-height:120px; resize:vertical}
+    input:focus, textarea:focus{border-color:rgba(124,92,255,.55)}
+    .helper{color:var(--muted); font-size:12px}
+
+    .toTop{position:fixed; right:22px; bottom:22px; width:48px; height:48px; border-radius:16px; border:1px solid rgba(124,92,255,.45); background:linear-gradient(135deg, rgba(124,92,255,.26), rgba(33,212,167,.12)); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:opacity .25s ease, transform .25s ease; z-index:60}
+    .toTop.show{opacity:1; pointer-events:auto; transform:translateY(0)}
+    .toTop:hover{filter:brightness(1.1)}
+
+    footer{padding:26px 0 40px; border-top:1px solid var(--line); color:var(--muted)}
+    .footerGrid{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap}
+
+    .lbBody{position:relative; background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; overflow:hidden}
+    .lbBody img{width:100%; height:100%; object-fit:contain; display:block}
+    .lbNav{position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:16px; border:1px solid var(--line); background:linear-gradient(135deg, rgba(124,92,255,.28), rgba(33,212,167,.12)); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow); backdrop-filter: blur(8px); user-select:none}
+    #lb_prev{left:14px}
+    #lb_next{right:14px}
+    .lbNav:hover{filter:brightness(1.1)}
+    .lbDots{display:flex; gap:8px; justify-content:center; align-items:center; padding:12px 14px; border-top:1px solid var(--line); background:rgba(11,13,18,.35)}
+    .lbDot{width:8px; height:8px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.10); cursor:pointer}
+    .lbDot[aria-current="true"]{background:linear-gradient(135deg, rgba(124,92,255,.85), rgba(33,212,167,.75)); border-color:rgba(124,92,255,.35)}
+
+    .overlay{position:fixed; inset:0; background:rgba(0,0,0,.62); display:none; align-items:center; justify-content:center; padding:20px; z-index:70}
+    .overlay[aria-hidden="false"]{display:flex}
+    .modal{width:min(920px, 100%); border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(16,21,33,.96), rgba(16,21,33,.78)); box-shadow:0 30px 90px rgba(0,0,0,.65); overflow:hidden; max-height:90vh}
+    .modalTop{display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid var(--line)}
+    .modalTop b{font-size:13px}
+    .x{border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text); border-radius:12px; padding:9px 11px; cursor:pointer}
+    .x:hover{background:rgba(255,255,255,.06)}
+    .modalContent{display:grid; grid-template-columns: 1.2fr .8fr; gap:0; max-height: calc(90vh - 52px)}
+    .modalImg{aspect-ratio:16/10; background:rgba(0,0,0,.2); border-right:1px solid var(--line); position:relative; overflow:hidden}
+    .modalImg img{width:100%; height:100%; object-fit:cover; display:block}
+    .expandBtn{position:absolute; top:12px; right:12px; width:40px; height:40px; border-radius:12px; border:1px solid var(--line); background:linear-gradient(135deg, rgba(124,92,255,.35), rgba(33,212,167,.18)); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow); backdrop-filter: blur(6px)}
+    .expandBtn:hover{filter:brightness(1.1)}
+    .modalSide{padding:14px; overflow:auto; max-height: calc(90vh - 52px); scrollbar-width:thin; scrollbar-color: rgba(124,92,255,.55) rgba(255,255,255,.04)}
+    .modalSide::-webkit-scrollbar{width:10px}
+    .modalSide::-webkit-scrollbar-track{background: rgba(255,255,255,.04); border-left:1px solid rgba(255,255,255,.06)}
+    .modalSide::-webkit-scrollbar-thumb{background: linear-gradient(180deg, rgba(124,92,255,.75), rgba(33,212,167,.55)); border:2px solid rgba(11,13,18,.85); border-radius:999px}
+    .modalSide::-webkit-scrollbar-thumb:hover{background: linear-gradient(180deg, rgba(124,92,255,.92), rgba(33,212,167,.72))}
+    .kv{display:grid; gap:8px}
+    .kv div{padding:10px; border-radius:16px; border:1px solid var(--line); background:rgba(255,255,255,.03)}
+    .kv b{display:block; font-size:12px}
+    .kv span{display:block; font-size:13px; color:var(--muted); margin-top:4px}
+
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .actions{min-width:auto}
+      .brand{min-width:auto}
+
+      .burger{display:inline-flex}
+      .menu{display:none}
+      .menu.open{
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+        position:absolute;
+        top:72px;
+        left:0;
+        right:0;
+        padding:12px 20px 18px;
+        background:rgba(11,13,18,.92);
+        backdrop-filter: blur(12px);
+        border-bottom:1px solid var(--line);
+      }
+      .menu.open a{padding:10px 12px; border:1px solid var(--line); background:rgba(255,255,255,.03)}
+
+      .proj{grid-column: span 6}
+      .about{grid-template-columns:1fr}
+      .modalContent{grid-template-columns:1fr}
+      .modalImg{border-right:0; border-bottom:1px solid var(--line)}
+
+      #services .grid > .card{grid-column:span 12 !important}
+      #contact .grid > .card{grid-column:span 12 !important}
+    }
+    @media (max-width: 640px){
+      .container{padding:0 16px}
+      .heroTitle{font-size:30px}
+      .proj{grid-column: span 12}
+      .row{grid-template-columns:1fr}
+      .actions{gap:8px}
+      .pill{padding:9px 10px}
+      .cta{padding:10px 12px}
+      .toTop{right:16px; bottom:16px}
+
+      #tools .li.toolLi{grid-column:span 12 !important}
+    }
+
+    [dir="rtl"] .brand{flex-direction:row-reverse}
+    [dir="rtl"] .sectionHead{flex-direction:row-reverse; text-align:right}
+    [dir="rtl"] .filters{justify-content:flex-start}
+    [dir="rtl"] .badge{left:auto; right:14px}
+    [dir="rtl"] .modalTop{flex-direction:row-reverse}
+    [dir="rtl"] .modalContent{direction:rtl}
+    [dir="rtl"] .modalImg{border-right:0; border-left:1px solid var(--line)}
+    @media (max-width: 980px){
+      [dir="rtl"] .modalImg{border-left:0}
+    }
+
+    .preload{position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; background:rgba(11,13,18,.92); backdrop-filter: blur(10px)}
+    .preload[aria-hidden="true"]{display:none}
+    .cubeWrap{width:120px; height:120px; perspective:800px}
+    .cube{width:80px; height:80px; position:relative; margin:20px auto; transform-style:preserve-3d; animation: spin 1.6s linear infinite}
+    .face{position:absolute; inset:0; border-radius:14px; border:1px solid rgba(255,255,255,.14); background:linear-gradient(135deg, rgba(124,92,255,.28), rgba(33,212,167,.16)); box-shadow:0 18px 60px rgba(0,0,0,.55), inset 0 0 22px rgba(124,92,255,.18); backdrop-filter: blur(6px)}
+    .f1{transform: translateZ(40px)}
+    .f2{transform: rotateY(180deg) translateZ(40px)}
+    .f3{transform: rotateY(90deg) translateZ(40px)}
+    .f4{transform: rotateY(-90deg) translateZ(40px)}
+    .f5{transform: rotateX(90deg) translateZ(40px)}
+    .f6{transform: rotateX(-90deg) translateZ(40px)}
+    @keyframes spin{0%{transform: rotateX(15deg) rotateY(0deg)} 100%{transform: rotateX(15deg) rotateY(360deg)}}
+    @media (prefers-reduced-motion: reduce){.cube{animation:none}}
+  </style>
+</head>
+
+<body>
+  <div class="preload" id="preload" aria-hidden="true" aria-label="Loading">
+    <div class="cubeWrap" aria-hidden="true">
+      <div class="cube">
+        <div class="face f1"></div>
+        <div class="face f2"></div>
+        <div class="face f3"></div>
+        <div class="face f4"></div>
+        <div class="face f5"></div>
+        <div class="face f6"></div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Accueil">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <h1 id="t_brand">MAROUANE AIT SALEM</h1>
+            <p id="t_role">Architecte d’intérieur • 3D Designer</p>
+          </div>
+        </a>
+
+        <button class="burger" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="menu" id="mainNav" aria-label="Navigation">
+          <a href="#projects" id="t_nav_projects">Projets</a>
+          <a href="#services" id="t_nav_services">Services</a>
+          <a href="#feedback" id="t_nav_feedback">Avis</a>
+          <a href="#about" id="t_nav_about">À propos</a>
+          <a href="#contact" id="t_nav_contact">Contact</a>
+        </nav>
+
+        <div class="actions">
+          <button class="pill" id="langBtn" type="button" aria-label="Changer la langue">🌐 <strong id="langLabel">FR</strong></button>
+          <a class="cta" href="#contact" id="t_nav_cta">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+      <section class="introFull" aria-label="Intro">
+        <div class="introWrap">
+          <div class="introPic">
+            <img src="profile/profile.webp" alt="MAROUANE AIT SALEM" />
+          </div>
+          <div>
+            <h2 class="introTitle"><span id="t_intro_title_portfolio">Portfolio</span> <span id="t_intro_title_name" style="background:linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent">MAROUANE AIT SALEM</span></h2>
+            <p class="introSubtitle" id="t_intro_sub"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" id="hero">
+        <div class="heroGrid">
+          <div class="card heroMain">
+            <div class="kicker"><span class="dot" aria-hidden="true"></span><span id="t_kicker">Disponible pour collaborations & missions</span></div>
+            <h2 class="heroTitle" id="t_hero_title">Des espaces <span>modernes</span> pensés pour l’usage, la lumière et l’identité.</h2>
+            <p class="heroText" id="t_hero_text"></p>
+            <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap">
+            </div>
+            <div class="heroBtns" style="gap:14px">
+              <a class="btn btnPrimary" href="#projects" id="t_btn_projects">Voir les projets</a>
+              <a class="btn" href="#contact" id="t_btn_contact">Me contacter</a>
+              <a class="btn btnPrimary" href="profile/CV-FR.pdf" download id="cvBtn" style="font-size:14px; padding:13px 18px">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 3v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span id="t_btn_cv">Télécharger CV</span>
+            </a>
+            </div>
+          </div>
+
+          <div class="card heroSide">
+            <div class="mini">
+              <h3 id="t_focus_title">Focus</h3>
+              <p id="t_focus_text">Bureaux • Showrooms • Éducation • Retail • Résidentiel</p>
+              <div class="metrics" aria-label="Statistiques">
+                <div class="metric"><b>+1500</b><span id="t_metric_1">Rendus livrés</span></div>
+                <div class="metric"><b>24–72h</b><span id="t_metric_2">Délai initial</span></div>
+                <div class="metric"><b>FR/EN/AR</b><span id="t_metric_3">Communication</span></div>
+                <div class="metric"><b>3D + 2D</b><span id="t_metric_4">Rendus & plans</span></div>
+              </div>
+            </div>
+
+            <div class="mini">
+              <h3 id="t_tools_title">Outils</h3>
+              <p id="t_tools_text">Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="sectionHead">
+          <div>
+            <h2 id="t_projects_title">Projets sélectionnés</h2>
+            <p id="t_projects_sub">Cliquez sur un projet pour voir les détails.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filtres">
+            <button class="chip" data-filter="all" aria-pressed="true" id="t_filter_all">Tous</button>
+            <button class="chip" data-filter="office" aria-pressed="false" id="t_filter_office">Bureaux</button>
+            <button class="chip" data-filter="showroom" aria-pressed="false" id="t_filter_showroom">Showroom</button>
+            <button class="chip" data-filter="education" aria-pressed="false" id="t_filter_education">Éducation</button>
+            <button class="chip" data-filter="residential" aria-pressed="false" id="t_filter_residential">Résidentiel</button>
+            <button class="chip" data-filter="exterior" aria-pressed="false" id="t_filter_exterior">Extérieur</button>
+            <button class="chip" data-filter="product" aria-pressed="false" id="t_filter_product">Produits</button>
+            <button class="chip" data-filter="commercial" aria-pressed="false" id="t_filter_commercial">Commercial</button>
+          </div>
+        </div>
+
+        <div class="grid" id="projGrid"></div>
+      </section>
+
+      <section id="services">
+        <div class="sectionHead">
+          <div>
+            <h2 id="t_services_title">Services</h2>
+            <p id="t_services_sub">Offres claires, process rapide, rendu premium.</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card" style="grid-column:span 4; padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_srv1_title">Rendus 3D réalistes</h3>
+            <p style="margin:0; color:var(--muted); font-size:13px" id="t_srv1_text">Images haute qualité, lumière maîtrisée, matériaux cohérents, cadrages clients.</p>
+            <div class="tags" style="margin-top:12px">
+              <span class="tag" id="t_srv1_tag1">Intérieur</span>
+              <span class="tag" id="t_srv1_tag2">Extérieur</span>
+              <span class="tag" id="t_srv1_tag3">Animation (option)</span>
+            </div>
+          </div>
+          <div class="card" style="grid-column:span 4; padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_srv2_title">Plans 2D techniques</h3>
+            <p style="margin:0; color:var(--muted); font-size:13px" id="t_srv2_text">Plans, élévations, coupes, détails — lisibles pour exécution & chiffrage.</p>
+            <div class="tags" style="margin-top:12px">
+              <span class="tag" id="t_srv2_tag1">DWG</span>
+              <span class="tag" id="t_srv2_tag2">PDF</span>
+              <span class="tag" id="t_srv2_tag3">Mise en page</span>
+            </div>
+          </div>
+          <div class="card" style="grid-column:span 4; padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_srv3_title">Conception & moodboard</h3>
+            <p style="margin:0; color:var(--muted); font-size:13px" id="t_srv3_text">Zoning, palette, matériaux, mobilier — une direction créative solide.</p>
+            <div class="tags" style="margin-top:12px">
+              <span class="tag" id="t_srv3_tag1">Concept</span>
+              <span class="tag" id="t_srv3_tag2">Matériaux</span>
+              <span class="tag" id="t_srv3_tag3">Budget</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedback">
+        <div class="sectionHead">
+          <div>
+            <h2 id="t_feedback_title">Avis clients</h2>
+            <p id="t_feedback_sub">Quelques retours sur la qualité, la rapidité et la communication.</p>
+          </div>
+        </div>
+
+        <div class="tGrid" id="tGrid"></div>
+      </section>
+
+      <section id="tools">
+        <div class="sectionHead">
+          <div>
+            <h2>Outils & logiciels</h2>
+            <p>Environnement de travail et niveau de maîtrise.</p>
+          </div>
+        </div>
+
+        <div class="card" style="padding:18px">
+          <div class="grid" style="gap:14px">
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="B"><img src="icons/blender.webp" alt="Blender" loading="lazy" /></span>
+                <b>Blender 3D</b>
+              </div>
+              <span class="rating" data-r="5"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="A"><img src="icons/autocad.webp" alt="AutoCAD" loading="lazy" /></span>
+                <b>AutoCAD</b>
+              </div>
+              <span class="rating" data-r="5"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="L"><img src="icons/lumion.webp" alt="Lumion" loading="lazy" /></span>
+                <b>Lumion</b>
+              </div>
+              <span class="rating" data-r="4"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="M"><img src="icons/3dsmax.webp" alt="3ds Max" loading="lazy" /></span>
+                <b>3ds Max</b>
+              </div>
+              <span class="rating" data-r="4"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="S"><img src="icons/sketchup.webp" alt="SketchUp" loading="lazy" /></span>
+                <b>SketchUp</b>
+              </div>
+              <span class="rating" data-r="4"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="R"><img src="icons/revit.webp" alt="Revit" loading="lazy" /></span>
+                <b>Revit</b>
+              </div>
+              <span class="rating" data-r="3"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="A"><img src="icons/archicad.webp" alt="Archicad" loading="lazy" /></span>
+                <b>Archicad</b>
+              </div>
+              <span class="rating" data-r="3"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="P"><img src="icons/photoshop.webp" alt="Photoshop" loading="lazy" /></span>
+                <b>Photoshop</b>
+              </div>
+              <span class="rating" data-r="5"></span>
+            </div>
+
+            <div class="li toolLi" style="grid-column:span 6">
+              <div class="toolLeft">
+                <span class="appIcon" data-letter="I"><img src="icons/illustrator.webp" alt="Illustrator" loading="lazy" /></span>
+                <b>Illustrator</b>
+              </div>
+              <span class="rating" data-r="4"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="sectionHead">
+          <div>
+            <h2 id="t_about_title">À propos</h2>
+            <p id="t_about_sub">Une approche orientée résultat, détail et cohérence.</p>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="card">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_about_block1_title">Profil</h3>
+            <p style="margin:0; color:var(--muted); font-size:13px" id="t_about_block1_text">Designer 3D & architecture d’intérieur. J’aide les entreprises et particuliers à transformer leurs espaces en expériences claires, modernes et fonctionnelles.</p>
+            <div class="list">
+              <div class="li"><b id="t_about_li1_b">Ce que j’apporte</b><span id="t_about_li1_s">Direction artistique + rigueur technique.</span></div>
+              <div class="li"><b id="t_about_li2_b">Méthode</b><span id="t_about_li2_s">Brief → concept → rendu → ajustements → livrables.</span></div>
+              <div class="li"><b id="t_about_li3_b">Livrables</b><span id="t_about_li3_s">Rendus HD, plans PDF/DWG, planches matériaux.</span></div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_about_block2_title">Compétences</h3>
+            <div class="grid" style="gap:10px">
+              <div class="li" style="grid-column:span 6"><b id="t_skill1_b">Modélisation</b><span id="t_skill1_s">Volumes propres, détails, mobilier.</span></div>
+              <div class="li" style="grid-column:span 6"><b id="t_skill2_b">Matériaux</b><span id="t_skill2_s">PBR, cohérence, finitions.</span></div>
+              <div class="li" style="grid-column:span 6"><b id="t_skill3_b">Lumière</b><span id="t_skill3_s">Ambiance, confort visuel, narration.</span></div>
+              <div class="li" style="grid-column:span 6"><b id="t_skill4_b">Plans</b><span id="t_skill4_s">Cotes, nomenclatures, détails.</span></div>
+            </div>
+            <p class="helper" style="margin-top:12px" id="t_about_note">Astuce : remplacez les statistiques et projets par vos vrais contenus.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="sectionHead">
+          <div>
+            <h2 id="t_contact_title">Contact</h2>
+            <p id="t_contact_sub">Réponse rapide, brief clair, devis transparent.</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card" style="grid-column:span 6; padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_contact_left_title">Coordonnées</h3>
+            <p style="margin:0 0 14px; color:var(--muted); font-size:13px" id="t_contact_left_text">Vous pouvez me contacter par email ou WhatsApp. Ajoutez aussi vos liens Fiverr/Behance/Instagram ici.</p>
+            <div class="list">
+              <div class="li"><b>Email</b><span><a href="mailto:maraitsalem@gmail.com">maraitsalem@gmail.com</a></span></div>
+              <div class="li"><b>WhatsApp</b><span><a href="https://wa.me/212707926960" target="_blank" rel="noopener">+212 707926960</a></span></div>
+              <div class="li"><b>Links</b><span><a href="https://www.behance.net/masworld1" target="_blank" rel="noopener">Behance</a> • <a href="https://www.instagram.com/mar_omas/" target="_blank" rel="noopener">Instagram</a></span></div>
+            </div>
+          </div>
+
+          <div class="card" style="grid-column:span 6; padding:18px">
+            <h3 style="margin:0 0 8px; font-size:14px" id="t_form_title">Envoyer un message</h3>
+            <form id="contactForm">
+              <div class="row">
+                <input id="name" name="name" placeholder="Nom" required />
+                <input id="email" name="email" placeholder="Email" type="email" required />
+              </div>
+              <input id="subject" name="subject" placeholder="Sujet" required />
+              <textarea id="message" name="message" placeholder="Décrivez votre projet (surface, style, délai, livrables...)" required></textarea>
+              <button class="btn btnPrimary" type="submit" id="t_form_send">Envoyer (mailto)</button>
+              <div class="helper" id="t_form_helper">Ce formulaire ouvre votre application email (pas de backend). Si vous voulez un vrai envoi, je peux ajouter un backend (Formspree, Netlify, etc.).</div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footerGrid">
+          <div>© <span id="year"></span> <span id="t_footer_name">MAROUANE AIT SALEM</span> — <span id="t_footer_rights">Tous droits réservés</span></div>
+          <div><span id="t_footer_made">Design & 3D</span> • <a href="#top" id="t_footer_top">Haut de page ↑</a></div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <button class="toTop" id="toTop" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5L5 12M12 5L19 12M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Détails du projet">
+      <div class="modalTop">
+        <b id="m_title">Projet</b>
+        <button class="x" id="closeModal" type="button">✕</button>
+      </div>
+      <div class="modalContent">
+        <div class="modalImg" id="m_img" aria-label="Aperçu">
+          <img id="m_img_el" src="" alt="Project render" draggable="false" />
+          <button class="expandBtn" id="expandImg" type="button" aria-label="Expand image">⤢</button>
+        </div>
+        <div class="modalSide">
+          <div class="kv">
+            <div><b id="m_type_b">Type</b><span id="m_type">—</span></div>
+            <div><b id="m_role_b">Rôle</b><span id="m_role">—</span></div>
+            <div><b id="m_tools_b">Outils</b><span id="m_tools">—</span></div>
+            <div><b id="m_deliv_b">Livrables</b><span id="m_deliv">—</span></div>
+          </div>
+          <div class="tags" id="m_tags" style="margin-top:12px"></div>
+          <p style="margin:12px 0 0; color:var(--muted); font-size:13px" id="m_desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="lightbox" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Project images" style="width:min(1100px, 100%);">
+      <div class="modalTop">
+        <b id="lb_title">Image</b>
+        <button class="x" id="lb_close" type="button">✕</button>
+      </div>
+      <div class="lbBody">
+        <button class="lbNav" id="lb_prev" type="button" aria-label="Previous">‹</button>
+        <img id="lb_img" alt="Expanded project render" draggable="false" />
+        <button class="lbNav" id="lb_next" type="button" aria-label="Next">›</button>
+      </div>
+      <div class="lbDots" id="lb_dots" aria-label="Images"></div>
+    </div>
+  </div>
+
+  <script>
+    const GH_MEDIA_BASE = "https://media.githubusercontent.com/media/Marouane-Ait-Salem/portfolio/main/";
+    const USE_GH_MEDIA = false; // force relative assets so GitHub Pages uses files from this repo
+    const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+    function assetUrl(path){
+      const p = String(path || "").trim();
+      if (!p) return "";
+      if (/^(https?:)?\/\//i.test(p) || p.startsWith("data:") || p.startsWith("blob:")) return p;
+      const cleaned = p.replace(/^\.?\//, "");
+      return USE_GH_MEDIA ? (GH_MEDIA_BASE + cleaned) : cleaned;
+    }
+
+    function rewriteRelativeImgSrc(){
+      if (!USE_GH_MEDIA) return;
+      document.querySelectorAll("img[src]").forEach(img => {
+        const src = String(img.getAttribute("src") || "").trim();
+        if (!src) return;
+        if (/^(https?:)?\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) return;
+        img.src = assetUrl(src);
+      });
+    }
+
+    function waitForImage(img){
+      return new Promise(resolve => {
+        if (!img) return resolve(false);
+        if (img.complete && img.naturalWidth > 0) return resolve(true);
+
+        const done = (ok) => {
+          img.removeEventListener("load", onLoad);
+          img.removeEventListener("error", onError);
+          resolve(ok);
+        };
+        const onLoad = () => done(true);
+        const onError = () => done(false);
+
+        img.addEventListener("load", onLoad, { once: true });
+        img.addEventListener("error", onError, { once: true });
+      });
+    }
+
+    function setupSequentialLazyImages(container, opts = {}){
+      const root = container || document;
+      const eagerCount = Math.max(0, Number(opts.eagerCount) || 0);
+      const imgs = [...root.querySelectorAll("img[data-src]")];
+      if (!imgs.length) return;
+
+      const queued = new Set();
+      const queue = [];
+      let running = false;
+
+      function enqueue(img){
+        if (!img || queued.has(img)) return;
+        const src = String(img.dataset.src || "").trim();
+        const current = String(img.getAttribute("src") || "").trim();
+        if (!src || (current && current !== BLANK_IMG)) return;
+        queued.add(img);
+        queue.push(img);
+        run();
+      }
+
+      async function run(){
+        if (running) return;
+        running = true;
+        try{
+          while (queue.length){
+            const img = queue.shift();
+            const src = String(img?.dataset?.src || "").trim();
+            if (!src) continue;
+            img.src = src;
+            await waitForImage(img);
+          }
+        } finally {
+          running = false;
+        }
+      }
+
+      for (const img of imgs.slice(0, eagerCount)) enqueue(img);
+
+      if ("IntersectionObserver" in window){
+        const io = new IntersectionObserver((entries) => {
+          for (const e of entries){
+            if (!e.isIntersecting) continue;
+            enqueue(e.target);
+            io.unobserve(e.target);
+          }
+        }, { rootMargin: "400px 0px" });
+
+        imgs.forEach(img => io.observe(img));
+      } else {
+        imgs.forEach(enqueue);
+      }
+    }
+
+    const testimonials = [
+      {
+        name: "Doha Benomar",
+        avatar: "clients/client 1.jpg",
+        meta: { fr: "Entreprise • Cuisine & dressing", en: "Company • Kitchen & fit-out", ar: "شركة • تجهيزات داخلية" },
+        stars: 5,
+        text: {
+          fr: "Très bon travail : rendus propres, rapides, et communication claire. Les modifications ont été faites sans problème.",
+          en: "Excellent work: clean renders, fast delivery, and clear communication. Revisions were handled smoothly.",
+          ar: "عمل ممتاز: رندرات نظيفة، تسليم سريع، وتواصل واضح. التعديلات تمت بسلاسة."
+        }
+      },
+      {
+        name: "Chouaib allam",
+        avatar: "clients/client 2.jpg",
+        meta: { fr: "Agence • Bureaux", en: "Studio • Office", ar: "مكتب هندسة • مكاتب" },
+        stars: 5,
+        text: {
+          fr: "Très professionnel et attentif aux détails. Les plans 2D étaient clairs pour la realisation.",
+          en: "Very professional and detail-oriented. The 2D drawings were clear for execution.",
+          ar: "احترافي ودقيق في التفاصيل. المخططات 2D كانت واضحة للتنفيذ."
+        }
+      },
+      {
+        name: "Aicha ait mbarek",
+        avatar: "clients/client 3.jpg",
+        meta: { fr: "Client • Résidentiel", en: "Client • Residential", ar: "عميل • سكني" },
+        stars: 4,
+        text: {
+          fr: "Design moderne et élégant. J’ai apprécié la vitesse et le rendu réaliste.",
+          en: "Modern, elegant design. I appreciated the speed and realism.",
+          ar: "تصميم عصري وأنيق. أعجبني السرعة وواقعية الرندر."
+        }
+      }
+    ];
+
+    let projects = [];
+
+    async function loadProjects(){
+      const r = await fetch("Data/projects.json", { cache: "no-store" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const data = await r.json();
+      const raw = Array.isArray(data) ? data : [];
+
+      projects = raw.map(p => {
+        const cat = String(p?.category ?? "").trim().toLowerCase();
+        const id = String(p?.id ?? "").trim();
+        return { ...p, id, category: cat };
+      });
+
+      validateProjects(projects);
+    }
+
+    function validateProjects(list){
+      const ids = new Set();
+      const cats = new Set(["office","showroom","education","residential","exterior","product","commercial"]);
+      let ok = true;
+
+      for (const p of (Array.isArray(list) ? list : [])){
+        const id = String(p?.id || "").trim();
+        if (!id || ids.has(id)) ok = false;
+        if (id) ids.add(id);
+
+        const c = String(p?.category || "").trim().toLowerCase();
+        if (!c || !cats.has(c)) ok = false;
+
+        if (!p?.title || !p?.short || !p?.desc) ok = false;
+        if (!p?.type || !p?.role) ok = false;
+      }
+
+      if (!ok) console.warn("projects.json contains invalid items (id/category/fields).", list);
+    }
+
+    const i18n = {
+      fr: {
+        intro_sub: "Concepteur 2D / 3D",
+        intro_title_portfolio: "Portfolio",
+        intro_title_name: "MAROUANE AIT SALEM",
+        page_title: "Portfolio | MAROUANE AIT SALEM",
+        brand: "MAROUANE AIT SALEM",
+        role: "Architecte d’intérieur • 3D Designer",
+        nav_projects: "Projets",
+        nav_services: "Services",
+        nav_about: "À propos",
+        nav_contact: "Contact",
+        nav_cta: "Contactez-moi",
+        kicker: "Disponible pour collaborations & missions",
+        hero_title: "Des espaces modernes pensés pour l’usage, la lumière et l’identité.",
+        hero_text: "Conception d’espaces professionnels & résidentiels, rendus 3D réalistes, et plans techniques clairs — avec une approche élégante, cohérente et rapide.",
+        btn_projects: "Voir les projets",
+        btn_contact: "Me contacter",
+        btn_cv: "Télécharger CV",
+        focus_title: "Focus",
+        focus_text: "Bureaux • Showrooms • Éducation • Retail • Résidentiel",
+        metric_1: "Rendus livrés",
+        metric_2: "Délai initial",
+        metric_3: "Communication",
+        metric_4: "Rendus & plans",
+        tools_title: "Outils",
+        tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
+        projects_title: "Projets sélectionnés",
+        projects_sub: "Cliquez sur un projet pour voir les détails.",
+        projects_empty: "Aucun projet à afficher. Vérifiez Data/projects.json.",
+        nav_feedback: "Avis",
+        feedback_title: "Avis clients",
+        feedback_sub: "Quelques retours sur la qualité, la rapidité et la communication.",
+        filter_all: "Tous",
+        filter_office: "Bureaux",
+        filter_showroom: "Showroom",
+        filter_education: "Éducation",
+        filter_residential: "Résidentiel",
+        filter_exterior: "Extérieur",
+        filter_product: "Produits",
+        filter_commercial: "Commercial",
+        services_title: "Services",
+        services_sub: "Offres claires, process rapide, rendu premium.",
+        srv1_title: "Rendus 3D réalistes",
+        srv1_text: "Images haute qualité, lumière maîtrisée, matériaux cohérents, cadrages clients.",
+        srv1_tag1: "Intérieur",
+        srv1_tag2: "Extérieur",
+        srv1_tag3: "Animation (option)",
+        srv2_title: "Plans 2D techniques",
+        srv2_text: "Plans, élévations, coupes, détails — lisibles pour exécution & chiffrage.",
+        srv2_tag1: "DWG",
+        srv2_tag2: "PDF",
+        srv2_tag3: "Mise en page",
+        srv3_title: "Conception & moodboard",
+        srv3_text: "Zoning, palette, matériaux, mobilier — une direction créative solide.",
+        srv3_tag1: "Concept",
+        srv3_tag2: "Matériaux",
+        srv3_tag3: "Budget",
+        about_title: "À propos",
+        about_sub: "Une approche orientée résultat, détail et cohérence.",
+        about_block1_title: "Profil",
+        about_block1_text: "Designer 3D & architecture d’intérieur. J’aide les entreprises et particuliers à transformer leurs espaces en expériences claires, modernes et fonctionnelles.",
+        about_li1_b: "Ce que j’apporte",
+        about_li1_s: "Direction artistique + rigueur technique.",
+        about_li2_b: "Méthode",
+        about_li2_s: "Brief → concept → rendu → ajustements → livrables.",
+        about_li3_b: "Livrables",
+        about_li3_s: "Rendus HD, plans PDF/DWG, planches matériaux.",
+        about_block2_title: "Compétences",
+        skill1_b: "Modélisation",
+        skill1_s: "Volumes propres, détails, mobilier.",
+        skill2_b: "Matériaux",
+        skill2_s: "PBR, cohérence, finitions.",
+        skill3_b: "Lumière",
+        skill3_s: "Ambiance, confort visuel, narration.",
+        skill4_b: "Plans",
+        skill4_s: "Cotes, nomenclatures, détails.",
+        about_note: "Astuce : remplacez les statistiques et projets par vos vrais contenus.",
+        contact_title: "Contact",
+        contact_sub: "Réponse rapide, brief clair, devis transparent.",
+        contact_left_title: "Coordonnées",
+        contact_left_text: "Vous pouvez me contacter par email ou WhatsApp. Ajoutez aussi vos liens Fiverr/Behance/Instagram ici.",
+        form_title: "Envoyer un message",
+        form_send: "Envoyer (mailto)",
+        form_helper: "Ce formulaire ouvre votre application email (pas de backend). Si vous voulez un vrai envoi, je peux ajouter un backend (Formspree, Netlify, etc.).",
+        footer_name: "MAROUANE AIT SALEM",
+        footer_rights: "Tous droits réservés",
+        footer_made: "Design & 3D",
+        footer_top: "Haut de page ↑",
+        modal_type_b: "Type",
+        modal_role_b: "Rôle",
+        modal_tools_b: "Outils",
+        modal_deliv_b: "Livrables"
+      },
+      en: {
+        intro_sub: "2D / 3D Designer",
+        intro_title_portfolio: "Portfolio",
+        intro_title_name: "MAROUANE AIT SALEM",
+        page_title: "Portfolio | MAROUANE AIT SALEM",
+        brand: "MAROUANE AIT SALEM",
+        role: "Interior Architect • 3D Designer",
+        nav_projects: "Projects",
+        nav_services: "Services",
+        nav_about: "About",
+        nav_contact: "Contact",
+        nav_cta: "Contact me",
+        kicker: "Available for collaborations & projects",
+        hero_title: "Modern spaces shaped by function, light, and identity.",
+        hero_text: "Workspaces & residential design, realistic 3D renders, and clean technical drawings — with an elegant, consistent, fast process.",
+        btn_projects: "View projects",
+        btn_contact: "Contact me",
+        btn_cv: "Download CV",
+        focus_title: "Focus",
+        focus_text: "Offices • Showrooms • Education • Retail • Residential",
+        metric_1: "Renders delivered",
+        metric_2: "Initial turnaround",
+        metric_3: "Communication",
+        metric_4: "3D & 2D",
+        tools_title: "Tools",
+        tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
+        projects_title: "Selected projects",
+        projects_sub: "Click a project to view details.",
+        projects_empty: "No projects to display. Check Data/projects.json.",
+        nav_feedback: "Feedback",
+        feedback_title: "Client feedback",
+        feedback_sub: "A few notes about quality, speed, and communication.",
+        filter_all: "All",
+        filter_office: "Office",
+        filter_showroom: "Showroom",
+        filter_education: "Education",
+        filter_residential: "Residential",
+        filter_exterior: "Exterior",
+        filter_product: "Products",
+        filter_commercial: "Commercial",
+        services_title: "Services",
+        services_sub: "Clear offers, fast workflow, premium output.",
+        srv1_title: "Realistic 3D renders",
+        srv1_text: "High-quality images, controlled lighting, coherent materials, client-ready angles.",
+        srv1_tag1: "Interior",
+        srv1_tag2: "Exterior",
+        srv1_tag3: "Animation (opt)",
+        srv2_title: "2D technical drawings",
+        srv2_text: "Plans, elevations, sections, details — clear for execution & costing.",
+        srv2_tag1: "DWG",
+        srv2_tag2: "PDF",
+        srv2_tag3: "Layout",
+        srv3_title: "Concept & moodboard",
+        srv3_text: "Zoning, palette, materials, furniture — a strong creative direction.",
+        srv3_tag1: "Concept",
+        srv3_tag2: "Materials",
+        srv3_tag3: "Budget",
+        about_title: "About",
+        about_sub: "Result-driven, detailed, consistent.",
+        about_block1_title: "Profile",
+        about_block1_text: "3D designer & interior architecture. I help companies and individuals turn spaces into clear, modern, functional experiences.",
+        about_li1_b: "What you get",
+        about_li1_s: "Art direction + technical rigor.",
+        about_li2_b: "Process",
+        about_li2_s: "Brief → concept → render → revisions → deliverables.",
+        about_li3_b: "Deliverables",
+        about_li3_s: "HD renders, PDF/DWG drawings, material boards.",
+        about_block2_title: "Skills",
+        skill1_b: "Modeling",
+        skill1_s: "Clean volumes, details, furniture.",
+        skill2_b: "Materials",
+        skill2_s: "PBR, consistency, finishes.",
+        skill3_b: "Lighting",
+        skill3_s: "Mood, visual comfort, storytelling.",
+        skill4_b: "Drawings",
+        skill4_s: "Dimensions, specs, details.",
+        about_note: "Tip: replace stats and projects with your real content.",
+        contact_title: "Contact",
+        contact_sub: "Fast reply, clear brief, transparent quote.",
+        contact_left_title: "Details",
+        contact_left_text: "Contact me via email or WhatsApp. Add your Fiverr/Behance/Instagram links here.",
+        form_title: "Send a message",
+        form_send: "Send (mailto)",
+        form_helper: "This form opens your email app (no backend). If you want real sending, I can add a backend (Formspree, Netlify, etc.).",
+        footer_name: "MAROUANE AIT SALEM",
+        footer_rights: "All rights reserved",
+        footer_made: "Design & 3D",
+        footer_top: "Back to top ↑",
+        modal_type_b: "Type",
+        modal_role_b: "Role",
+        modal_tools_b: "Tools",
+        modal_deliv_b: "Deliverables"
+      },
+      ar: {
+        intro_sub: "مصمم ثنائي وثلاثي الأبعاد",
+        intro_title_portfolio: "معرض الأعمال",
+        intro_title_name: "مروان أيت سالم",
+        page_title: "معرض الأعمال | مروان أيت سالم",
+        brand: "مروان أيت سالم",
+        role: "مصمم داخلي • مصمم ثلاثي الأبعاد",
+        nav_projects: "المشاريع",
+        nav_services: "الخدمات",
+        nav_about: "من أنا",
+        nav_contact: "تواصل",
+        nav_cta: "تواصل معي",
+        kicker: "متاح للتعاون والمشاريع",
+        hero_title: "مساحات عصرية مبنية على الوظيفة والضوء والهوية.",
+        hero_text: "تصميم مساحات العمل والسكن، رندرات واقعية، ومخططات تقنية واضحة — بمنهج احترافي سريع ومتناسق.",
+        btn_projects: "مشاهدة المشاريع",
+        btn_contact: "تواصل معي",
+        btn_cv: "تحميل السيرة",
+        focus_title: "التركيز",
+        focus_text: "مكاتب • صالات عرض • تعليم • متاجر • سكني",
+        metric_1: "رندرات مُسلّمة",
+        metric_2: "المدة الأولية",
+        metric_3: "التواصل",
+        metric_4: "3D و 2D",
+        tools_title: "الأدوات",
+        tools_text: "Blender / Cycle-Evee • 3ds Max / Corona • SketchUp / Enscape • Lumion • AutoCAD",
+        projects_title: "مختارات من المشاريع",
+        projects_sub: "اضغط على أي مشروع لعرض التفاصيل.",
+        projects_empty: "لا توجد مشاريع للعرض. تحقق من ملف Data/projects.json.",
+        nav_feedback: "آراء العملاء",
+        feedback_title: "آراء العملاء",
+        feedback_sub: "بعض الانطباعات حول الجودة والسرعة والتواصل.",
+        filter_all: "الكل",
+        filter_office: "مكاتب",
+        filter_showroom: "صالة عرض",
+        filter_education: "تعليم",
+        filter_residential: "سكني",
+        filter_exterior: "خارجي",
+        filter_product: "منتجات",
+        filter_commercial: "تجاري",
+        services_title: "الخدمات",
+        services_sub: "عروض واضحة، تنفيذ سريع، جودة عالية.",
+        srv1_title: "رندرات 3D واقعية",
+        srv1_text: "صور عالية الجودة، إضاءة متوازنة، مواد منسجمة، زوايا مناسبة للعميل.",
+        srv1_tag1: "داخلي",
+        srv1_tag2: "خارجي",
+        srv1_tag3: "تحريك (اختياري)",
+        srv2_title: "مخططات تقنية 2D",
+        srv2_text: "مخططات، واجهات، مقاطع، تفاصيل — واضحة للتنفيذ والتسعير.",
+        srv2_tag1: "DWG",
+        srv2_tag2: "PDF",
+        srv2_tag3: "إخراج",
+        srv3_title: "كونسبت ومودبورد",
+        srv3_text: "توزيع، لوحة ألوان، مواد، أثاث — اتجاه فني قوي.",
+        srv3_tag1: "كونسبت",
+        srv3_tag2: "مواد",
+        srv3_tag3: "ميزانية",
+        about_title: "من أنا",
+        about_sub: "تركيز على النتيجة، التفاصيل والانسجام.",
+        about_block1_title: "الملف",
+        about_block1_text: "مصمم 3D وتصميم داخلي. أساعد الشركات والأفراد على تحويل المساحات إلى تجارب عصرية وواضحة وعملية.",
+        about_li1_b: "ماذا أقدم",
+        about_li1_s: "اتجاه فني + دقة تقنية.",
+        about_li2_b: "الطريقة",
+        about_li2_s: "متطلبات → كونسبت → رندر → تعديلات → تسليم.",
+        about_li3_b: "التسليمات",
+        about_li3_s: "رندرات HD، مخططات PDF/DWG، لوحات مواد.",
+        about_block2_title: "المهارات",
+        skill1_b: "نمذجة",
+        skill1_s: "أحجام نظيفة، تفاصيل، أثاث.",
+        skill2_b: "مواد",
+        skill2_s: "PBR، انسجام، تشطيبات.",
+        skill3_b: "إضاءة",
+        skill3_s: "أجواء، راحة بصرية، سرد.",
+        skill4_b: "مخططات",
+        skill4_s: "أبعاد، مواصفات، تفاصيل.",
+        about_note: "ملاحظة: استبدل الأرقام والمشاريع بمحتواك الحقيقي.",
+        contact_title: "تواصل",
+        contact_sub: "رد سريع، متطلبات واضحة، عرض سعر شفاف.",
+        contact_left_title: "المعلومات",
+        contact_left_text: "يمكنك التواصل عبر البريد أو واتساب. أضف روابط Fiverr/Behance/Instagram هنا.",
+        form_title: "أرسل رسالة",
+        form_send: "إرسال (mailto)",
+        form_helper: "هذا النموذج يفتح تطبيق البريد لديك (بدون خادم). إذا أردت إرسالاً فعلياً، أستطيع إضافة Backend (Formspree, Netlify...).",
+        footer_name: "مروان أيت سالم",
+        footer_rights: "جميع الحقوق محفوظة",
+        footer_made: "تصميم و3D",
+        footer_top: "العودة للأعلى ↑",
+        modal_type_b: "النوع",
+        modal_role_b: "الدور",
+        modal_tools_b: "الأدوات",
+        modal_deliv_b: "التسليمات"
+      }
+    };
+
+    const state = { lang: "fr", filter: "all" };
+    const cvByLang = {
+      fr: "profile/CV-FR.pdf",
+      en: "profile/CV-EN.pdf",
+      ar: "profile/CV-EN.pdf"
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function setText(id, value){
+      const el = $(id);
+      if (!el) return;
+      el.textContent = value;
+    }
+
+    function applyLang(lang){
+      closeNav();
+      state.lang = lang;
+      const t = i18n[lang];
+
+      document.documentElement.lang = lang === "ar" ? "ar" : (lang === "en" ? "en" : "fr");
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.title = t.page_title || document.title;
+
+      setText("langLabel", lang.toUpperCase());
+
+      setText("t_brand", t.brand);
+      setText("t_role", t.role);
+      setText("t_nav_projects", t.nav_projects);
+      setText("t_nav_services", t.nav_services);
+      setText("t_nav_about", t.nav_about);
+      setText("t_nav_contact", t.nav_contact);
+      setText("t_nav_feedback", t.nav_feedback);
+      setText("t_nav_cta", t.nav_cta);
+      setText("t_kicker", t.kicker);
+      setText("t_hero_title", t.hero_title);
+      setText("t_hero_text", t.hero_text);
+      setText("t_btn_projects", t.btn_projects);
+      setText("t_btn_contact", t.btn_contact);
+      setText("t_btn_cv", t.btn_cv);
+
+      const cvBtn = $("cvBtn");
+      if (cvBtn){
+        const href = cvByLang[lang] || cvByLang.fr;
+        cvBtn.setAttribute("href", href);
+        cvBtn.setAttribute("download", "");
+      }
+      setText("t_intro_sub", t.intro_sub);
+      setText("t_intro_title_portfolio", t.intro_title_portfolio);
+      setText("t_intro_title_name", t.intro_title_name);
+      setText("t_focus_title", t.focus_title);
+      setText("t_focus_text", t.focus_text);
+      setText("t_metric_1", t.metric_1);
+      setText("t_metric_2", t.metric_2);
+      setText("t_metric_3", t.metric_3);
+      setText("t_metric_4", t.metric_4);
+      setText("t_tools_title", t.tools_title);
+      setText("t_tools_text", t.tools_text);
+
+      setText("t_projects_title", t.projects_title);
+      setText("t_projects_sub", t.projects_sub);
+      setText("t_feedback_title", t.feedback_title);
+      setText("t_feedback_sub", t.feedback_sub);
+      setText("t_filter_all", t.filter_all);
+      setText("t_filter_office", t.filter_office);
+      setText("t_filter_showroom", t.filter_showroom);
+      setText("t_filter_education", t.filter_education);
+      setText("t_filter_residential", t.filter_residential);
+      setText("t_filter_exterior", t.filter_exterior);
+      setText("t_filter_product", t.filter_product);
+      setText("t_filter_commercial", t.filter_commercial);
+
+      setText("t_services_title", t.services_title);
+      setText("t_services_sub", t.services_sub);
+      setText("t_srv1_title", t.srv1_title);
+      setText("t_srv1_text", t.srv1_text);
+      setText("t_srv1_tag1", t.srv1_tag1);
+      setText("t_srv1_tag2", t.srv1_tag2);
+      setText("t_srv1_tag3", t.srv1_tag3);
+      setText("t_srv2_title", t.srv2_title);
+      setText("t_srv2_text", t.srv2_text);
+      setText("t_srv2_tag1", t.srv2_tag1);
+      setText("t_srv2_tag2", t.srv2_tag2);
+      setText("t_srv2_tag3", t.srv2_tag3);
+      setText("t_srv3_title", t.srv3_title);
+      setText("t_srv3_text", t.srv3_text);
+      setText("t_srv3_tag1", t.srv3_tag1);
+      setText("t_srv3_tag2", t.srv3_tag2);
+      setText("t_srv3_tag3", t.srv3_tag3);
+
+      setText("t_about_title", t.about_title);
+      setText("t_about_sub", t.about_sub);
+      setText("t_about_block1_title", t.about_block1_title);
+      setText("t_about_block1_text", t.about_block1_text);
+      setText("t_about_li1_b", t.about_li1_b);
+      setText("t_about_li1_s", t.about_li1_s);
+      setText("t_about_li2_b", t.about_li2_b);
+      setText("t_about_li2_s", t.about_li2_s);
+      setText("t_about_li3_b", t.about_li3_b);
+      setText("t_about_li3_s", t.about_li3_s);
+      setText("t_about_block2_title", t.about_block2_title);
+      setText("t_skill1_b", t.skill1_b);
+      setText("t_skill1_s", t.skill1_s);
+      setText("t_skill2_b", t.skill2_b);
+      setText("t_skill2_s", t.skill2_s);
+      setText("t_skill3_b", t.skill3_b);
+      setText("t_skill3_s", t.skill3_s);
+      setText("t_skill4_b", t.skill4_b);
+      setText("t_skill4_s", t.skill4_s);
+      setText("t_about_note", t.about_note);
+
+      setText("t_contact_title", t.contact_title);
+      setText("t_contact_sub", t.contact_sub);
+      setText("t_contact_left_title", t.contact_left_title);
+      setText("t_contact_left_text", t.contact_left_text);
+      setText("t_form_title", t.form_title);
+      setText("t_form_send", t.form_send);
+      setText("t_form_helper", t.form_helper);
+
+      setText("t_footer_name", t.footer_name);
+      setText("t_footer_rights", t.footer_rights);
+      setText("t_footer_made", t.footer_made);
+      setText("t_footer_top", t.footer_top);
+
+      setText("m_type_b", t.modal_type_b);
+      setText("m_role_b", t.modal_role_b);
+      setText("m_tools_b", t.modal_tools_b);
+      setText("m_deliv_b", t.modal_deliv_b);
+
+      renderProjects();
+      renderFeedback();
+    }
+
+    function starsText(n){
+      const s = Math.max(1, Math.min(5, Number(n) || 5));
+      return "★★★★★".slice(0, s) + "☆☆☆☆☆".slice(0, 5 - s);
+    }
+
+    function renderFeedback(){
+      const grid = $("tGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+
+      for (const fb of testimonials){
+        const card = document.createElement("article");
+        card.className = "tCard";
+        const meta = fb.meta?.[state.lang] || "";
+        const quote = fb.text?.[state.lang] || "";
+        const stars = Math.max(1, Math.min(5, Number(fb.stars) || 5));
+        const avatar = String(fb.avatar || "").trim();
+        const avatarSrc = avatar ? assetUrl(avatar) : "";
+
+        card.innerHTML = `
+          <div class="tTop">
+            <div class="tName">
+              <div class="tAvatar ${avatar ? "" : "noimg"}" aria-hidden="true">
+                ${avatarSrc ? `<img src="${avatarSrc.replace(/"/g, "&quot;")}" alt="" loading="lazy" draggable="false" onerror="this.parentElement.classList.add('noimg'); this.remove();" />` : ""}
+              </div>
+              <div style="min-width:0">
+                <b>${fb.name}</b>
+                <div class="tMeta">${meta}</div>
+              </div>
+            </div>
+            <div class="tStars" data-s="${stars}" aria-label="${stars} stars">${starsText(stars)}</div>
+          </div>
+          <p class="tQuote">“${quote}”</p>
+        `;
+        grid.appendChild(card);
+      }
+    }
+
+    function renderProjects(){
+      const grid = $("projGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+
+      const filtered = projects.filter(p => {
+        const c = String(p?.category || "").trim().toLowerCase();
+        return state.filter === "all" ? true : c === state.filter;
+      });
+
+      if (!filtered.length){
+        const empty = document.createElement("div");
+        empty.className = "card";
+        empty.style.padding = "18px";
+        empty.style.gridColumn = "span 12";
+        empty.innerHTML = `<div style="color:var(--muted); font-size:13px">${(i18n[state.lang]?.projects_empty || "")}</div>`;
+        grid.appendChild(empty);
+        return;
+      }
+
+      for (const p of filtered){
+        const card = document.createElement("article");
+        card.className = "proj";
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", "Open project");
+        card.dataset.id = p.id;
+
+        const badge = p.badge?.[state.lang] || "";
+        const title = p.title?.[state.lang] || "";
+        const short = p.short?.[state.lang] || "";
+        const imgs = getProjectImages(p);
+        const thumbUrl = assetUrl(imgs[0] || "");
+        const thumb = thumbUrl.replace(/"/g, "&quot;");
+        const dots = imgs.map((_, i) => `<span class="thumbDot" aria-hidden="true" data-active="${i===0 ? "1" : "0"}"></span>`).join("");
+
+        card.innerHTML = `
+          <div class="thumb" data-thumb="${thumb}">
+            <img class="thumbImg" alt="${title.replace(/"/g, "&quot;")}" loading="lazy" decoding="async" src="${BLANK_IMG}" data-src="${thumb}" draggable="false" onerror="this.closest('.thumb').classList.add('noimg'); this.remove();" />
+            <span class="badge">${badge}</span>
+            <span class="thumbShade" aria-hidden="true"></span>
+            ${dots ? `<div class="thumbDots">${dots}</div>` : ""}
+          </div>
+          <div class="projBody">
+            <h3>${title}</h3>
+            <p>${short}</p>
+            <div class="tags">${(Array.isArray(p.tags) ? p.tags : []).map(t => `<span class=\"tag\">${t}</span>`).join("")}</div>
+          </div>
+        `;
+
+        card.addEventListener("click", () => openModal(p.id));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(p.id); }
+        });
+        grid.appendChild(card);
+      }
+
+      setupSequentialLazyImages(grid, { eagerCount: 3 });
+    }
+
+    function showPreloadOnce(){
+      const preload = $("preload");
+      if (!preload) return;
+      const key = "portfolio_preload_seen";
+      const seen = localStorage.getItem(key) === "1";
+      if (seen) { preload.setAttribute("aria-hidden", "true"); return; }
+      preload.setAttribute("aria-hidden", "false");
+      setTimeout(() => {
+        preload.setAttribute("aria-hidden", "true");
+        localStorage.setItem(key, "1");
+      }, 5000);
+    }
+
+    document.querySelectorAll(".chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        const f = chip.dataset.filter;
+        state.filter = f;
+        document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", "false"));
+        chip.setAttribute("aria-pressed", "true");
+        renderProjects();
+      });
+    });
+
+    const langs = ["fr", "en", "ar"];
+    const navToggle = $("navToggle");
+    const mainNav = $("mainNav");
+
+    function closeNav(){
+      if (!mainNav || !navToggle) return;
+      mainNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+
+    navToggle?.addEventListener("click", () => {
+      if (!mainNav) return;
+      const isOpen = mainNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    mainNav?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeNav));
+    window.addEventListener("scroll", () => { if (window.innerWidth <= 980) closeNav(); }, { passive:true });
+
+    $("langBtn")?.addEventListener("click", () => {
+      const i = langs.indexOf(state.lang);
+      const next = langs[(i + 1) % langs.length];
+      applyLang(next);
+    });
+
+    const overlay = $("overlay");
+    const expandBtn = $("expandImg");
+
+    const lightbox = $("lightbox");
+    const lbImg = $("lb_img");
+    const lbDots = $("lb_dots");
+    const lbTitle = $("lb_title");
+    const lbClose = $("lb_close");
+    const lbPrev = $("lb_prev");
+    const lbNext = $("lb_next");
+
+    let currentProject = null;
+    let currentIndex = 0;
+
+    function getProjectImages(p){
+      if (!p) return [];
+      if (Array.isArray(p.images) && p.images.length) return p.images;
+      if (p.image) return [p.image];
+      return [];
+    }
+
+    function openLightbox(p, startIndex=0){
+      currentProject = p;
+      const imgs = getProjectImages(p);
+      currentIndex = Math.max(0, Math.min(startIndex, imgs.length - 1));
+
+      lbTitle.textContent = p ? (p.title[state.lang] || "Image") : "Image";
+
+      function render(){
+        const src = imgs[currentIndex];
+        lbImg.src = assetUrl(src);
+        lbDots.innerHTML = imgs.map((_, i) =>
+          `<button class="lbDot" type="button" aria-label="Image ${i+1}" aria-current="${i===currentIndex}"></button>`
+        ).join("");
+        [...lbDots.querySelectorAll(".lbDot")].forEach((b, i) => {
+          b.onclick = () => { currentIndex = i; render(); };
+        });
+        const show = imgs.length > 1 ? "1" : "0";
+        lbPrev.style.opacity = show;
+        lbNext.style.opacity = show;
+      }
+
+      function prev(){
+        if (imgs.length <= 1) return;
+        currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
+        render();
+      }
+      function next(){
+        if (imgs.length <= 1) return;
+        currentIndex = (currentIndex + 1) % imgs.length;
+        render();
+      }
+
+      lbPrev.onclick = prev;
+      lbNext.onclick = next;
+      lbClose.onclick = closeLightbox;
+
+      render();
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+
+      openLightbox._prev = prev;
+      openLightbox._next = next;
+    }
+
+    function closeLightbox(){
+      lightbox.setAttribute("aria-hidden", "true");
+      if (overlay.getAttribute("aria-hidden") === "false") document.body.style.overflow = "hidden";
+      else document.body.style.overflow = "";
+    }
+
+    lightbox?.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+
+    const closeModalBtn = $("closeModal");
+
+    function openModal(id){
+      const p = projects.find(x => x.id === id);
+      if (!p) return;
+      currentProject = p;
+
+      $("m_title").textContent = p.title[state.lang];
+      $("m_type").textContent = p.type[state.lang];
+      $("m_role").textContent = p.role[state.lang];
+      $("m_tools").textContent = p.tools;
+      $("m_deliv").textContent = p.deliverables;
+      $("m_desc").textContent = p.desc[state.lang];
+
+      const tags = $("m_tags");
+      tags.innerHTML = (Array.isArray(p.tags) ? p.tags : []).map(t => `<span class="tag">${t}</span>`).join("");
+
+      const imgs = getProjectImages(p);
+      currentIndex = 0;
+      const img = $("m_img_el");
+      img.src = assetUrl(imgs[0]);
+
+      expandBtn.onclick = () => openLightbox(p, currentIndex);
+
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(){
+      overlay.setAttribute("aria-hidden", "true");
+      if (lightbox.getAttribute("aria-hidden") === "false") document.body.style.overflow = "hidden";
+      else document.body.style.overflow = "";
+    }
+
+    closeModalBtn?.addEventListener("click", closeModal);
+    overlay?.addEventListener("click", (e) => { if (e.target === overlay) closeModal(); });
+
+    const modalImgWrap = $("m_img");
+    modalImgWrap?.addEventListener("click", () => {
+      if (!currentProject) return;
+      openLightbox(currentProject, currentIndex);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      const modalOpen = overlay?.getAttribute("aria-hidden") === "false";
+      const lbOpen = lightbox?.getAttribute("aria-hidden") === "false";
+
+      if (e.key === "Escape"){
+        if (lbOpen) closeLightbox();
+        else if (modalOpen) closeModal();
+      }
+
+      if (lbOpen && (e.key === "ArrowLeft" || e.key === "ArrowRight")){
+        if (e.key === "ArrowLeft" && openLightbox._prev) openLightbox._prev();
+        if (e.key === "ArrowRight" && openLightbox._next) openLightbox._next();
+      }
+    });
+
+    $("contactForm")?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = $("name").value.trim();
+      const email = $("email").value.trim();
+      const subject = $("subject").value.trim();
+      const message = $("message").value.trim();
+
+      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      const mail = `mailto:maraitsalem@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mail;
+    });
+
+    const toTop = $("toTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) toTop?.classList.add("show");
+      else toTop?.classList.remove("show");
+    });
+    toTop?.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.addEventListener("contextmenu", (e) => {
+      const img = e.target?.closest?.("img");
+      if (img) e.preventDefault();
+    }, { capture: true });
+
+    document.addEventListener("dragstart", (e) => {
+      const img = e.target?.closest?.("img");
+      if (img) e.preventDefault();
+    }, { capture: true });
+
+    $("year").textContent = new Date().getFullYear();
+    (async () => {
+      try{ await loadProjects(); }
+      catch(_){ projects = []; }
+      applyLang("fr");
+      rewriteRelativeImgSrc();
+      showPreloadOnce();
+    })();
+  </script>
+</body>
+</html>
