@@ -385,6 +385,77 @@
     .f6{transform: rotateX(-90deg) translateZ(40px)}
     @keyframes spin{0%{transform: rotateX(15deg) rotateY(0deg)} 100%{transform: rotateX(15deg) rotateY(360deg)}}
     @media (prefers-reduced-motion: reduce){.cube{animation:none}}
+
+    /* New preloader */
+    .preload{display:none !important}
+    .mil-preloader{
+      position:fixed; inset:0; z-index:220;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(11,13,18,.96); backdrop-filter: blur(10px);
+      overflow:hidden;
+      transition:opacity .45s ease, visibility .45s ease;
+      opacity:1; visibility:visible;
+    }
+    .mil-preloader[aria-hidden="true"]{opacity:0; visibility:hidden; pointer-events:none}
+    .mil-preloader-animation{position:relative; width:min(420px, 90vw); height:200px}
+    .mil-pos-abs{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center}
+    .mil-h3{margin:0; font-size:24px; letter-spacing:.4px}
+    .mil-muted{color:var(--muted)}
+    .mil-thin{font-weight:300}
+    .mil-animation-1 p{
+      position:absolute; inset:auto 0; opacity:0;
+      animation: milWords 2.2s ease 1 forwards;
+    }
+    .mil-animation-1 p:nth-child(1){animation-delay:0s}
+    .mil-animation-1 p:nth-child(2){animation-delay:1.4s}
+    .mil-animation-1 p:nth-child(3){animation-delay:2.8s}
+    @keyframes milWords{
+      0%{opacity:0; transform:translateY(12px)}
+      10%{opacity:1; transform:translateY(0)}
+      28%{opacity:1; transform:translateY(0)}
+      38%{opacity:0; transform:translateY(-8px)}
+      100%{opacity:0; transform:translateY(-8px)}
+    }
+
+    .mil-animation-2{opacity:0; animation: milRevealShow 1.4s ease 1 forwards; animation-delay:4.2s}
+    @keyframes milRevealShow{
+      0%{opacity:0}
+      20%{opacity:1}
+      60%{opacity:1}
+      100%{opacity:1}
+    }
+    .mil-reveal-frame{
+      position:relative;
+      padding:12px 16px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      min-width:240px;
+      background:rgba(255,255,255,.04);
+      box-shadow:0 16px 40px rgba(0,0,0,.45);
+      transform: translateY(-12px);
+    }
+    .mil-reveal-frame p{margin:0; position:relative}
+    .mil-reveal-box{
+      position:absolute; inset:0;
+      background:linear-gradient(90deg, rgba(124,92,255,.8), rgba(33,212,167,.65));
+      transform: translateX(-105%);
+      animation: milSlide 1.4s ease 1 forwards;
+      animation-delay:4.2s;
+      opacity:.85;
+    }
+    @keyframes milSlide{
+      0%{transform: translateX(-105%)}
+      30%{transform: translateX(0)}
+      60%{transform: translateX(0)}
+      100%{transform: translateX(0)}
+    }
+    @media (prefers-reduced-motion: reduce){
+      .mil-preloader{backdrop-filter:none}
+      .mil-animation-1 p,
+      .mil-animation-2,
+      .mil-reveal-box{animation:none; opacity:1}
+    }
   </style>
 </head>
 
@@ -399,6 +470,28 @@
         <div class="face f5"></div>
         <div class="face f6"></div>
       </div>
+    </div>
+  </div>
+
+  <!-- PRELOADER -->
+  <div class="mil-preloader" id="milPreloader" aria-hidden="true" aria-label="Loading">
+    <div class="mil-preloader-animation">
+
+      <!-- TEXT SEQUENCE -->
+      <div class="mil-pos-abs mil-animation-1">
+        <p class="mil-h3 mil-muted mil-thin">Architecture d'intérieur</p>
+        <p class="mil-h3 mil-muted">Interior Design</p>
+        <p class="mil-h3 mil-muted mil-thin">3D & Visuals</p>
+      </div>
+
+      <!-- REVEAL DOMAIN / NAME -->
+      <div class="mil-pos-abs mil-animation-2">
+        <div class="mil-reveal-frame">
+          <span class="mil-reveal-box"></span>
+          <p class="mil-h3 mil-muted mil-thin">marouaneaitsalam.com</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -1485,16 +1578,17 @@
     }
 
     function showPreloadOnce(){
-      const preload = $("preload");
-      if (!preload) return;
-      const key = "portfolio_preload_seen";
-      const seen = localStorage.getItem(key) === "1";
-      if (seen) { preload.setAttribute("aria-hidden", "true"); return; }
-      preload.setAttribute("aria-hidden", "false");
-      setTimeout(() => {
-        preload.setAttribute("aria-hidden", "true");
-        localStorage.setItem(key, "1");
-      }, 5000);
+      const milPreload = $("milPreloader");
+      if (!milPreload) return;
+
+      const hide = () => {
+        milPreload.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      };
+
+      milPreload.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      setTimeout(hide, 6400);
     }
 
     document.querySelectorAll(".chip").forEach(chip => {
