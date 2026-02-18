@@ -29,7 +29,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "Rendus 3D HD + concept d’aménagement",
+  "plan_pdf": "https://drive.google.com/file/d/1tTV-dL2XXadPCrgJGxnXGIZpK-zvhUFd/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Bureaux",
     "Direction",
     "Design institutionnel",
@@ -105,7 +107,8 @@
     },
     "tools": "Blender / Cycle",
     "deliverables": "4 renders HD",
-    "tags": ["Commercial", "Hospitality", "Coffee Shop", "3D"],
+    "plan_pdf": "https://drive.google.com/file/d/1u155tW7mjAe5WRBFWJ8_DUNDmHTZRPvT/view?usp=sharing",
+    "tags": ["Detaill PDF", "Commercial", "Hospitality", "Coffee Shop", "3D"],
     "desc": {
       "fr": "Coffee shop à l’esthétique industrielle contemporaine combinant intérieur lumineux et terrasse végétalisée...",
       "en": "Contemporary industrial coffee shop combining a bright interior with a landscaped terrace...",
@@ -231,7 +234,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "4 renders HD",
+  "plan_pdf": "https://drive.google.com/file/d/1SWUPb4iG7M1sNRSCEK7E6vdD_i11YNWc/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Education",
     "Auditorium",
     "Lecture Hall",
@@ -774,7 +779,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "Rendus 3D HD",
+  "plan_pdf": "https://drive.google.com/file/d/1WFPySHUDxovtoI4TMdXeFaxfchTqkNbH/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Éducation",
     "Salle de prière",
     "Architecture intérieure",
@@ -876,7 +883,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "Rendus 3D HD",
+  "plan_pdf": "https://drive.google.com/file/d/1rzaGxJlUk3_aBonTPc7tPr4c28GWzlRk/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Commercial",
     "Lounge",
     "Espace d’accueil",
@@ -1278,7 +1287,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "Rendus 3D HD + organisation spatiale",
+   "plan_pdf": "https://drive.google.com/file/d/1Sw5ORcxxBDrjevelKM4tDfmV8gKkAdJM/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Éducation",
     "Salle de classe",
     "Design pédagogique",
@@ -1677,7 +1688,9 @@
   },
   "tools": "Blender / Cycle",
   "deliverables": "Rendus 3D photoréalistes",
+   "plan_pdf": "https://drive.google.com/file/d/1UZCaz6S9qfRhn2hWJMOAsQgfh6jjN_To/view?usp=sharing",
   "tags": [
+    "Detaill PDF",
     "Commercial",
     "Restaurant",
     "Cafétéria",
@@ -2498,5 +2511,58 @@
     "projects/p52-8.webp",
     "projects/p52-9.webp"
   ]
+},
+{
+  "id": "p53",
+  "category": "product",
+  "badge": {
+    "fr": "Produit",
+    "en": "Product",
+    "ar": "منتج"
+  },
+  "title": {
+    "fr": "Station de recharge urbaine – Design produit 3D",
+    "en": "Urban charging station – 3D product design",
+    "ar": "محطة شحن حضرية – تصميم منتج ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Station de recharge urbaine au design fonctionnel, modélisée en 3D avec une identité graphique dédiée à la mobilité douce.",
+    "en": "Urban charging station with a functional design, 3D modeled and enhanced with a graphic identity focused on soft mobility.",
+    "ar": "محطة شحن حضرية بتصميم عملي، تمّت نمذجتها ثلاثيًّا مع هوية بصرية مرتبطة بالتنقل المستدام."
+  },
+  "type": {
+    "fr": "Mobilier urbain",
+    "en": "Urban furniture",
+    "ar": "أثاث حضري"
+  },
+  "role": {
+    "fr": "Design produit + modélisation 3D + rendu",
+    "en": "Product design + 3D modeling + rendering",
+    "ar": "تصميم منتج + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "Blender / Cycles",
+  "deliverables": "Rendus 3D photoréalistes",
+  "plan_pdf": "https://drive.google.com/file/d/1St_B70DXWjKcY1iQx2NkhzKLe_L23UlN/view?usp=sharing",
+  "tags": [
+    "Produit",
+    "Mobilier urbain",
+    "Station de recharge",
+    "Mobilité douce",
+    "Design produit",
+    "Design urbain",
+    "Modélisation 3D",
+    "Rendu photoréaliste"
+  ],
+  "desc": {
+    "fr": "Ce projet présente une station de recharge urbaine conçue comme un produit à part entière, alliant fonctionnalité, design contemporain et identité graphique forte. Le mobilier intègre des compartiments sécurisés, une structure métallique stable et un bandeau illustré évoquant la mobilité durable, offrant une solution adaptée aux espaces publics et aux nouveaux usages urbains.",
+    "en": "This project showcases an urban charging station designed as a standalone product, combining functionality, contemporary design, and a strong visual identity. The furniture includes secure compartments, a stable metal structure, and an illustrated panel referencing sustainable mobility, making it suitable for public spaces and emerging urban uses.",
+    "ar": "يعرض هذا المشروع محطة شحن حضرية مصممة كمنتج مستقل يجمع بين الوظيفة والتصميم العصري والهوية البصرية الواضحة. يضم الأثاث خزائن آمنة وهيكلًا معدنيًا متينًا ولوحة رسومية تعكس مفهوم التنقل المستدام، ما يجعله مناسبًا للفضاءات العامة والاستخدامات الحضرية الحديثة."
+  },
+  "images": [
+    "projects/p53-1.webp",
+    "projects/p53-2.webp"
+  ]
 }
 ]
+
+
