@@ -1,5 +1,59 @@
 [
   {
+  "id": "p57",
+  "category": "office",
+  "badge": {
+    "fr": "Open Space",
+    "en": "Open Space",
+    "ar": "فضاء عمل مفتوح"
+  },
+  "title": {
+    "fr": "Open space collaboratif & espaces de travail contemporains",
+    "en": "Collaborative open space & contemporary workspaces",
+    "ar": "مساحات عمل مفتوحة وتعاونية معاصرة"
+  },
+  "short": {
+    "fr": "Aménagement d’un open space moderne favorisant collaboration, flexibilité et bien-être des utilisateurs.",
+    "en": "Modern open-space design focused on collaboration, flexibility, and user well-being.",
+    "ar": "تصميم فضاء عمل مفتوح حديث يركز على التعاون والمرونة وراحة المستخدمين."
+  },
+  "type": {
+    "fr": "Aménagement tertiaire",
+    "en": "Workplace design",
+    "ar": "تصميم فضاءات العمل"
+  },
+  "role": {
+    "fr": "Conception intérieure + visualisation 3D",
+    "en": "Interior design + 3D visualization",
+    "ar": "تصميم داخلي + تصور ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona / AutoCAD / Photoshop",
+  "deliverables": "Rendus photoréalistes + concept d’aménagement",
+  "tags": [
+    "Open Space",
+    "Workspace",
+    "Collaborative Office",
+    "Phone Booth",
+    "Modern Office",
+    "Corporate Design",
+    "Interior Design",
+    "Flexible Workspace",
+    "Office Planning"
+  ],
+  "desc": {
+    "fr": "Ce projet d’open space contemporain a été conçu pour offrir un environnement de travail fluide, chaleureux et collaboratif. L’aménagement intègre des espaces semi-privatifs, des zones de concentration, des phone booths acoustiques et des séparations végétalisées afin d’améliorer le confort et la qualité des échanges entre collaborateurs. Les lignes organiques du plafond lumineux, les matériaux naturels et les touches de couleurs chaudes créent une ambiance professionnelle apaisante et dynamique à la fois.",
+    "en": "This contemporary open-space project was designed to create a fluid, warm, and collaborative work environment. The layout integrates semi-private workstations, focus areas, acoustic phone booths, and planted dividers to improve comfort and interaction between users. Organic ceiling lighting, natural materials, and warm accent colors create a professional atmosphere that feels both calming and dynamic.",
+    "ar": "تم تصميم هذا الفضاء المكتبي المفتوح بأسلوب معاصر لتوفير بيئة عمل مرنة ودافئة تعزز التعاون بين المستخدمين. يضم المشروع مساحات شبه خاصة، ومناطق للتركيز، وكبائن صوتية معزولة، وفواصل نباتية لتحسين الراحة وجودة التفاعل داخل بيئة العمل. كما تساهم خطوط الإضاءة العضوية والخامات الطبيعية والألوان الدافئة في خلق أجواء مهنية هادئة وحيوية في الوقت نفسه."
+  },
+  "images": [
+    "projects/p57-1.webp",
+    "projects/p57-2.webp",
+    "projects/p57-3.webp",
+    "projects/p57-4.webp",
+    "projects/p57-5.webp"
+  ]
+},
+{
   "id": "p54",
   "category": "office",
   "badge": {
@@ -27,7 +81,7 @@
     "en": "Interior design + 3D modeling + rendering",
     "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
   },
-  "tools": "Blender / CYCLE",
+  "tools": "3ds Max / Corona",
   "deliverables": "Rendus 3D photoréalistes",
   "tags": [
     "Office",
@@ -82,7 +136,7 @@
     "en": "Interior design + 3D architectural visualization",
     "ar": "تصميم داخلي + تصور معماري ثلاثي الأبعاد"
   },
-  "tools": "Blender / CYCLE / AutoCAD",
+  "tools": "3ds Max / Corona / AutoCAD",
   "deliverables": "Rendus 3D photoréalistes + ambiance conceptuelle",
   "tags": [
     "Office",
@@ -140,7 +194,7 @@
     "en": "Interior design + 3D modeling + rendering",
     "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
   },
-  "tools": "Blender / CYCLE",
+  "tools": "3ds Max / Corona",
   "deliverables": "Rendus 3D photoréalistes",
   "tags": [
     "Residential",
