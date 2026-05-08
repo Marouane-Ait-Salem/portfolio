@@ -1,5 +1,177 @@
 [
   {
+  "id": "p54",
+  "category": "office",
+  "badge": {
+    "fr": "Bureau",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Open space contemporain – Design de bureaux 3D",
+    "en": "Contemporary open space – 3D office design",
+    "ar": "فضاء عمل معاصر – تصميم مكاتب ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Conception 3D d’un open space contemporain avec salles de réunion vitrées, zones collaboratives et ambiance végétalisée.",
+    "en": "3D design of a contemporary open space featuring glazed meeting rooms, collaborative zones, and a green workplace atmosphere.",
+    "ar": "تصميم ثلاثي الأبعاد لفضاء عمل معاصر يضم قاعات اجتماعات زجاجية ومناطق عمل تعاونية وأجواء نباتية حديثة."
+  },
+  "type": {
+    "fr": "Aménagement de bureaux",
+    "en": "Office interior design",
+    "ar": "تصميم المكاتب"
+  },
+  "role": {
+    "fr": "Design intérieur + modélisation 3D + rendu",
+    "en": "Interior design + 3D modeling + rendering",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Office",
+    "Open space",
+    "Salle de réunion",
+    "Workspace",
+    "Design contemporain",
+    "Bureaux modernes",
+    "Modélisation 3D",
+    "Rendu photoréaliste"
+  ],
+  "desc": {
+    "fr": "Ce projet présente un espace de bureaux contemporain pensé pour favoriser la collaboration, la flexibilité et le bien-être des utilisateurs. L’aménagement combine open space, salles de réunion vitrées et zones végétalisées dans une identité moderne mêlant bois, métal noir et nuances de bleu. Le projet met l’accent sur la fluidité de circulation, le confort visuel, l’intégration acoustique et une ambiance professionnelle élégante adaptée aux environnements de travail actuels.",
+    "en": "This project showcases a contemporary office environment designed to enhance collaboration, flexibility, and user well-being. The layout combines open workspace areas, glazed meeting rooms, and green elements within a modern identity mixing wood, black metal, and blue tones. The design focuses on smooth circulation, visual comfort, acoustic integration, and an elegant professional atmosphere suited to modern workplaces.",
+    "ar": "يعرض هذا المشروع فضاء مكاتب معاصرًا صُمم لتعزيز التعاون والمرونة وراحة المستخدمين. يجمع التصميم بين فضاءات العمل المفتوحة وقاعات الاجتماعات الزجاجية والعناصر النباتية ضمن هوية حديثة تمزج بين الخشب والمعدن الأسود وتدرجات اللون الأزرق. يركز المشروع على سلاسة الحركة والراحة البصرية والمعالجة الصوتية وتوفير بيئة عمل احترافية أنيقة تناسب المكاتب الحديثة."
+  },
+  "images": [
+    "projects/p54-1.webp",
+    "projects/p54-2.webp",
+    "projects/p54-3.webp",
+    "projects/p54-4.webp",
+    "projects/p54-5.webp",
+    "projects/p54-6.webp",
+    "projects/p54-7.webp"
+  ]
+},
+{
+  "id": "p56",
+  "category": "office",
+  "badge": {
+    "fr": "Bureaux",
+    "en": "Office",
+    "ar": "مكاتب"
+  },
+  "title": {
+    "fr": "Espaces de direction & collaboration – Design intérieur corporate",
+    "en": "Executive & collaborative spaces – Corporate interior design",
+    "ar": "مساحات إدارية وتعاونية – تصميم داخلي مؤسساتي"
+  },
+  "short": {
+    "fr": "Conception d’espaces professionnels contemporains alliant élégance, collaboration et identité haut de gamme.",
+    "en": "Contemporary professional spaces combining elegance, collaboration, and premium corporate identity.",
+    "ar": "تصميم مساحات مهنية معاصرة تجمع بين الأناقة والتعاون والهوية المؤسسية الراقية."
+  },
+  "type": {
+    "fr": "Espaces professionnels",
+    "en": "Professional spaces",
+    "ar": "مساحات مهنية"
+  },
+  "role": {
+    "fr": "Design intérieur + visualisation architecturale 3D",
+    "en": "Interior design + 3D architectural visualization",
+    "ar": "تصميم داخلي + تصور معماري ثلاثي الأبعاد"
+  },
+  "tools": "3ds Max / Corona / AutoCAD",
+  "deliverables": "Rendus 3D photoréalistes + ambiance conceptuelle",
+  "tags": [
+    "Office",
+    "Corporate",
+    "Boardroom",
+    "Executive office",
+    "Meeting room",
+    "Workspace",
+    "Contemporary",
+    "Luxury office",
+    "Interior design"
+  ],
+  "desc": {
+    "fr": "Ce projet met en scène plusieurs espaces corporate contemporains conçus pour favoriser le confort, la collaboration et l’image haut de gamme de l’entreprise. Les espaces comprennent des lounges professionnels, des zones de réunion, des bureaux de direction et des salles de conférence intégrant des matériaux nobles, des lignes architecturales élégantes et un éclairage soigné. L’approche design combine chaleur des textures boisées, mobilier sculptural et transparence des cloisons vitrées afin de créer une expérience professionnelle moderne et immersive.",
+    "en": "This project showcases a series of contemporary corporate spaces designed to enhance comfort, collaboration, and premium brand identity. The spaces include professional lounges, meeting areas, executive offices, and conference rooms featuring refined materials, elegant architectural lines, and carefully designed lighting. The design approach combines warm wood textures, sculptural furniture, and transparent glazed partitions to create a modern and immersive professional environment.",
+    "ar": "يعرض هذا المشروع مجموعة من المساحات المؤسسية المعاصرة المصممة لتعزيز الراحة والتعاون وإبراز الهوية الراقية للشركة. يضم المشروع صالات استقبال مهنية، ومساحات اجتماعات، ومكاتب إدارية، وقاعات مؤتمرات تعتمد على مواد فاخرة وخطوط معمارية أنيقة وإضاءة مدروسة بعناية. يجمع التصميم بين دفء الخامات الخشبية والأثاث النحتي والواجهات الزجاجية لخلق بيئة عمل حديثة وغامرة."
+  },
+  "images": [
+    "projects/p56-1.webp",
+    "projects/p56-2.webp",
+    "projects/p56-3.webp",
+    "projects/p56-4.webp",
+    "projects/p56-5.webp",
+    "projects/p56-6.webp",
+    "projects/p56-7.webp",
+    "projects/p56-8.webp",
+    "projects/p56-9.webp"
+  ]
+},
+{
+  "id": "p55",
+  "category": "residential",
+  "badge": {
+    "fr": "Résidentiel",
+    "en": "Residential",
+    "ar": "سكني"
+  },
+  "title": {
+    "fr": "Appartement contemporain minimaliste – Design intérieur 3D",
+    "en": "Contemporary minimalist apartment – 3D interior design",
+    "ar": "شقة معاصرة بأسلوب مينيمالي – تصميم داخلي ثلاثي الأبعاد"
+  },
+  "short": {
+    "fr": "Conception 3D d’un appartement contemporain aux tons doux mêlant minimalisme, confort et élégance moderne.",
+    "en": "3D design of a contemporary apartment featuring soft tones, minimalist aesthetics, comfort, and modern elegance.",
+    "ar": "تصميم ثلاثي الأبعاد لشقة معاصرة بألوان هادئة تجمع بين البساطة والراحة والأناقة الحديثة."
+  },
+  "type": {
+    "fr": "Appartement résidentiel",
+    "en": "Residential apartment",
+    "ar": "شقة سكنية"
+  },
+  "role": {
+    "fr": "Design intérieur + modélisation 3D + rendu",
+    "en": "Interior design + 3D modeling + rendering",
+    "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
+  },
+  "tools": "3ds Max / Corona",
+  "deliverables": "Rendus 3D photoréalistes",
+  "tags": [
+    "Residential",
+    "Appartement",
+    "Salon",
+    "Cuisine",
+    "Salle de bain",
+    "Chambre",
+    "Minimalisme",
+    "Design contemporain",
+    "Rendu photoréaliste"
+  ],
+  "desc": {
+    "fr": "Ce projet présente l’aménagement intérieur complet d’un appartement contemporain conçu dans une approche minimaliste et chaleureuse. Les espaces combinent des matériaux naturels, des tons neutres et un éclairage indirect élégant afin de créer une ambiance apaisante et raffinée. Le projet comprend un salon moderne avec mobilier intégré, une salle à manger lumineuse, une cuisine optimisée, une chambre au design épuré ainsi qu’une salle de bain contemporaine aux finitions sobres et élégantes.",
+    "en": "This project showcases the complete interior design of a contemporary apartment developed with a warm minimalist approach. The spaces combine natural materials, neutral tones, and elegant indirect lighting to create a calm and refined atmosphere. The project includes a modern living room with integrated furniture, a bright dining area, an optimized kitchen, a clean-lined bedroom, and a contemporary bathroom with elegant finishes.",
+    "ar": "يعرض هذا المشروع التصميم الداخلي الكامل لشقة معاصرة بأسلوب مينيمالي دافئ. تجمع المساحات بين المواد الطبيعية والألوان الهادئة والإضاءة غير المباشرة الأنيقة لخلق أجواء مريحة وراقية. يضم المشروع غرفة معيشة حديثة بأثاث مدمج، ومنطقة طعام مضيئة، ومطبخًا عمليًا، وغرفة نوم بتصميم بسيط وأنيق، بالإضافة إلى حمام عصري بتفاصيل راقية."
+  },
+  "images": [
+    "projects/p55-1.webp",
+    "projects/p55-2.webp",
+    "projects/p55-3.webp",
+    "projects/p55-4.webp",
+    "projects/p55-5.webp",
+    "projects/p55-6.webp",
+    "projects/p55-7.webp",
+    "projects/p55-8.webp",
+    "projects/p55-10.webp",
+    "projects/p55-9.webp"
+  ]
+},
+{
   "id": "p29",
   "category": "office",
   "badge": {
