@@ -27,7 +27,7 @@
     "en": "Interior design + 3D modeling + rendering",
     "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
   },
-  "tools": "3ds Max / Corona",
+  "tools": "Blender / CYCLE",
   "deliverables": "Rendus 3D photoréalistes",
   "tags": [
     "Office",
@@ -82,7 +82,7 @@
     "en": "Interior design + 3D architectural visualization",
     "ar": "تصميم داخلي + تصور معماري ثلاثي الأبعاد"
   },
-  "tools": "3ds Max / Corona / AutoCAD",
+  "tools": "Blender / CYCLE / AutoCAD",
   "deliverables": "Rendus 3D photoréalistes + ambiance conceptuelle",
   "tags": [
     "Office",
@@ -140,7 +140,7 @@
     "en": "Interior design + 3D modeling + rendering",
     "ar": "تصميم داخلي + نمذجة ثلاثية الأبعاد + إخراج بصري"
   },
-  "tools": "3ds Max / Corona",
+  "tools": "Blender / CYCLE",
   "deliverables": "Rendus 3D photoréalistes",
   "tags": [
     "Residential",
