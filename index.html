@@ -316,7 +316,21 @@
     .toTop:hover{filter:brightness(1.1)}
 
     footer{padding:26px 0 40px; border-top:1px solid var(--line); color:var(--muted)}
-    .footerGrid{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap}
+    .footerGrid{display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap}
+    .visitCounter{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 11px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
+    .visitCounter svg{width:17px; height:17px; color:var(--accent2); flex:0 0 auto}
+    .visitCounter strong{color:var(--text); font-weight:750}
 
     .lbBody{position:relative; background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; overflow:hidden}
     .lbBody, .modalImg{touch-action: pan-y;}
@@ -947,6 +961,14 @@
       <footer>
         <div class="footerGrid">
           <div>© <span id="year"></span> <span id="t_footer_name">MAROUANE AIT SALEM</span> — <span id="t_footer_rights">Tous droits réservés</span></div>
+          <div class="visitCounter" id="visitCounter" aria-live="polite" title="Visites">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <strong id="visitCount">--</strong>
+            <span id="t_visit_label">visites</span>
+          </div>
           <div><span id="t_footer_made">Design & 3D</span> • <a href="#top" id="t_footer_top">Haut de page ↑</a></div>
         </div>
       </footer>
@@ -1657,6 +1679,7 @@
         form_helper: "Ce formulaire ouvre votre application email (pas de backend). Si vous voulez un vrai envoi, je peux ajouter un backend (Formspree, Netlify, etc.).",
         footer_name: "MAROUANE AIT SALEM",
         footer_rights: "Tous droits réservés",
+        visit_label: "visites",
         footer_made: "Design & 3D",
         footer_top: "Haut de page ↑",
         modal_type_b: "Type",
@@ -1751,6 +1774,7 @@
         form_helper: "This form opens your email app (no backend). If you want real sending, I can add a backend (Formspree, Netlify, etc.).",
         footer_name: "MAROUANE AIT SALEM",
         footer_rights: "All rights reserved",
+        visit_label: "visits",
         footer_made: "Design & 3D",
         footer_top: "Back to top ↑",
         modal_type_b: "Type",
@@ -1845,6 +1869,7 @@
         form_helper: "هذا النموذج يفتح تطبيق البريد لديك (بدون خادم). إذا أردت إرسالاً فعلياً، أستطيع إضافة Backend (Formspree, Netlify...).",
         footer_name: "مروان أيت سالم",
         footer_rights: "جميع الحقوق محفوظة",
+        visit_label: "زيارة",
         footer_made: "تصميم و3D",
         footer_top: "العودة للأعلى ↑",
         modal_type_b: "النوع",
@@ -1985,6 +2010,7 @@
 
       setText("t_footer_name", t.footer_name);
       setText("t_footer_rights", t.footer_rights);
+      setText("t_visit_label", t.visit_label);
       setText("t_footer_made", t.footer_made);
       setText("t_footer_top", t.footer_top);
 
@@ -2579,6 +2605,60 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
+    function getCounterValue(data){
+      if (!data || typeof data !== "object") return null;
+      const direct = data.count ?? data.Count ?? data.value ?? data.Value;
+      if (Number.isFinite(Number(direct))) return Number(direct);
+      for (const value of Object.values(data)){
+        if (value && typeof value === "object"){
+          const found = getCounterValue(value);
+          if (found !== null) return found;
+        }
+      }
+      return null;
+    }
+
+    async function initVisitorCounter(){
+      const countEl = $("visitCount");
+      if (!countEl) return;
+
+      const storageKey = "marouanePortfolioVisitorCounted";
+      const localFallbackKey = "marouanePortfolioLocalVisits";
+      const namespace = "marouane-ait-salem-portfolio";
+      const counterName = "visitors";
+      let shouldIncrement = true;
+
+      try {
+        shouldIncrement = localStorage.getItem(storageKey) !== "1";
+      } catch (_) {}
+
+      const endpoint = `https://api.counterapi.dev/v1/${namespace}/${counterName}${shouldIncrement ? "/up" : ""}`;
+
+      try {
+        const response = await fetch(endpoint, { cache: "no-store" });
+        if (!response.ok) throw new Error("Counter request failed");
+
+        const data = await response.json();
+        const count = getCounterValue(data);
+        if (count === null) throw new Error("Counter response missing count");
+
+        countEl.textContent = count.toLocaleString(document.documentElement.lang || "fr");
+        try {
+          if (shouldIncrement) localStorage.setItem(storageKey, "1");
+        } catch (_) {}
+      } catch (_) {
+        let fallback = 1;
+        try {
+          fallback = Number(localStorage.getItem(localFallbackKey) || "0");
+          if (shouldIncrement) fallback += 1;
+          if (!Number.isFinite(fallback) || fallback < 1) fallback = 1;
+          localStorage.setItem(localFallbackKey, String(fallback));
+          if (shouldIncrement) localStorage.setItem(storageKey, "1");
+        } catch (_) {}
+        countEl.textContent = fallback.toLocaleString(document.documentElement.lang || "fr");
+      }
+    }
+
     document.addEventListener("contextmenu", (e) => {
       const img = e.target?.closest?.("img");
       if (img) e.preventDefault();
@@ -2591,6 +2671,7 @@
 
     $("year").textContent = new Date().getFullYear();
     initCursorField();
+    initVisitorCounter();
     (async () => {
       try{ await loadProjects(); }
       catch(_){ projects = []; }
